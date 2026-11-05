@@ -1,0 +1,53 @@
+{
+  "name": "@bovinphang/craft-common",
+  "version": "1.0.0",
+  "description": "Craft AI Coding 的公共技能、研发方法与共享安装协议",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bovinphang/craft-common"
+  },
+  "homepage": "https://github.com/bovinphang/craft-common",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "packageManager": "pnpm@12.4.1",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "docs/consuming-common.md",
+    "dist",
+    "skills",
+    "localized",
+    "methods",
+    "LICENSE",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "sync:methods": "tsx scripts/sync-methods.ts",
+    "pack:skills": "tsx scripts/pack-skills.ts",
+    "lint": "eslint src scripts tests eslint.config.mjs --max-warnings=0",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "tsx scripts/run-tests.ts",
+    "build": "pnpm typecheck && tsx scripts/build.ts && tsc -p tsconfig.build.json",
+    "prepack": "pnpm build"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.5",
+    "@types/node": "^22.19.15",
+    "esbuild": "^0.28.0",
+    "eslint": "9.39.4",
+    "globals": "17.12.0",
+    "tsx": "^4.22.3",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "8.70.1"
+  }
+}

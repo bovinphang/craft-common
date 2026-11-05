@@ -1,0 +1,53 @@
+{
+  "cc-debug-methodology": {
+    "capabilityTags": [
+      "debug",
+      "evidence",
+      "root-cause"
+    ]
+  },
+  "cc-doc-sync-core": {
+    "capabilityTags": [
+      "documentation",
+      "source-of-truth",
+      "i18n"
+    ]
+  },
+  "cc-drawio-studio": {
+    "capabilityTags": [
+      "drawio",
+      "uml",
+      "erd",
+      "architecture"
+    ]
+  },
+  "cc-refactoring-core": {
+    "capabilityTags": [
+      "refactoring",
+      "behavior-preservation",
+      "baseline"
+    ]
+  },
+  "cc-source-driven-development": {
+    "capabilityTags": [
+      "official-docs",
+      "versioning",
+      "local-knowledge"
+    ]
+  },
+  "cc-tdd-methodology": {
+    "capabilityTags": [
+      "tdd",
+      "regression",
+      "red-green-refactor"
+    ]
+  },
+  "cc-technical-diagrams": {
+    "capabilityTags": [
+      "architecture",
+      "sequence",
+      "workflow",
+      "png-qa"
+    ]
+  }
+}

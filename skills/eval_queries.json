@@ -1,0 +1,160 @@
+{
+  "cc-debug-methodology": {
+    "should_trigger": [
+      "Vite build error reports Module not found, please help me troubleshoot",
+      "The page has a white screen and a TypeError appears in the console.",
+      "The rendering result of this component is inconsistent with expectations. Help me debug it.",
+      "The interface returns 500 but the front end does not display the error message",
+      "Styles are lost after packaging, but the development environment is normal",
+      "How to locate hydration mismatch in React components",
+      "Page status lost after HMR update",
+      "Troubleshoot sporadic JS exceptions in production environments"
+    ],
+    "should_not_trigger": [
+      "Write unit tests for this module",
+      "Design a new React component",
+      "Optimize first screen loading performance",
+      "Do front-end security review",
+      "Upgrade TypeScript to the latest version",
+      "Refactor the logic of this hooks",
+      "Write a Playwright E2E test",
+      "Design type definitions for this API"
+    ]
+  },
+  "cc-doc-sync-core": {
+    "should_trigger": [
+      "Synchronize the number of skills and agents in README",
+      "Update multi-language documentation after adding a new command",
+      "Generate command list based on package.json",
+      "docs sync for runtime documentation",
+      "Update capability quantity in marketplace description",
+      "Check whether README and skills metadata are consistent",
+      "Synchronize report output table to document",
+      "Update the commands list in the project structure document"
+    ],
+    "should_not_trigger": [
+      "Write Storybook stories for components",
+      "Fix TypeScript build failure",
+      "Write login E2E test",
+      "Review XSS risks",
+      "Planning React component boundaries",
+      "Clean up unused exports",
+      "Implement PWA manifest",
+      "Optimize virtual list scrolling"
+    ]
+  },
+  "cc-drawio-studio": {
+    "should_trigger": [
+      "Generate an editable draw.io architecture diagram and export it as a PNG",
+      "Draw this microservice system as a .drawio file",
+      "Use diagrams.net to make ER diagrams, requiring the ability to edit them later.",
+      "Check out the official shape style of AWS Lambda in draw.io",
+      "Generate a module dependency graph for this TypeScript project and automatically lay it out",
+      "Generate UML class diagram and export to SVG using draw.io CLI",
+      "draw.io automatically layouts a service topology with more than 20 nodes",
+      "Generate diagrams.net editing link after layout with Graphviz",
+      "Make an editable sequence diagram and check .drawio for broken edges",
+      "create an editable drawio architecture diagram with official cloud shapes"
+    ],
+    "should_not_trigger": [
+      "Generate a product promotional poster image",
+      "Edit this photo and replace the background",
+      "Implement Three.js interactive 3D topology map",
+      "Add path stroke animation to SVG logo",
+      "Just write Mermaid into the README",
+      "Implement the page according to the Figma design draft",
+      "Check dashboard button hover state",
+      "Visual regression using Playwright screenshots",
+      "Optimize Canvas particle animation performance",
+      "Generate comic avatars and brand boards"
+    ]
+  },
+  "cc-refactoring-core": {
+    "should_trigger": [
+      "Keep observable behavior unchanged while restructuring this frontend module.",
+      "Refactor this function in small verified steps without changing its output or side effects.",
+      "Improve the structure of this React feature but preserve behavior exactly.",
+      "Clean up the architecture of this Vue composable without adding features.",
+      "Use a diff budget and rollback boundary for this behavior-preserving refactor.",
+      "Restructure this TypeScript service with a green baseline before and after each step.",
+      "Refactor this code with SAFE CAUTION DANGER risk classification.",
+      "Plan and execute a behavior-preserving refactoring with verification after every step."
+    ],
+    "should_not_trigger": [
+      "Remove unused components and dependencies from this project.",
+      "Fix this duplicate-request bug and change behavior so only one request is sent.",
+      "Migrate this Redux store to Zustand.",
+      "Review this PR and tell me whether it is safe to merge.",
+      "Debug why this page renders a blank screen.",
+      "Implement a new payment workflow using TDD.",
+      "Upgrade Vite and update all breaking configuration changes.",
+      "Add a new responsive dashboard from this Figma design."
+    ]
+  },
+  "cc-source-driven-development": {
+    "should_trigger": [
+      "For this new version of Next.js API, please check the official documentation before making a decision.",
+      "Help me confirm whether the current version of Vite configuration items is still recommended",
+      "This browser API compatibility is subject to specifications and MDN",
+      "source-driven decision for a frontend library migration",
+      "React Router version differences require checking documentation",
+      "Do not judge the ESM/CJS behavior of this package from memory.",
+      "Design public interfaces based on project source code and official docs",
+      "Verify the latest recommended usage of Nuxt useFetch"
+    ],
+    "should_not_trigger": [
+      "Write Zod validation to the form",
+      "Optimize virtual scrolling of large lists",
+      "Run npm test and fix the failure",
+      "Check button aria-label",
+      "Writing the Playwright Login Flow",
+      "Clean up unused dependencies",
+      "Design UI visual direction",
+      "Review token storage security"
+    ]
+  },
+  "cc-tdd-methodology": {
+    "should_trigger": [
+      "Implement this hook using TDD",
+      "Write the failing test first and then fix the bug",
+      "Go through the refactoring process for new components",
+      "Add a regression test and change the logic",
+      "test driven development for this frontend feature",
+      "This tool function first writes a single test and then implements it",
+      "Reproduce the test before fixing the form validation bug",
+      "Reconstruct state logic using a test-driven approach"
+    ],
+    "should_not_trigger": [
+      "Only run existing tests and fix failures",
+      "Develop a test tiering strategy",
+      "Write the complete Playwright E2E process",
+      "Synchronization document capability table",
+      "Clean up unused dependencies",
+      "Do an XSS security review",
+      "Design Vue project structure",
+      "Configure PWA offline caching"
+    ]
+  },
+  "cc-technical-diagrams": {
+    "should_trigger": [
+      "Draw the lifecycle of a backend job as an editable diagram",
+      "Export an architecture JSON source to self-contained HTML",
+      "Create a sequence diagram of an API and database transaction",
+      "Show an agent memory retrieval flow with labelled arrows",
+      "Validate text clipping in an exported technical diagram PNG",
+      "Render a workflow with decision branches and rollback edges",
+      "Make a local interactive preview of service dependencies",
+      "Preserve all data-flow labels when exporting SVG"
+    ],
+    "should_not_trigger": [
+      "Generate a product photograph",
+      "Edit a portrait background",
+      "Build a React component",
+      "Tune a database query",
+      "Fix a Rust compiler error",
+      "Review authorization logic",
+      "Write a CLI unit test",
+      "Polish marketing copy"
+    ]
+  }
+}
