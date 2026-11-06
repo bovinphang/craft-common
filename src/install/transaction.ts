@@ -185,9 +185,7 @@ function validateJournal(
         bytes === null
           ? hash !== null
           : typeof bytes !== "string" ||
-            !/^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$/.test(
-              bytes,
-            ) ||
+            Buffer.from(bytes, "base64").toString("base64") !== bytes ||
             hashBytes(Buffer.from(bytes, "base64")) !== hash
       )
         throw new Error("公共事务内容摘要无效");
@@ -269,14 +267,19 @@ function normalizeProductPath(file: string, roots: string[]): string {
       continue;
     // The declared root may be a junction; links beneath it remain forbidden.
     let current = absolute;
-    while (current !== boundary) {
+    while (
+      (process.platform === "win32" ? current.toLowerCase() : current) !==
+      (process.platform === "win32" ? boundary.toLowerCase() : boundary)
+    ) {
       try {
         if (fs.lstatSync(current).isSymbolicLink())
           throw new Error(`产品托管路径不允许符号链接：${current}`);
       } catch (error) {
         if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
       }
-      current = path.dirname(current);
+      const parent = path.dirname(current);
+      if (parent === current) throw new Error("产品路径未到达声明边界");
+      current = parent;
     }
     return safeManagedPath(real, relative.split(path.sep).join("/"));
   }

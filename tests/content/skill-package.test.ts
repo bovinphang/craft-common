@@ -18,7 +18,7 @@ test("公共独立包保留来源版本、完整资源及许可证", (t) => {
     fs.readFileSync(path.join(output, "cc-drawio-studio/package.json"), "utf8"),
   );
   assert.equal(pkg.name, "@bovinphang/cc-drawio-studio");
-  assert.equal(pkg.version, "1.0.0");
+  assert.equal(pkg.version, JSON.parse(fs.readFileSync(path.join(root,'package.json'),'utf8')).version);
   assert.equal(
     pkg.repository.url,
     "https://github.com/bovinphang/craft-common",

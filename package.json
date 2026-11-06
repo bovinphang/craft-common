@@ -1,6 +1,6 @@
 {
   "name": "@bovinphang/craft-common",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Craft AI Coding 的公共技能、研发方法与共享安装协议",
   "type": "module",
   "license": "MIT",

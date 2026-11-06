@@ -38,7 +38,7 @@ test("中英文公共能力发现清单完整且无前端旧公共入口", () =>
     ) as Array<{ id: string; version: string; repository: string }>;
     assert.deepEqual(metadata.map((item) => item.id).sort(), expected);
     for (const item of metadata) {
-      assert.equal(item.version, "1.0.0");
+      assert.equal(item.version, catalog.packageVersion);
       assert.equal(
         item.repository,
         "https://github.com/bovinphang/craft-common",

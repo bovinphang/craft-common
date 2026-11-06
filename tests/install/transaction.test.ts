@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import { createHash } from "node:crypto";
+import { spawnSync } from "node:child_process";
 import {
   executeSharedPlan,
   recoverSharedTransaction,
@@ -180,3 +181,65 @@ test("复用公共内容时产品计划也不能认领或覆盖 cc 文件", asyn
   );
   assert.deepEqual(fs.readFileSync(file), original);
 });
+
+test("较大二进制事务日志恢复不依赖正则递归栈并拒绝非规范 base64", async (t) => {
+  const f = sharedFixture(t),
+    { target, ledgerDir } = resolveSharedIdentity(f.skillsDir),
+    file = path.join(target, "cc-example/large.bin");
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  fs.mkdirSync(ledgerDir, { recursive: true });
+  const bytes = Buffer.alloc(8 * 1024 * 1024, 0x61),
+    after = bytes.toString("base64"),
+    journal = {
+      schemaVersion: 1,
+      target,
+      phase: "prepared",
+      token: "12345678-1234-1234-1234-123456789abc",
+      entries: [
+        {
+          path: file,
+          before: null,
+          after,
+          beforeHash: null,
+          afterHash: createHash("sha256").update(bytes).digest("hex"),
+        },
+      ],
+    };
+  fs.writeFileSync(file, bytes);
+  fs.writeFileSync(
+    path.join(ledgerDir, "transaction.json"),
+    JSON.stringify(journal),
+  );
+  assert.equal(await recoverSharedTransaction(f.skillsDir), "recovered");
+  assert.equal(fs.existsSync(file), false);
+  for (const invalid of ["YQ=", "YQ===", "Y Q==", "YR=="]) {
+    journal.entries[0].after = invalid;
+    journal.entries[0].afterHash = createHash("sha256")
+      .update(Buffer.from(invalid, "base64"))
+      .digest("hex");
+    fs.writeFileSync(
+      path.join(ledgerDir, "transaction.json"),
+      JSON.stringify(journal),
+    );
+    await assert.rejects(recoverSharedTransaction(f.skillsDir), /摘要|内容/);
+  }
+});
+
+test(
+  "Windows 公共事务对大小写等价产品根和路径有界完成",
+  { skip: process.platform !== "win32" },
+  (t) => {
+    const f = sharedFixture(t),
+      product = path.join(f.root, "product");
+    fs.mkdirSync(product);
+    const code = `import {executeSharedPlan} from ${JSON.stringify(new URL("../../src/install/transaction.ts", import.meta.url).href)};const request=${JSON.stringify({ action: "install", skillsDir: f.skillsDir, consumer: f.consumer("backend-craft"), catalog: f.catalog() })};for(const [file,root] of [[${JSON.stringify(path.join(product, "bec-file").toUpperCase())},${JSON.stringify(product)}],[${JSON.stringify(path.join(product, "bec-other"))},${JSON.stringify(product.toUpperCase())}]])await executeSharedPlan(request,{dryRun:true,allowedProductRoots:[root],productMutations:[{path:file,beforeHash:null,after:Buffer.from('owned')}]});console.log('ok');`;
+    const run = spawnSync(
+      process.execPath,
+      ["--import", "tsx", "--input-type=module", "-e", code],
+      { encoding: "utf8", timeout: 3000, windowsHide: true },
+    );
+    assert.equal(run.error, undefined, run.error?.message);
+    assert.equal(run.status, 0, run.stderr);
+    assert.match(run.stdout, /ok/);
+  },
+);

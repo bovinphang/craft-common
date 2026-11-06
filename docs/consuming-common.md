@@ -1,6 +1,6 @@
 # 消费 craft-common
 
-公共包首版为 `@bovinphang/craft-common@1.0.0`，要求 Node >=22、ESM。消费者精确固定版本，公共内容在本仓库维护，产品只维护自动生成的分发副本。公共源码不依赖 frontend-craft。
+公共包当前修复版为 `@bovinphang/craft-common@1.0.1`（首版 1.0.0），要求 Node >=22、ESM。1.0.1 修复较大事务日志恢复的正则栈溢出及 Windows 等价大小写路径的遍历挂起，并固定分发文本换行。消费者精确固定版本，公共内容在本仓库维护，产品只维护自动生成的分发副本。公共源码不依赖 frontend-craft。
 
 ## 内容与分发
 
@@ -8,7 +8,7 @@
 
 `readMethodResource(packageRoot, method, language)` 提供源码核验、文档同步、诊断、重构、TDD 的通用方法字节。领域 Skill 将方法内嵌为本地 references，独立发布时不依赖相邻 Skill。修改 methods 后运行 `pnpm run sync:methods` 更新公共入口引用；评估样例独立维护。
 
-frontend-craft 的 `pnpm run sync:common` 生成中英文公共快照、领域方法副本和来源锁；`pnpm run check:common` 只读比对。Git 原生插件也携带这些生成快照，不要求用户执行构建。禁止手工修改生成文件。公共独立包用 1.0.0，领域独立包跟随其产品版本。
+frontend-craft / backend-craft 的 `pnpm run sync:common` 生成中英文公共快照、领域方法副本和来源锁；`pnpm run check:common` 只读比对。Git 原生插件也携带这些生成快照，不要求用户执行构建。禁止手工修改生成文件。公共独立包用 1.0.1，领域独立包跟随其产品版本。两个消费者需使用相同版本、语言及精确内容摘要；升级前先通过旧产品卸载退出旧公共引用并处理保留的用户修改。
 
 检查覆盖完整公共文件集合；同步仅清理旧锁认领且哈希未变的过期文件。额外未知文件和手工修改会阻断同步并保留原文件。组合索引中的产品自有条目仍在产品维护，公共条目来自本包。
 
