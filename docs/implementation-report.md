@@ -2,6 +2,10 @@
 
 本报告记录开发验收时点。验收后用户已授权将两个仓库分别提交、合并到 main 并推送远程；下文“不提交”的记录及裁定描述原开发阶段边界，Git 集成按后续授权执行。npm 发布仍是独立步骤。
 
+## 后续状态
+
+本报告下文保留最初抽取阶段的版本与验证结果。当前源码版本已为 1.0.1，frontend-craft 3.0.0 与 backend-craft 1.0.0 均精确依赖该版本；后端已实现产品级公共事务接入。当前消费契约以[消费指南](consuming-common.md)及各产品代码、锁文件为准。历史测试数量和 registry 查询仅对应原验收时点。
+
 ## 交付范围
 
 本次依据 `docs/backend-craft项目.md`、`docs/Craft-AI-Coding生态建设.md` 及已批准设计实施。frontend-craft 直接按未发布的 3.0.0 开发，公共包首版为 `@bovinphang/craft-common@1.0.0`，产品精确依赖 1.0.0。backend-craft 未修改。
