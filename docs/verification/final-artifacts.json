@@ -1,0 +1,252 @@
+{
+  "date": "2026-11-08",
+  "status": "local-unpublished-candidate",
+  "common": {
+    "file": "craft-common/.superpowers/sdd/2026-11-08-product-installation-foundation/packages/bovinphang-craft-common-2.0.0-dev.20261108.tgz",
+    "bytes": 1238654,
+    "integrity": "sha512-j0guP4F8W/6rW8LOkvRa07eBhGfTLSasm0ZUXrGJhrRutZV6JTBL6Bb0LpuROmAL9oRzO2if5LY+8Io4WyCJig=="
+  },
+  "frontend": {
+    "cli": {
+      "file": "craft-common/.superpowers/sdd/2026-11-08-product-installation-foundation/packages/bovinphang-frontend-craft-3.0.0.tgz",
+      "bytes": 1992985,
+      "integrity": "sha512-2W91ad6OiIEmqs0Y5K/Uj8C1Rci9YyD21PmHdQhihRqqQUJzzWRvSg3s8TaT96R/oQmnRkAzaPdHza82ZSARDg=="
+    },
+    "openclaw": {
+      "file": "frontend-craft/npm-packages/openclaw/frontend-craft-3.0.0.tgz",
+      "bytes": 3010443,
+      "integrity": "sha512-KfFdBqW7WtTtM2ZHV+mPEOqZRYKHyjLLYKJPW5QlkfaTBewO09J7E5asGRIAIBtUcNrY1GNKnQ1i8GBt/S8CMg=="
+    },
+    "standalone": {
+      "directory": "frontend-craft/skill-packages",
+      "count": 74,
+      "format": "publishable bilingual package directories"
+    }
+  },
+  "backend": {
+    "directory": "backend-craft/npm-packages-bY7Jjr",
+    "count": 44,
+    "archives": [
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-backend-craft-1.0.0.tgz",
+        "bytes": 1600330,
+        "integrity": "sha512-wPfMz6Tphhxn4oMIeOXZ1eDUTs3UiZe0+LfYpAvDLMr6EGvU+3RrQKhTOq6G3vQLa00A37fpeRsDf83ffH5yhg=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-backend-craft-openclaw-1.0.0.tgz",
+        "bytes": 1292434,
+        "integrity": "sha512-8G/69zHn3TQujEfvXLLoMSdiNN/BFoTOWXJZwroGQ4hC5eYjfqIbEgXKoL3tgwZxc/Q39uS8bBgDlTBlUbpmyA=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-bec-api-design-1.0.0.tgz",
+        "bytes": 4924,
+        "integrity": "sha512-WUfZRDdQIOJPmLLuf5Vl2iBHGMRrPGrGlZb4PLwXaKHOIcbxEXMnM8TvK5emliOrK0z+0eyJJV/MkChF2ew0xA=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-bec-architecture-design-1.0.0.tgz",
+        "bytes": 4846,
+        "integrity": "sha512-vDDxw0P1nCIpzYDevbkk/fK8w9K/EHwdcnKYctqx/NpRv9PSfyx2CZEfihQoCeTiNShUglmkuORg0mCZ7c4zkw=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-bec-auth-security-1.0.0.tgz",
+        "bytes": 4675,
+        "integrity": "sha512-+71dvgLIPKCXUMKKKGFVSP4bHMYFiVxaJLDxvOhrymMvzLyjSNIpwafSN0Bdcw0rIYHXddY4sA9AdF6/B4Of8w=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-bec-axum-project-standard-1.0.0.tgz",
+        "bytes": 11292,
+        "integrity": "sha512-EAjOyoebfcy4Xb8Sl/seG8q5aJDmedX4l9t1XjKcipWeiv3+L42dzqYX2PD17YhDat6TBDFfvk5iNTCkxs1S/Q=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-bec-cache-design-1.0.0.tgz",
+        "bytes": 4677,
+        "integrity": "sha512-NTqJT3wcY+Ng8AvQgQLUTSz512acUotKLCZcy8aK+NIUnblq8yns+2XC1floCXhBruBD1nUNejeqWnL9TB7LCw=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-bec-code-review-1.0.0.tgz",
+        "bytes": 4646,
+        "integrity": "sha512-TSuMTTQ7lseWMuPa4b04QSYfxkhrqE/QoQ45R/aJ9h0s6hMCikrKMZ28+F9y/HvgZYb6fLoxYPrOF+klrdV0JQ=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-bec-database-design-1.0.0.tgz",
+        "bytes": 4715,
+        "integrity": "sha512-cUihECF2MvamE8HKTVfX3qXw33LPiRKwGU0czTUbIqFSo/F7vz+AQgSEHOq022fURgDMrnCELUeQjhSYfVl81w=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-bec-debug-framework-1.0.0.tgz",
+        "bytes": 6554,
+        "integrity": "sha512-sZAheq/wCVOFkEhl3kpIpq3Tkb2Qy0OymFq++Nsd3wPV07MX4o8WsR4lO7Rze1N9CXqOvAJfyx7twv/5hZIFWg=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-bec-dependency-management-1.0.0.tgz",
+        "bytes": 4634,
+        "integrity": "sha512-+Ksgq5MPWdvObJ22996xLUUItGl3umb6LXvl5w1EsOAvWiUbv1VgeXTy11M+GbMJa8qultO0+aIDJ2DP/cxtGw=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-bec-doc-sync-1.0.0.tgz",
+        "bytes": 6373,
+        "integrity": "sha512-lhqGemWdYTof98hey45SHJ/YtDgcGDgsfQpL2AwdyUYFFE//PSuC6dQEa//XsV/ghd70diHm5qqkQORSYrF/gA=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-bec-drogon-project-standard-1.0.0.tgz",
+        "bytes": 8202,
+        "integrity": "sha512-sYG2gWBZFE64hqxLD03K2p4rFpcmULHatwc/59fxFqblN15sL5BmTv89ad7w5o3GYtoDd3b91CBwOYQGccf7PA=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-bec-fastapi-project-standard-1.0.0.tgz",
+        "bytes": 6986,
+        "integrity": "sha512-VVuoROmT6pNtzUIrJi5J+IBI+5qJNUDteXCpEb5EP3l3jEGXWXxjKpxF4sbIkzPbQWefaAfVjriuC3KxARlLYg=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-bec-gin-project-standard-1.0.0.tgz",
+        "bytes": 11706,
+        "integrity": "sha512-VoJgtTJMeynKPY87igxJeImJrImQs0Sh0LrkPcxG2kjUjbriZ5AqS3Ppjjr/WNw9reXgK2iy8wTLegazLEQMlw=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-bec-observability-1.0.0.tgz",
+        "bytes": 4682,
+        "integrity": "sha512-t4k7cl97MIN/FaiZlmZor+au4U/EzwHLZ3rCeKmMDKJaxfYQ71kN9cNLRMDCc/8jQmFC9pGB2Mn5SERT9WlPHw=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-bec-performance-optimization-1.0.0.tgz",
+        "bytes": 4629,
+        "integrity": "sha512-UJkB7/kEDFB5g+YzYNJlglFDaCpWrG7QeWOOjr60b7TWddYV00H2hiVSX1OV1CD9ScLAfkEADaM6ikTP8HgYbg=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-bec-project-init-1.0.0.tgz",
+        "bytes": 4552,
+        "integrity": "sha512-iiRs64hfU7vfsM/yf/4mtILkU1hPaT2Tww+YA6jOJRTZdgdz9S3RjsPwdk2Fsq0cBE6CSkTNEg6XWYK2NPiyAA=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-bec-refactoring-1.0.0.tgz",
+        "bytes": 7094,
+        "integrity": "sha512-7Yfyzn9F/ZwseTPCRv3WP5ChipVZJbGjTCMmJOPwM1Kcs3lEh+MVRU8mPvTEnkzUQlGGZasN/bSleeL6gAoOVQ=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-bec-spring-boot-project-standard-1.0.0.tgz",
+        "bytes": 7880,
+        "integrity": "sha512-ShSAfHDd4EdNxGUaAdnTKcqNIkbOwefNT1R5m23s35F580GNir6Qj4dLB0ZsFxbK5Ye7OuxT4O3JNLly/cJgLA=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-bec-tdd-workflow-1.0.0.tgz",
+        "bytes": 6434,
+        "integrity": "sha512-8RsG9ZoN6RPfoxECDtYMatsZoEVNi6OcEKEVLjIA8yBEhTKG3yDXamhxTzJC0c7DK5NRqDq8KfPd6B9e/Mw+aw=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-bec-testing-strategy-1.0.0.tgz",
+        "bytes": 4668,
+        "integrity": "sha512-dnL8lUPI2PqTVGb6G7Lazam9uV35lgoFhu5UFZdI9hmmTa2LHQJQuQaDN50O7wYs0fclE8S3tNamxi80+sGQjw=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-bec-transaction-management-1.0.0.tgz",
+        "bytes": 5017,
+        "integrity": "sha512-/wolllGfEu8FjGDs1a/AonKC2qcMxTQA4zmrbIIuC0MXKYRBLanwKYZczqwsyqxMPis64zedZiRTQ6ToUVpB7A=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-cc-c-project-standard-2.0.0-dev.20261108.tgz",
+        "bytes": 5043,
+        "integrity": "sha512-lZs333zov6CGFBg64svLMwCviE6PHdFBv9RxRF56q5Etje7TiGvEyIZWy4Udb49HEkvakX/kCE1TU104EY+SQA=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-cc-cpp-project-standard-2.0.0-dev.20261108.tgz",
+        "bytes": 4891,
+        "integrity": "sha512-vt0yNEplrC7LGOXrkgIprA4PLIJ+QnXcodl+39Vna4R8yFqhONpFi+gWKWQg7i8GHCsmPuQGWZ7F9keczGy70w=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-cc-debug-methodology-2.0.0-dev.20261108.tgz",
+        "bytes": 4198,
+        "integrity": "sha512-tPmpasrEYYkfrkIwOVCgkUfviSgNPfojZjSkWQ8oBehfx6VpLDQf7yKPFupYUhEfwk8dhwxkrwC7hlKqb1j+sg=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-cc-doc-sync-core-2.0.0-dev.20261108.tgz",
+        "bytes": 3951,
+        "integrity": "sha512-54Yb1WFfqw5o4fUt+6lKHW0tlC9JpXGHo9+5S8KAVA19HtCUeg2zVpQVs7DYWMcV5bIqOeIKLbwIUSyLS4pQrg=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-cc-drawio-studio-2.0.0-dev.20261108.tgz",
+        "bytes": 914505,
+        "integrity": "sha512-lWF2UzfkOCb66WbPWypTOnVlkZLxgXBBhV3tlus+bvESuJQFgFCyIT0LLMEQnrkMoSLh6aIt206hDFzNk1ZagQ=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-cc-electron-project-standard-2.0.0-dev.20261108.tgz",
+        "bytes": 10172,
+        "integrity": "sha512-x/j4zibsX9GK0deEqEWFfHrX68OJtTu35biVOr/W+nVFcoqXAGbYaalSFBFKlspWo6Yslk6G0bmwtbgrz022hg=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-cc-go-concurrency-2.0.0-dev.20261108.tgz",
+        "bytes": 4849,
+        "integrity": "sha512-DVgL1BAHH8zg7GN9hdvr0zAmuSv+kCtVZo8JZRpC6ylMP+0M9RXG4fmN+gQ9rPhHi8DIWEWcm5vLC2AM1iUheg=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-cc-go-project-standard-2.0.0-dev.20261108.tgz",
+        "bytes": 4921,
+        "integrity": "sha512-oyiVA5n750S0JT//PH+2KlTQnsUmwZLrUhPQAzp4jqAVqaYShuauDqf5lUqs51zXLqleaUMzM2AsJ2ObrHhUmQ=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-cc-java-project-standard-2.0.0-dev.20261108.tgz",
+        "bytes": 4783,
+        "integrity": "sha512-27uNckbMjdy4TNOpeRMF7f61Iypw/1cRWMTkAKaoE335iwiBB8/e65hVmkxq4Ga0mIi6dHz7HTeCYjmKpW9Zlw=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-cc-java-runtime-2.0.0-dev.20261108.tgz",
+        "bytes": 4876,
+        "integrity": "sha512-QYofeNAeNH6/CI7ZIz7/z3U6byr+XbUMyG4G1YwZubpsdRq5VZ2ZGN9/cHWdImlj5F/uh4FBE7BQ9uxCBaMXnw=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-cc-native-memory-safety-2.0.0-dev.20261108.tgz",
+        "bytes": 4962,
+        "integrity": "sha512-OzmF5c1Wi/r8vqhyn4QTGUX5DYgdfUXsCBhsQ12Lfc5VJfLzXisMSdoAfxdTNEd26cSRgnSNshxg46xDIHS+Wg=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-cc-python-async-2.0.0-dev.20261108.tgz",
+        "bytes": 4931,
+        "integrity": "sha512-S2dJMBIFIhLYZReZu1gIxFjku3xzZQJ+j3wxXz5vIAMHNpG0Mkl7/8bJQD2l95e1wTb/lOpvFm+TLhkazNbLWg=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-cc-python-project-standard-2.0.0-dev.20261108.tgz",
+        "bytes": 4936,
+        "integrity": "sha512-1zjlAQMo114tsqCrQVbsKj4vXdRi3Bo4rpxgU7FO4HmPDMdKscXbu88AWESSAU19vbw8BtHU7x1OTCGYc7yFwg=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-cc-refactoring-core-2.0.0-dev.20261108.tgz",
+        "bytes": 4788,
+        "integrity": "sha512-h5hC4Y+/xO/SK0ETQF3w2Ze60hDgZibiDIJeDsXPEFLY3vLWPIj8P1CusXLng92u5auPwDW1PK2DJbVlfAiM+A=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-cc-rust-async-2.0.0-dev.20261108.tgz",
+        "bytes": 4860,
+        "integrity": "sha512-L2wTdscjrcAOr6C/bzn3oEYfirxdKuLWHs2hIuncUlYsBTygYqa2gDb5zxOGwYmntTNdxdEO/jh74MsloMR2tA=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-cc-rust-project-standard-2.0.0-dev.20261108.tgz",
+        "bytes": 5004,
+        "integrity": "sha512-Kl9YurK8tTD70MGllHsSkIMThLVlJ/NpiQNRCzi/W4jXg+HQlg4V3ph28FgSgmzLNH0NRCsRfJoOUJJdo42ZXw=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-cc-source-driven-development-2.0.0-dev.20261108.tgz",
+        "bytes": 4590,
+        "integrity": "sha512-e8MnDE93mBDwA7fKfh0cTWD777igOaRafA4mbbuMWjt1uJ20kqeFctJ2f7L6CQ38MOlzn2iFP3k+ZBNmv6tK7w=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-cc-tauri-project-standard-2.0.0-dev.20261108.tgz",
+        "bytes": 11642,
+        "integrity": "sha512-tFLVHB6cSDeUHTupTLEYVFk9VIE2nAiOShb1ZSWilvFI/JV3UZAnzatKujOAZ2OHEQNLPxUrXuWVqkKYH08/Rg=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-cc-tdd-methodology-2.0.0-dev.20261108.tgz",
+        "bytes": 3926,
+        "integrity": "sha512-ZqMK515mcUlolWQD0PAjda+fvyTUYCpJoNhuFLyQT3o+9A2h014MtD5jJ4kITquFrbJTtEpjwLiOV/l9b5yVcQ=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-cc-technical-diagrams-2.0.0-dev.20261108.tgz",
+        "bytes": 87880,
+        "integrity": "sha512-rvgZawXG7zPX/hlKVUd9M7i+Q3eGiGvnITQCEUp/e2unHxFQtzeIq8k0sCq8RcWy3aaUI7tUMsbXzJHtpDLBgA=="
+      },
+      {
+        "file": "backend-craft/npm-packages-bY7Jjr/bovinphang-cc-typescript-project-standard-2.0.0-dev.20261108.tgz",
+        "bytes": 10532,
+        "integrity": "sha512-+dgqhg3/oAZUjArnZa5jYwLRKNqyiHOnapLJeKBkCK7OyUlo/jSqQrOFT+TXhXIGIoawru7dwjOyFwt3snz5CQ=="
+      }
+    ]
+  }
+}

@@ -4,6 +4,7 @@ import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
 import { fileURLToPath } from "node:url";
+import { execSync } from "node:child_process";
 import { packSkills } from "../../scripts/pack-skills.js";
 
 const root = path.resolve(
@@ -18,7 +19,11 @@ test("公共独立包保留来源版本、完整资源及许可证", (t) => {
     fs.readFileSync(path.join(output, "cc-drawio-studio/package.json"), "utf8"),
   );
   assert.equal(pkg.name, "@bovinphang/cc-drawio-studio");
-  assert.equal(pkg.version, JSON.parse(fs.readFileSync(path.join(root,'package.json'),'utf8')).version);
+  assert.equal(
+    pkg.version,
+    JSON.parse(fs.readFileSync(path.join(root, "package.json"), "utf8"))
+      .version,
+  );
   assert.equal(
     pkg.repository.url,
     "https://github.com/bovinphang/craft-common",
@@ -32,5 +37,37 @@ test("公共独立包保留来源版本、完整资源及许可证", (t) => {
   assert.ok(fs.existsSync(path.join(output, "cc-drawio-studio/LICENSE")));
   assert.ok(
     fs.existsSync(path.join(output, "cc-tdd-methodology/references/method.md")),
+  );
+  const packed = JSON.parse(
+    execSync("npm pack --dry-run --json --ignore-scripts", {
+      cwd: path.join(output, "cc-tauri-project-standard"),
+      encoding: "utf8",
+    }),
+  );
+  assert.ok(
+    packed[0].files.some(
+      (file: { path: string }) =>
+        file.path === "examples/minimal/core/src/lib.rs",
+    ),
+    "standalone npm archive includes the actual Tauri example",
+  );
+});
+test("standalone common skill archives retain the Chinese entry and runnable example", (t) => {
+  const output = fs.mkdtempSync(path.join(os.tmpdir(), "cc-bilingual-"));
+  t.after(() => fs.rmSync(output, { recursive: true, force: true }));
+  packSkills(root, output);
+  const dest = path.join(output, "cc-electron-project-standard");
+  assert.ok(fs.existsSync(path.join(dest, "localized/zh-CN/SKILL.md")));
+  const packed = JSON.parse(
+    execSync("npm pack --dry-run --json --ignore-scripts", {
+      cwd: dest,
+      encoding: "utf8",
+    }),
+  );
+  assert.ok(
+    packed[0].files.some(
+      (f: { path: string }) =>
+        f.path === "localized/zh-CN/examples/minimal/boundary.cjs",
+    ),
   );
 });

@@ -1,0 +1,94 @@
+{
+  "caseId": "Q1",
+  "arm": "old",
+  "bytes": 55817,
+  "sha256": "b2ec18e95719beb337ddcbce0a9194add2bc0a919d962b12b05ee0e1dedf9380",
+  "selected": [
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-typescript-project-standard/SKILL.md",
+      "sha256": "22395e51d4f40155ec4905dcf0a845ec6ee07d17214d5fae2b0e0384397505c8",
+      "bytes": 4244,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-typescript-project-standard/references/type-safety-patterns.md",
+      "sha256": "bbfc7a02191e691af728aec5db1ea4dd474e34d62bfa900d17785ab7158f4465",
+      "bytes": 2030,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-typescript-project-standard/references/type-safety.md",
+      "sha256": "70fe79504c724cbb9db0943d2f27d04e4d947f4dda6c2570ac4314884aa491df",
+      "bytes": 4349,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-react-project-standard/SKILL.md",
+      "sha256": "059e515ab3acb1ac60979ca81452634595d1608797148b6fe3ff784e3ca945a0",
+      "bytes": 5377,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-react-project-standard/references/generic-component-types.md",
+      "sha256": "0ae33e3ea425e7b644fbf4df544b922a5fc2772879969e86ae0019168f687c10",
+      "bytes": 715,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-react-project-standard/references/react-performance-patterns.md",
+      "sha256": "6833d5c0689bc123c2d66dd2981a7535279a9aae704a7fbc54ec6628bf3313e8",
+      "bytes": 1554,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-react-project-standard/references/react-project-structure.md",
+      "sha256": "ad663359a6d67707e08939d2a077552398b06ad035ee18eee6aabfb4f93fc000",
+      "bytes": 7657,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-react-project-standard/references/react-quality-patterns.md",
+      "sha256": "1a73c41bbe5b52ce3e4a7710b449f6156c6f8e4ab78c944d4231bac886a68a3d",
+      "bytes": 5052,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-react-project-standard/references/react-runtime-patterns.md",
+      "sha256": "3ab6e13e88559ae96da237241c34e3610f9383fdf538603890d62eecc20ccedf",
+      "bytes": 8888,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-api-integration/SKILL.md",
+      "sha256": "588f547a08f682f25d2026670bc49f1a6bc32da70140b3aa6af7fecb3d0e9257",
+      "bytes": 4904,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-api-integration/references/integration-patterns.md",
+      "sha256": "41972ea9d2c1ac5f56dc15fa67a4c97f0bd863e44af57531f8c5d7a3a45851e1",
+      "bytes": 2566,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-data-fetching/SKILL.md",
+      "sha256": "3c1832fa8133aeb10617c738c8489190e5e9f817b698de6083b322ca95523270",
+      "bytes": 2843,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-data-fetching/references/query-patterns.md",
+      "sha256": "17fcb27a7e9eeaa6f3cbc63c3bb51c20a800887f84f39398e86c624d46f3103b",
+      "bytes": 3748,
+      "deduplicated": false
+    }
+  ],
+  "configuration": {
+    "modelSelector": "inherited parent session, no override",
+    "reasoning": "inherited",
+    "maxReadCalls": 4,
+    "network": false,
+    "writes": false,
+    "maxAnswerChineseCharacters": 1200
+  }
+}

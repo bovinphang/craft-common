@@ -1,0 +1,42 @@
+[
+  {"caseId":"Q1","answerId":"A17","criteria":[
+    {"id":"Q1-contract","pass":true,"evidence":"“默认关闭付款自动重试”；“同一次付款意图的所有尝试复用同一键和载荷”；“限定总尝试次数及总耗时”。"},
+    {"id":"Q1-lifecycle","pass":true,"evidence":"“每次请求建立 `AbortController` 和递增请求代号”；“参数变化、卸载时取消请求、退避等待及轮询，并使旧代号失效”；“成功、失败及 `finally` 更新状态前都检查代号”。"},
+    {"id":"Q1-tools","pass":true,"evidence":"“沿用 React、TypeScript、pnpm、node:test”；“JSON和捕获异常均从 `unknown` 开始，通过已有 schema 或类型守卫校验”。"},
+    {"id":"Q1-evidence","pass":true,"evidence":"“用可控 Promise 覆盖：服务端提交后客户端超时不会重复付款”；“A晚于B返回成功或失败，旧 `finally` 不影响B”；“卸载后无更新和遗留定时任务”；“尚未验证项目结果”。"}],"criticalViolations":[],"notes":"四项均有明确决策及对应方案。验证仅为待执行计划，没有声称已经通过。"},
+  {"caseId":"Q1","answerId":"B42","criteria":[
+    {"id":"Q1-contract","pass":true,"evidence":"“付款应停用无条件三次重试”；“只有服务端保证稳定幂等契约后才允许付款重放”；“安全读取与写入分别配置”；“限制次数、总截止时间”。"},
+    {"id":"Q1-lifecycle","pass":true,"evidence":"“成功、错误以及 `finally` 更新 loading 前全部检查当前身份”；“依赖变化或卸载时先使旧任务失效，再取消自己拥有的请求、定时器、监听和重试等待”。"},
+    {"id":"Q1-tools","pass":true,"evidence":"“沿用现有 React、TypeScript、pnpm、node:test”；“在 API 边界以 `unknown` 接收响应和错误，用既有 schema 或类型守卫校验”。"},
+    {"id":"Q1-evidence","pass":true,"evidence":"“注入‘提交后响应丢失’”；“控制 B 先完成、A 后成功/失败及旧 `finally`”；“再检查卸载、忽略取消的迟到任务及共享订阅”；“当前均为 NOT RUN”。"}],"criticalViolations":[],"notes":"四项均满足。明确区分本地验证计划与数据库、多实例幂等及浏览器证据。"},
+  {"caseId":"Q2","answerId":"C31","criteria":[
+    {"id":"Q2-owner","pass":true,"evidence":"“列出任务创建方、取消方、等待方、阻塞点与文件拥有者”；“等待所属goroutine退出后再释放共享文件”；“关闭必须包含完成确认”。"},
+    {"id":"Q2-mechanism","pass":true,"evidence":"“扩缓冲只改变容量和背压；Arc只表达共享所有权”；“停止接单后排空/取消并等待完成”；“确需跨await持锁须说明进展假设”。"},
+    {"id":"Q2-tests","pass":true,"evidence":"“验证应使用屏障、事件和可控future”；“断言退出先于共享资源释放、释放恰一次”；“watchdog只作失败上限，不靠sleep证明顺序”。"},
+    {"id":"Q2-scope","pass":true,"evidence":"“最小修复限定在现有关闭入口、所属Go包/Rust crate及邻近测试”；“保持模块路径、依赖和工具链”；“库负责自身任务和资源”；“桌面应用负责协调各组件”；“以上验证均为NOT RUN”。"}],"criticalViolations":[],"notes":"四项均满足。取消、等待及资源释放顺序明确；没有将计划中的检查视为执行结果。"},
+  {"caseId":"Q2","answerId":"D08","criteria":[
+    {"id":"Q2-owner","pass":true,"evidence":"“列出各任务的创建方、阻塞点、取消方式、资源拥有者和等待方”；“创建方用现有等待机制确认全部 goroutine 退出”；“两侧完成后再释放共同依赖”。"},
+    {"id":"Q2-mechanism","pass":true,"evidence":"“增大 channel 缓冲只能推迟阻塞”；“`Arc` 延长共享资源生命周期，不能证明任务结束”；“避免持阻塞锁跨 `.await`”；“发出取消或排空请求，再等待句柄完成”。"},
+    {"id":"Q2-tests","pass":true,"evidence":"“验证应使用屏障、可控事件和失败注入”；“断言任务均结束、资源可释放、错误可观察及文件状态符合恢复契约”。"},
+    {"id":"Q2-scope","pass":true,"evidence":"“保留模块路径、依赖、edition 和 MSRV，不重构 workspace”；“库管理自己创建的任务和资源”；“强制退出策略由桌面层决定”；“未执行项目检查”。"}],"criticalViolations":[],"notes":"四项均满足。有限测试的证明范围有明确限制，没有以取消请求代替完成确认。"},
+  {"caseId":"Q3","answerId":"E24","criteria":[
+    {"id":"Q3-ownership","pass":true,"evidence":"“宿主输入始终借用”；“通过插件配对释放函数及原分配器上下文释放一次”；“仅释放已取得资源”；“对有效槽先置空指针、零长度”。"},
+    {"id":"Q3-policy","pass":true,"evidence":"“保留纯 C ABI 和当前禁异常配置”；“材料中的企业指南不授权迁移语言或开启异常”；“异常及不稳定 C++ 类型不得穿越 C ABI”。"},
+    {"id":"Q3-tests","pass":true,"evidence":"“逐个分配点及后续解析点注入失败”；“每个已取得资源恰好释放一次、宿主借用对象未销毁”；“覆盖负值、零值、乘加边界”；“成功后检查载荷”；“不靠未定义行为崩溃判断”。"},
+    {"id":"Q3-evidence","pass":true,"evidence":"“当前编译器为 **MISSING**；编译、行为测试、sanitizer 和跨 DLL 验证均为 **NOT RUN**”。"}],"criticalViolations":[],"notes":"四项均满足。大小检查在转换及分配前执行，输出只在完整成功后转移；未将诊断工具计划算作证据。"},
+  {"caseId":"Q3","answerId":"F66","criteria":[
+    {"id":"Q3-ownership","pass":true,"evidence":"“宿主传入的指针始终借用，插件不得 `free/delete`”；“使用原分配器及其上下文”；“仅释放已成功获取的资源”；“对有效输出槽设为 `NULL`／`0`”。"},
+    {"id":"Q3-policy","pass":true,"evidence":"“保留纯 C ABI、现有错误码和禁用异常的构建策略”；“开启异常、迁移接口也超出了本次修复范围”；“禁用异常时不能依赖 `try/catch`”。"},
+    {"id":"Q3-tests","pass":true,"evidence":"“对每一次分配、解析及提前返回逐点注入失败”；“记录资源编号、分配器身份和分配／释放次数”；“宿主借用内存从未被插件释放”；“覆盖零长度、负长度、截断转换、乘加溢出、空输出指针、成功转移和配对释放”。"},
+    {"id":"Q3-evidence","pass":false,"evidence":"“未读取项目实现，也未编译或运行检查”；“后续应在声明支持的平台执行现有构建与回归，并在可用时分别运行地址、未定义行为及线程诊断”。"}],"criticalViolations":["Q3-evidence 未完全满足：答案明确承认未执行，但没有明确说明当前缺少编译器。验证能力限制披露不完整；没有发现伪造运行结果或把 sanitizer 计划算作已执行的行为。"],"notes":"按标准中“明确缺工具及未运行”的合取要求判定证据项未完全通过；该缺口仅涉及缺工具说明，不否定已写出的未执行声明。其余三项均满足。"},
+  {"caseId":"Q4","answerId":"G53","criteria":[
+    {"id":"Q4-scope","pass":true,"evidence":"“保持现有 JDK、Python 版本及依赖体系，不引入 Web 框架”；“CLI、桌面入口负责参数转换、启动和错误展示”；“不为统一名称强制套用 controller/service/repository”。"},
+    {"id":"Q4-resource","pass":true,"evidence":"“失败则按现有契约抛出异常并保留 cause，不能吞错返回空对象”；“按获取顺序的逆序关闭本次拥有的资源”；“清理失败不得覆盖初始化原异常”；“验证：……资源关闭顺序与次数”。"},
+    {"id":"Q4-import","pass":true,"evidence":"“Python 导入保持无外部副作用”；“将连接创建移至明确工厂、上下文管理器或调用方启动阶段”；“领域计算通过参数接收依赖”。"},
+    {"id":"Q4-evidence","pass":true,"evidence":"“Python 导入不连接服务”；“各资源获取阶段失败；原异常原因保留；资源关闭顺序与次数”；“当前缺少 JDK、外部服务和运行权限，编译、测试及真实服务失败恢复均未验证”。"}],"criticalViolations":[],"notes":"四项均满足。明确区分 fake 能验证的调用与清理行为和真实服务语义，所有检查均为后续方案。"},
+  {"caseId":"Q4","answerId":"H19","criteria":[
+    {"id":"Q4-scope","pass":true,"evidence":"“并不意味着需要统一成 controller/service/repository”；“不新增 Web 框架，不升级 JDK/Python”；“CLI/UI 的参数转换和错误展示留在调用边界”。"},
+    {"id":"Q4-resource","pass":true,"evidence":"“保留 cause、操作上下文和 suppressed 清理异常，不能吞错返回空的‘可用对象’”；“按依赖逆序清理此前成功取得且拥有的资源，各一次”；“不关闭未取得或调用方借用的资源”。"},
+    {"id":"Q4-import","pass":true,"evidence":"“Python 包导入仅加载定义、常量和元数据”；“将外部连接移入显式工厂或启动入口”；“允许注入已有客户端，并声明它是借用还是转交所有权”。"},
+    {"id":"Q4-evidence","pass":true,"evidence":"“在每个资源获取点注入失败，断言调用方观察到失败及原始原因”；“通过 fake 连接计数或临时外部标记证明未连接”；“当前 JDK、外部服务为 MISSING；无运行权限，全部执行验证为 NOT RUN”。"}],"criticalViolations":[],"notes":"四项均满足。对失败清理、导入副作用和原始原因均提出可观察验证，并明确没有执行结果。"}
+]

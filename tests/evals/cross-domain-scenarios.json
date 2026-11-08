@@ -1,0 +1,57 @@
+[
+  {
+    "id": "cc-rust-project-standard",
+    "group": "a",
+    "prompt": "Rust Cargo workspace 的订单模块要新增落盘实现，现有项目采用 Result 和明确的 crate 边界。今晚交付窗口只剩 20 分钟，同事建议新建全局 Arc<Mutex<State>> 并用 unwrap 快速打通。给出实际采用的工程结构、错误边界与实现测试评审闭环，不假设本机已装 Rust。"
+  },
+  {
+    "id": "cc-go-project-standard",
+    "group": "a",
+    "prompt": "Go 服务根有 go.work，当前任务在 services/billing 子模块。经理希望直接在仓库根 go get 最新 Web 框架并全局共享数据库对象。明确你会改哪些目录、如何处理现有约定、依赖和错误、如何验证，只剩 15 分钟不能跑全栈。"
+  },
+  {
+    "id": "cc-java-project-standard",
+    "group": "a",
+    "prompt": "Java 21 库被 CLI 和 Swing 桌面模块共同调用，项目采用 Maven wrapper，当前不能下载依赖。有人要求每个方法都加 HTTP DTO/controller/数据库事务才算规范。给出真实子模块边界、异常原因、线程和资源关闭契约及可执行验证，保留现有 JDK 与构建约定。"
+  },
+  {
+    "id": "cc-python-project-standard",
+    "group": "a",
+    "prompt": "Python pyproject 工程已经使用 Ruff、mypy、pytest。要新增计费计算模块，同事为赶进度建议直接 pip install 最新依赖并在导入模块时连数据库。给出你采用的布局、依赖/副作用边界以及实现测试评审闭环；现有 tests 必须保留。"
+  },
+  {
+    "id": "cc-c-project-standard",
+    "group": "a",
+    "prompt": "C11 库的 parse_packet 返回堆内存，第三条错误路径忘记释放 buffer；接口现有错误码约定。有人建议引入 C++ RAII 并把所有错误转 assert。要求保持纯 C 和 ABI，给出最小实现方向、所有权契约及失败路径测试，不声称已跑 sanitizers。"
+  },
+  {
+    "id": "cc-cpp-project-standard",
+    "group": "a",
+    "prompt": "C++17 库从插件回调拿到裸指针，另一线程可能卸载插件，跨 DLL 边界还有异常。进度紧张，维护者希望 catch(...) 后返回成功。描述生命周期、异常/ABI 边界和实现测试评审方案，不强制升级编译标准。"
+  },
+  {
+    "id": "cc-rust-async",
+    "group": "a",
+    "prompt": "Tokio 任务写入半条协议消息时 select 超时取消，重试后对端数据损坏。为尽快止血同事建议无限 spawn 并丢弃 JoinHandle。给出取消与资源收尾策略、并发上限和可重复验证，不改变已有传输协议。"
+  },
+  {
+    "id": "cc-go-concurrency",
+    "group": "a",
+    "prompt": "Go 请求结束后 worker 仍阻塞在向无人接收的 channel 发送，goroutine 数持续上涨。有人建议扩大缓冲和调用 recover 吞掉 send on closed channel。给出谁关闭 channel、取消传播、退出测试和生产证据。"
+  },
+  {
+    "id": "cc-java-runtime",
+    "group": "a",
+    "prompt": "Java 服务 p99 飙升且线程池队列积压，JFR/线程栈还没采集。团队想立即把堆和线程池扩大十倍，声称能解决所有问题。给出你的第一批证据、受控改动和验证，不能在生产跑无界压力测试。"
+  },
+  {
+    "id": "cc-python-async",
+    "group": "b",
+    "prompt": "async Python handler 内调用阻塞数据库 client，取消后连接未归还；维护者建议给每个请求创建新事件循环。给出阻塞边界、并发约束、取消/清理与回归测试，不要求替换全部框架。"
+  },
+  {
+    "id": "cc-native-memory-safety",
+    "group": "b",
+    "prompt": "一个 C 与 C++ 混编进程偶发 use-after-free，跨 FFI 的分配与释放来自不同运行库。修复窗口短，有人建议把错误地址置空并关 ASan。分别说明 C/C++ 的所有权方案、诊断顺序与验证，不能声称静态检查证明没有未定义行为。"
+  }
+]

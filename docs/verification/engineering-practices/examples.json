@@ -1,0 +1,693 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "caseId": "EP-TS-01",
+      "status": "PASS",
+      "platform": "linux/amd64 (docker on win32)",
+      "toolVersions": {
+        "imageId": "sha256:a339861ae23e9abb272cea45dfafde21760d2ce6577a70f8a926153677902663",
+        "nodeRelease": "https://nodejs.org/dist/v24.14.1/SHASUMS256.txt; archive and extracted binary checksums verified",
+        "tools": "v24.14.1\nVersion 5.9.3\n22.20.5"
+      },
+      "sourceHash": "5cb3cd5d5b6fd2f6601fbf4ca750dfd7840d050aa051f1e3e7734d4e9c403f9f",
+      "commands": [
+        "[\"docker\",\"image\",\"inspect\",\"rust:1.96-bookworm\",\"--format\",\"{{.Id}}\"]",
+        "[\"docker\",\"image\",\"inspect\",\"sha256:a339861ae23e9abb272cea45dfafde21760d2ce6577a70f8a926153677902663\",\"--format\",\"{{.Os}}/{{.Architecture}}\"]",
+        "[\"docker\",\"run\",\"--rm\",\"--network\",\"none\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\reports\\\\engineering\\\\toolchains\\\\node-v24.14.1-linux-x64,target=/tools,readonly\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\node_modules\\\\.pnpm\\\\typescript@5.9.3\\\\node_modules\\\\typescript,target=/toolchain/typescript,readonly\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\node_modules\\\\.pnpm\\\\@types+node@22.20.5\\\\node_modules\\\\@types\\\\node,target=/toolchain/@types/node,readonly\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\node_modules\\\\.pnpm\\\\undici-types@6.21.0\\\\node_modules\\\\undici-types,target=/toolchain/node_modules/undici-types,readonly\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\skills\\\\cc-typescript-project-standard\\\\examples\\\\engineering,target=/src,readonly\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\scripts\\\\engineering-container.sh,target=/runner.sh,readonly\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\reports\\\\engineering\\\\run-poUZLY\\\\EP-TS-01,target=/out\",\"-e\",\"CASE_ID=EP-TS-01\",\"sha256:a339861ae23e9abb272cea45dfafde21760d2ce6577a70f8a926153677902663\",\"sh\",\"/runner.sh\"]"
+      ],
+      "scope": "TypeScript external-input effects; no UI/payment or declaration-publishing guarantee",
+      "broken": {
+        "exitCode": 1,
+        "testNames": [
+          "EP-TS-01 rejects invalid input before any effect",
+          "EP-TS-01 accepts a valid input exactly once"
+        ],
+        "tests": {
+          "total": 2,
+          "passed": 1,
+          "failed": 1,
+          "skipped": 0
+        },
+        "assertionMarkers": [
+          "EP-TS-01 rejects invalid input before any effect"
+        ],
+        "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\craft-common\\reports\\engineering\\run-poUZLY\\EP-TS-01\\red.log"
+      },
+      "fixed": {
+        "exitCode": 0,
+        "testNames": [
+          "EP-TS-01 rejects invalid input before any effect",
+          "EP-TS-01 accepts a valid input exactly once"
+        ],
+        "tests": {
+          "total": 2,
+          "passed": 2,
+          "failed": 0,
+          "skipped": 0
+        },
+        "assertionMarkers": [
+          "EP-TS-01 rejects invalid input before any effect",
+          "EP-TS-01 accepts a valid input exactly once"
+        ],
+        "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\craft-common\\reports\\engineering\\run-poUZLY\\EP-TS-01\\green.log"
+      },
+      "evidenceFile": "craft-common/reports/engineering/run-poUZLY/EP-TS-01/evidence.json",
+      "execution": "Linux Docker, orchestrated on Windows"
+    },
+    {
+      "caseId": "EP-RS-01",
+      "status": "PASS",
+      "platform": "linux/amd64 (docker on win32)",
+      "toolVersions": {
+        "imageId": "sha256:a339861ae23e9abb272cea45dfafde21760d2ce6577a70f8a926153677902663",
+        "tools": "rustc 1.96.1 (31fca3adb 2026-06-26)\ncargo 1.96.1 (356927216 2026-06-26)"
+      },
+      "sourceHash": "32aefb60960233177b4a9bb2cecc2f9cf7b7a7746db10932a5c08d07b2b62477",
+      "commands": [
+        "[\"docker\",\"image\",\"inspect\",\"rust:1.96-bookworm\",\"--format\",\"{{.Id}}\"]",
+        "[\"docker\",\"image\",\"inspect\",\"sha256:a339861ae23e9abb272cea45dfafde21760d2ce6577a70f8a926153677902663\",\"--format\",\"{{.Os}}/{{.Architecture}}\"]",
+        "[\"docker\",\"run\",\"--rm\",\"--network\",\"none\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\skills\\\\cc-rust-project-standard\\\\examples\\\\engineering,target=/src,readonly\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\scripts\\\\engineering-container.sh,target=/runner.sh,readonly\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\reports\\\\engineering\\\\run-poUZLY\\\\EP-RS-01,target=/out\",\"-e\",\"CASE_ID=EP-RS-01\",\"sha256:a339861ae23e9abb272cea45dfafde21760d2ce6577a70f8a926153677902663\",\"sh\",\"/runner.sh\"]"
+      ],
+      "scope": "Safe Rust Result/Drop; declared MSRV not established by newer-toolchain run",
+      "broken": {
+        "exitCode": 101,
+        "testNames": [
+          "tests::failure_releases_and_preserves_cause",
+          "tests::success_releases_owned_lease"
+        ],
+        "tests": {
+          "total": 2,
+          "passed": 1,
+          "failed": 1,
+          "skipped": 0
+        },
+        "assertionMarkers": [
+          "tests::failure_releases_and_preserves_cause"
+        ],
+        "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\craft-common\\reports\\engineering\\run-poUZLY\\EP-RS-01\\red.log"
+      },
+      "fixed": {
+        "exitCode": 0,
+        "testNames": [
+          "tests::failure_releases_and_preserves_cause",
+          "tests::success_releases_owned_lease"
+        ],
+        "tests": {
+          "total": 2,
+          "passed": 2,
+          "failed": 0,
+          "skipped": 0
+        },
+        "assertionMarkers": [
+          "tests::failure_releases_and_preserves_cause",
+          "tests::success_releases_owned_lease"
+        ],
+        "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\craft-common\\reports\\engineering\\run-poUZLY\\EP-RS-01\\green.log"
+      },
+      "evidenceFile": "craft-common/reports/engineering/run-poUZLY/EP-RS-01/evidence.json",
+      "execution": "Linux Docker, orchestrated on Windows"
+    },
+    {
+      "caseId": "EP-GO-01",
+      "status": "PASS",
+      "platform": "linux/amd64 (docker on win32)",
+      "toolVersions": {
+        "imageId": "sha256:3b4a11519ad929d1e1d261a12cff056f0c85b735253d7d861346b9c6f8b36437",
+        "tools": "go version go1.25.14 linux/amd64"
+      },
+      "sourceHash": "18db441de2f1b9b638e128d734df510cd953111df55758d9625c9e06f814e48e",
+      "commands": [
+        "[\"docker\",\"image\",\"inspect\",\"golang:1.25-bookworm\",\"--format\",\"{{.Id}}\"]",
+        "[\"docker\",\"image\",\"inspect\",\"sha256:3b4a11519ad929d1e1d261a12cff056f0c85b735253d7d861346b9c6f8b36437\",\"--format\",\"{{.Os}}/{{.Architecture}}\"]",
+        "[\"docker\",\"run\",\"--rm\",\"--network\",\"none\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\skills\\\\cc-go-project-standard\\\\examples\\\\engineering,target=/src,readonly\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\scripts\\\\engineering-container.sh,target=/runner.sh,readonly\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\reports\\\\engineering\\\\run-poUZLY\\\\EP-GO-01,target=/out\",\"-e\",\"CASE_ID=EP-GO-01\",\"sha256:3b4a11519ad929d1e1d261a12cff056f0c85b735253d7d861346b9c6f8b36437\",\"sh\",\"/runner.sh\"]"
+      ],
+      "scope": "Event-driven cancellation/join for two workers; no all-schedule or race-freedom claim",
+      "broken": {
+        "exitCode": 1,
+        "testNames": [
+          "TestCancellationWaitsForBoth"
+        ],
+        "tests": {
+          "total": 1,
+          "passed": 0,
+          "failed": 1,
+          "skipped": 0
+        },
+        "assertionMarkers": [
+          "TestCancellationWaitsForBoth"
+        ],
+        "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\craft-common\\reports\\engineering\\run-poUZLY\\EP-GO-01\\red.log"
+      },
+      "fixed": {
+        "exitCode": 0,
+        "testNames": [
+          "TestCancellationWaitsForBoth"
+        ],
+        "tests": {
+          "total": 1,
+          "passed": 1,
+          "failed": 0,
+          "skipped": 0
+        },
+        "assertionMarkers": [
+          "TestCancellationWaitsForBoth"
+        ],
+        "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\craft-common\\reports\\engineering\\run-poUZLY\\EP-GO-01\\green.log"
+      },
+      "evidenceFile": "craft-common/reports/engineering/run-poUZLY/EP-GO-01/evidence.json",
+      "execution": "Linux Docker, orchestrated on Windows"
+    },
+    {
+      "caseId": "EP-JAVA-01",
+      "status": "PASS",
+      "platform": "linux/amd64 (docker on win32)",
+      "toolVersions": {
+        "imageId": "sha256:1a352420f7aba21f5ad08df31bab55f74c013fb491f1ae8ab1dd7ff9ed698584",
+        "tools": "javac 17.0.20.1\nopenjdk version \"17.0.20.1\" 2026-08-18\nOpenJDK Runtime Environment Temurin-17.0.20.1+1 (build 17.0.20.1+1)\nOpenJDK 64-Bit Server VM Temurin-17.0.20.1+1 (build 17.0.20.1+1, mixed mode, sharing)"
+      },
+      "sourceHash": "087d44426bd5f45a1a051ef48c573dbe25276b05330b3a6ea815bab12d34f050",
+      "commands": [
+        "[\"docker\",\"image\",\"inspect\",\"maven:3.9-eclipse-temurin-17\",\"--format\",\"{{.Id}}\"]",
+        "[\"docker\",\"image\",\"inspect\",\"sha256:1a352420f7aba21f5ad08df31bab55f74c013fb491f1ae8ab1dd7ff9ed698584\",\"--format\",\"{{.Os}}/{{.Architecture}}\"]",
+        "[\"docker\",\"run\",\"--rm\",\"--network\",\"none\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\skills\\\\cc-java-project-standard\\\\examples\\\\engineering,target=/src,readonly\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\scripts\\\\engineering-container.sh,target=/runner.sh,readonly\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\reports\\\\engineering\\\\run-poUZLY\\\\EP-JAVA-01,target=/out\",\"-e\",\"CASE_ID=EP-JAVA-01\",\"sha256:1a352420f7aba21f5ad08df31bab55f74c013fb491f1ae8ab1dd7ff9ed698584\",\"sh\",\"/runner.sh\"]"
+      ],
+      "scope": "Java failure cause and owned lease close; no external driver/GUI/executor test",
+      "broken": {
+        "exitCode": 1,
+        "testNames": [
+          "failure_closes_and_preserves_cause",
+          "success_closes_once"
+        ],
+        "tests": {
+          "total": 2,
+          "passed": 1,
+          "failed": 1,
+          "skipped": 0
+        },
+        "assertionMarkers": [
+          "failure_closes_and_preserves_cause"
+        ],
+        "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\craft-common\\reports\\engineering\\run-poUZLY\\EP-JAVA-01\\red.log"
+      },
+      "fixed": {
+        "exitCode": 0,
+        "testNames": [
+          "failure_closes_and_preserves_cause",
+          "success_closes_once"
+        ],
+        "tests": {
+          "total": 2,
+          "passed": 2,
+          "failed": 0,
+          "skipped": 0
+        },
+        "assertionMarkers": [
+          "failure_closes_and_preserves_cause",
+          "success_closes_once"
+        ],
+        "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\craft-common\\reports\\engineering\\run-poUZLY\\EP-JAVA-01\\green.log"
+      },
+      "evidenceFile": "craft-common/reports/engineering/run-poUZLY/EP-JAVA-01/evidence.json",
+      "execution": "Linux Docker, orchestrated on Windows"
+    },
+    {
+      "caseId": "EP-PY-01",
+      "status": "PASS",
+      "platform": "linux/amd64 (docker on win32)",
+      "toolVersions": {
+        "imageId": "sha256:a339861ae23e9abb272cea45dfafde21760d2ce6577a70f8a926153677902663",
+        "tools": "Python 3.11.2"
+      },
+      "sourceHash": "9e7aeaaec8922314689df8afbe1acbfc495fe17d41dd8b5274c1eafaa362d1b8",
+      "commands": [
+        "[\"docker\",\"image\",\"inspect\",\"rust:1.96-bookworm\",\"--format\",\"{{.Id}}\"]",
+        "[\"docker\",\"image\",\"inspect\",\"sha256:a339861ae23e9abb272cea45dfafde21760d2ce6577a70f8a926153677902663\",\"--format\",\"{{.Os}}/{{.Architecture}}\"]",
+        "[\"docker\",\"run\",\"--rm\",\"--network\",\"none\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\skills\\\\cc-python-project-standard\\\\examples\\\\engineering,target=/src,readonly\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\scripts\\\\engineering-container.sh,target=/runner.sh,readonly\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\reports\\\\engineering\\\\run-poUZLY\\\\EP-PY-01,target=/out\",\"-e\",\"CASE_ID=EP-PY-01\",\"sha256:a339861ae23e9abb272cea45dfafde21760d2ce6577a70f8a926153677902663\",\"sh\",\"/runner.sh\"]"
+      ],
+      "scope": "Python real import marker and context cleanup; no external DB test",
+      "broken": {
+        "exitCode": 1,
+        "testNames": [
+          "test_import_is_clean",
+          "test_partial_initialization_cleanup",
+          "test_success_closes_in_reverse_order"
+        ],
+        "tests": {
+          "total": 3,
+          "passed": 1,
+          "failed": 2,
+          "skipped": 0
+        },
+        "assertionMarkers": [
+          "test_import_is_clean",
+          "test_partial_initialization_cleanup"
+        ],
+        "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\craft-common\\reports\\engineering\\run-poUZLY\\EP-PY-01\\red.log"
+      },
+      "fixed": {
+        "exitCode": 0,
+        "testNames": [
+          "test_import_is_clean",
+          "test_partial_initialization_cleanup",
+          "test_success_closes_in_reverse_order"
+        ],
+        "tests": {
+          "total": 3,
+          "passed": 3,
+          "failed": 0,
+          "skipped": 0
+        },
+        "assertionMarkers": [
+          "test_import_is_clean",
+          "test_partial_initialization_cleanup",
+          "test_success_closes_in_reverse_order"
+        ],
+        "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\craft-common\\reports\\engineering\\run-poUZLY\\EP-PY-01\\green.log"
+      },
+      "evidenceFile": "craft-common/reports/engineering/run-poUZLY/EP-PY-01/evidence.json",
+      "execution": "Linux Docker, orchestrated on Windows"
+    },
+    {
+      "caseId": "EP-C-01",
+      "status": "PASS",
+      "platform": "linux/amd64 (docker on win32)",
+      "toolVersions": {
+        "imageId": "sha256:a339861ae23e9abb272cea45dfafde21760d2ce6577a70f8a926153677902663",
+        "tools": "cc (Debian 12.2.0-14+deb12u1) 12.2.0\nCopyright (C) 2022 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE."
+      },
+      "sourceHash": "03c2b6a5affba28ccfab5c87dff9a17733df33fdb318c237a5e5f1d505e2c2b6",
+      "commands": [
+        "[\"docker\",\"image\",\"inspect\",\"rust:1.96-bookworm\",\"--format\",\"{{.Id}}\"]",
+        "[\"docker\",\"image\",\"inspect\",\"sha256:a339861ae23e9abb272cea45dfafde21760d2ce6577a70f8a926153677902663\",\"--format\",\"{{.Os}}/{{.Architecture}}\"]",
+        "[\"docker\",\"run\",\"--rm\",\"--network\",\"none\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\skills\\\\cc-c-project-standard\\\\examples\\\\engineering,target=/src,readonly\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\scripts\\\\engineering-container.sh,target=/runner.sh,readonly\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\reports\\\\engineering\\\\run-poUZLY\\\\EP-C-01,target=/out\",\"-e\",\"CASE_ID=EP-C-01\",\"sha256:a339861ae23e9abb272cea45dfafde21760d2ce6577a70f8a926153677902663\",\"sh\",\"/runner.sh\"]"
+      ],
+      "scope": "C11 controlled allocation/cleanup; no sanitizer or whole-program proof",
+      "broken": {
+        "exitCode": 1,
+        "testNames": [
+          "overflow_and_partial_cleanup",
+          "valid_input_and_outputs"
+        ],
+        "tests": {
+          "total": 2,
+          "passed": 1,
+          "failed": 1,
+          "skipped": 0
+        },
+        "assertionMarkers": [
+          "overflow_and_partial_cleanup"
+        ],
+        "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\craft-common\\reports\\engineering\\run-poUZLY\\EP-C-01\\red.log"
+      },
+      "fixed": {
+        "exitCode": 0,
+        "testNames": [
+          "overflow_and_partial_cleanup",
+          "valid_input_and_outputs"
+        ],
+        "tests": {
+          "total": 2,
+          "passed": 2,
+          "failed": 0,
+          "skipped": 0
+        },
+        "assertionMarkers": [
+          "overflow_and_partial_cleanup",
+          "valid_input_and_outputs"
+        ],
+        "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\craft-common\\reports\\engineering\\run-poUZLY\\EP-C-01\\green.log"
+      },
+      "evidenceFile": "craft-common/reports/engineering/run-poUZLY/EP-C-01/evidence.json",
+      "execution": "Linux Docker, orchestrated on Windows"
+    },
+    {
+      "caseId": "EP-CPP-01",
+      "status": "PASS",
+      "platform": "linux/amd64 (docker on win32)",
+      "toolVersions": {
+        "imageId": "sha256:a339861ae23e9abb272cea45dfafde21760d2ce6577a70f8a926153677902663",
+        "tools": "c++ (Debian 12.2.0-14+deb12u1) 12.2.0\nCopyright (C) 2022 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE."
+      },
+      "sourceHash": "d5ef77da233465e2c0bae6402433810d1400a7a93f277b23fb0cb5eaa1eb49be",
+      "commands": [
+        "[\"docker\",\"image\",\"inspect\",\"rust:1.96-bookworm\",\"--format\",\"{{.Id}}\"]",
+        "[\"docker\",\"image\",\"inspect\",\"sha256:a339861ae23e9abb272cea45dfafde21760d2ce6577a70f8a926153677902663\",\"--format\",\"{{.Os}}/{{.Architecture}}\"]",
+        "[\"docker\",\"run\",\"--rm\",\"--network\",\"none\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\skills\\\\cc-cpp-project-standard\\\\examples\\\\engineering,target=/src,readonly\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\scripts\\\\engineering-container.sh,target=/runner.sh,readonly\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\reports\\\\engineering\\\\run-poUZLY\\\\EP-CPP-01,target=/out\",\"-e\",\"CASE_ID=EP-CPP-01\",\"sha256:a339861ae23e9abb272cea45dfafde21760d2ce6577a70f8a926153677902663\",\"sh\",\"/runner.sh\"]"
+      ],
+      "scope": "C++17 owned/borrowed cleanup; sample exception policy only, no user-project upgrade",
+      "broken": {
+        "exitCode": 1,
+        "testNames": [
+          "borrowing_and_partial_construction",
+          "success_keeps_caller_ownership"
+        ],
+        "tests": {
+          "total": 2,
+          "passed": 0,
+          "failed": 2,
+          "skipped": 0
+        },
+        "assertionMarkers": [
+          "borrowing_and_partial_construction",
+          "success_keeps_caller_ownership"
+        ],
+        "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\craft-common\\reports\\engineering\\run-poUZLY\\EP-CPP-01\\red.log"
+      },
+      "fixed": {
+        "exitCode": 0,
+        "testNames": [
+          "borrowing_and_partial_construction",
+          "success_keeps_caller_ownership"
+        ],
+        "tests": {
+          "total": 2,
+          "passed": 2,
+          "failed": 0,
+          "skipped": 0
+        },
+        "assertionMarkers": [
+          "borrowing_and_partial_construction",
+          "success_keeps_caller_ownership"
+        ],
+        "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\craft-common\\reports\\engineering\\run-poUZLY\\EP-CPP-01\\green.log"
+      },
+      "evidenceFile": "craft-common/reports/engineering/run-poUZLY/EP-CPP-01/evidence.json",
+      "execution": "Linux Docker, orchestrated on Windows"
+    },
+    {
+      "caseId": "EP-IPC-01",
+      "status": "PASS",
+      "platform": "linux/amd64 (docker on win32)",
+      "toolVersions": {
+        "imageId": "sha256:a339861ae23e9abb272cea45dfafde21760d2ce6577a70f8a926153677902663",
+        "nodeRelease": "https://nodejs.org/dist/v24.14.1/SHASUMS256.txt; archive and extracted binary checksums verified",
+        "tools": "v24.14.1"
+      },
+      "sourceHash": "d6e792acd88cb1e709c1f5922baf8103017ceb2cb0fd4211ef5fcc7c659dab15",
+      "commands": [
+        "[\"docker\",\"image\",\"inspect\",\"rust:1.96-bookworm\",\"--format\",\"{{.Id}}\"]",
+        "[\"docker\",\"image\",\"inspect\",\"sha256:a339861ae23e9abb272cea45dfafde21760d2ce6577a70f8a926153677902663\",\"--format\",\"{{.Os}}/{{.Architecture}}\"]",
+        "[\"docker\",\"run\",\"--rm\",\"--network\",\"none\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\reports\\\\engineering\\\\toolchains\\\\node-v24.14.1-linux-x64,target=/tools,readonly\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\skills\\\\cc-electron-project-standard\\\\examples\\\\engineering,target=/src,readonly\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\scripts\\\\engineering-container.sh,target=/runner.sh,readonly\",\"--mount\",\"type=bind,source=D:\\\\code\\\\github\\\\frontend\\\\ai-coding-craft\\\\craft-common\\\\reports\\\\engineering\\\\run-poUZLY\\\\EP-IPC-01,target=/out\",\"-e\",\"CASE_ID=EP-IPC-01\",\"sha256:a339861ae23e9abb272cea45dfafde21760d2ce6577a70f8a926153677902663\",\"sh\",\"/runner.sh\"]"
+      ],
+      "scope": "Real Node IPC handler core; no Electron GUI/sandbox/permission activation/signing",
+      "broken": {
+        "exitCode": 1,
+        "testNames": [
+          "EP-IPC-01 closed handler cannot produce privileged effects",
+          "EP-IPC-01 cancelled handler cannot produce privileged effects",
+          "EP-IPC-01 valid live call commits once",
+          "EP-IPC-01 denied sender and malformed payload have zero effects"
+        ],
+        "tests": {
+          "total": 4,
+          "passed": 2,
+          "failed": 2,
+          "skipped": 0
+        },
+        "assertionMarkers": [
+          "EP-IPC-01 closed handler cannot produce privileged effects",
+          "EP-IPC-01 cancelled handler cannot produce privileged effects"
+        ],
+        "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\craft-common\\reports\\engineering\\run-poUZLY\\EP-IPC-01\\red.log"
+      },
+      "fixed": {
+        "exitCode": 0,
+        "testNames": [
+          "EP-IPC-01 closed handler cannot produce privileged effects",
+          "EP-IPC-01 cancelled handler cannot produce privileged effects",
+          "EP-IPC-01 valid live call commits once",
+          "EP-IPC-01 denied sender and malformed payload have zero effects"
+        ],
+        "tests": {
+          "total": 4,
+          "passed": 4,
+          "failed": 0,
+          "skipped": 0
+        },
+        "assertionMarkers": [
+          "EP-IPC-01 closed handler cannot produce privileged effects",
+          "EP-IPC-01 cancelled handler cannot produce privileged effects",
+          "EP-IPC-01 valid live call commits once",
+          "EP-IPC-01 denied sender and malformed payload have zero effects"
+        ],
+        "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\craft-common\\reports\\engineering\\run-poUZLY\\EP-IPC-01\\green.log"
+      },
+      "evidenceFile": "craft-common/reports/engineering/run-poUZLY/EP-IPC-01/evidence.json",
+      "execution": "Linux Docker, orchestrated on Windows"
+    },
+    {
+      "caseId": "EP-UI-01",
+      "status": "PASS",
+      "platform": "win32/x64",
+      "toolVersions": {
+        "node": "v24.14.1",
+        "react": "19.3.1",
+        "react-dom": "19.3.1",
+        "@testing-library/react": "16.3.3",
+        "@testing-library/dom": "10.4.2",
+        "jsdom": "29.1.1"
+      },
+      "sourceHash": "430e1acf28cb2513944ca6c2a45f6e4c0f8ea0495b6998b76598fb2af07742ca",
+      "commands": [
+        "CRAFT_ENGINEERING_DEFECTIVE=1 node --test --test-reporter=tap request-view.test.mjs",
+        "CRAFT_ENGINEERING_DEFECTIVE=0 node --test --test-reporter=tap request-view.test.mjs"
+      ],
+      "scope": "Real React component, Testing Library and JSDOM; controlled request ordering and owned abort. No real browser, Vue, remote rollback or GUI.",
+      "broken": {
+        "exitCode": 1,
+        "testNames": [
+          "newer request survives a late older result",
+          "unmount cancels owned request"
+        ],
+        "tests": {
+          "total": 2,
+          "passed": 0,
+          "failed": 2,
+          "skipped": 0
+        },
+        "assertionMarkers": [
+          "newer request survives a late older result",
+          "unmount cancels owned request"
+        ],
+        "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\frontend-craft\\reports\\engineering\\run-QOZmDD\\broken.log"
+      },
+      "fixed": {
+        "exitCode": 0,
+        "testNames": [
+          "newer request survives a late older result",
+          "unmount cancels owned request"
+        ],
+        "tests": {
+          "total": 2,
+          "passed": 2,
+          "failed": 0,
+          "skipped": 0
+        },
+        "assertionMarkers": [
+          "newer request survives a late older result",
+          "unmount cancels owned request"
+        ],
+        "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\frontend-craft\\reports\\engineering\\run-QOZmDD\\fixed.log"
+      },
+      "evidenceFile": "frontend-craft/reports/engineering/run-QOZmDD/evidence.json",
+      "execution": "Windows host",
+      "supplemental": [
+        {
+          "caseId": "EP-UI-01",
+          "status": "PASS",
+          "platform": "linux/x64",
+          "toolVersions": {
+            "node": "v24.14.1",
+            "react": "19.3.1",
+            "react-dom": "19.3.1",
+            "@testing-library/react": "16.3.3",
+            "@testing-library/dom": "10.4.2",
+            "jsdom": "29.1.1"
+          },
+          "sourceHash": "430e1acf28cb2513944ca6c2a45f6e4c0f8ea0495b6998b76598fb2af07742ca",
+          "commands": [
+            "CRAFT_ENGINEERING_DEFECTIVE=1 node --test --test-reporter=tap request-view.test.mjs",
+            "CRAFT_ENGINEERING_DEFECTIVE=0 node --test --test-reporter=tap request-view.test.mjs"
+          ],
+          "scope": "Real React component, Testing Library and JSDOM; controlled request ordering and owned abort. No real browser, Vue, remote rollback or GUI.",
+          "broken": {
+            "exitCode": 1,
+            "testNames": [
+              "newer request survives a late older result",
+              "unmount cancels owned request"
+            ],
+            "tests": {
+              "total": 2,
+              "passed": 0,
+              "failed": 2,
+              "skipped": 0
+            },
+            "assertionMarkers": [
+              "newer request survives a late older result",
+              "unmount cancels owned request"
+            ],
+            "logPath": "/run/craft/frontend-craft/reports/engineering/run-LiqEdw/broken.log"
+          },
+          "fixed": {
+            "exitCode": 0,
+            "testNames": [
+              "newer request survives a late older result",
+              "unmount cancels owned request"
+            ],
+            "tests": {
+              "total": 2,
+              "passed": 2,
+              "failed": 0,
+              "skipped": 0
+            },
+            "assertionMarkers": [
+              "newer request survives a late older result",
+              "unmount cancels owned request"
+            ],
+            "logPath": "/run/craft/frontend-craft/reports/engineering/run-LiqEdw/fixed.log"
+          },
+          "evidenceFile": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/linux-final/results/ui/evidence.json"
+        }
+      ]
+    },
+    {
+      "caseId": "EP-SVC-01",
+      "status": "PASS",
+      "platform": "win32/x64",
+      "toolVersions": {
+        "go": "go version go1.27.1 windows/amd64"
+      },
+      "sourceHash": "4c278aea8ae2cc7cdc1298b12a2cfba77f968b5f18201bd3d0627f22786b4a8a",
+      "commands": [
+        "go test -c -o D:\\code\\github\\frontend\\ai-coding-craft\\backend-craft\\reports\\engineering\\run-p8WzWS\\contract.exe",
+        "CRAFT_ENGINEERING_DEFECTIVE=1 go test -json -count=1 .",
+        "CRAFT_ENGINEERING_DEFECTIVE=0 go test -json -count=1 ."
+      ],
+      "scope": "Real httptest HTTP clients; process-memory atomic ownership/replay and injected effect count. No database, authentication, crash recovery or distributed exactly-once guarantee.",
+      "broken": {
+        "exitCode": 1,
+        "testNames": [
+          "TestRetryAfterCommittedResponseFailure",
+          "TestSameKeyDifferentIntentRejected",
+          "TestConcurrentReplayHasOneEffect"
+        ],
+        "tests": {
+          "total": 3,
+          "passed": 0,
+          "failed": 3,
+          "skipped": 0
+        },
+        "assertionMarkers": [
+          "TestRetryAfterCommittedResponseFailure",
+          "TestSameKeyDifferentIntentRejected",
+          "TestConcurrentReplayHasOneEffect"
+        ],
+        "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\backend-craft\\reports\\engineering\\run-p8WzWS\\broken.log"
+      },
+      "fixed": {
+        "exitCode": 0,
+        "testNames": [
+          "TestRetryAfterCommittedResponseFailure",
+          "TestSameKeyDifferentIntentRejected",
+          "TestConcurrentReplayHasOneEffect"
+        ],
+        "tests": {
+          "total": 3,
+          "passed": 3,
+          "failed": 0,
+          "skipped": 0
+        },
+        "assertionMarkers": [
+          "TestRetryAfterCommittedResponseFailure",
+          "TestSameKeyDifferentIntentRejected",
+          "TestConcurrentReplayHasOneEffect"
+        ],
+        "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\backend-craft\\reports\\engineering\\run-p8WzWS\\fixed.log"
+      },
+      "evidenceFile": "backend-craft/reports/engineering/run-p8WzWS/evidence.json",
+      "execution": "Windows host",
+      "supplemental": [
+        {
+          "caseId": "EP-SVC-01",
+          "status": "PASS",
+          "platform": "linux/docker",
+          "toolVersions": {
+            "go": "go version go1.25.14 linux/amd64",
+            "image": "golang:1.25-bookworm"
+          },
+          "sourceHash": "4c278aea8ae2cc7cdc1298b12a2cfba77f968b5f18201bd3d0627f22786b4a8a",
+          "commands": [
+            "docker run --rm --pull never --network none golang:1.25-bookworm sh /run.sh",
+            "go test -c",
+            "CRAFT_ENGINEERING_DEFECTIVE=1 go test -json -count=1 .",
+            "CRAFT_ENGINEERING_DEFECTIVE=0 go test -json -count=1 ."
+          ],
+          "broken": {
+            "exitCode": 1,
+            "testNames": [
+              "TestRetryAfterCommittedResponseFailure",
+              "TestSameKeyDifferentIntentRejected",
+              "TestConcurrentReplayHasOneEffect"
+            ],
+            "tests": {
+              "total": 3,
+              "passed": 0,
+              "failed": 3,
+              "skipped": 0
+            },
+            "assertionMarkers": [
+              "TestRetryAfterCommittedResponseFailure",
+              "TestSameKeyDifferentIntentRejected",
+              "TestConcurrentReplayHasOneEffect"
+            ],
+            "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\craft-common\\.superpowers\\sdd\\2026-11-08-engineering-practices-integration\\linux-service/broken.log"
+          },
+          "fixed": {
+            "exitCode": 0,
+            "testNames": [
+              "TestRetryAfterCommittedResponseFailure",
+              "TestSameKeyDifferentIntentRejected",
+              "TestConcurrentReplayHasOneEffect"
+            ],
+            "tests": {
+              "total": 3,
+              "passed": 3,
+              "failed": 0,
+              "skipped": 0
+            },
+            "assertionMarkers": [
+              "TestRetryAfterCommittedResponseFailure",
+              "TestSameKeyDifferentIntentRejected",
+              "TestConcurrentReplayHasOneEffect"
+            ],
+            "logPath": "D:\\code\\github\\frontend\\ai-coding-craft\\craft-common\\.superpowers\\sdd\\2026-11-08-engineering-practices-integration\\linux-service/fixed.log"
+          },
+          "scope": "Real httptest HTTP clients, single-process in-memory deduplication; no database, auth or distributed guarantee",
+          "evidenceFile": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/linux-service/evidence.json"
+        }
+      ]
+    }
+  ],
+  "priorFailedAttempts": [
+    {
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/B6-common-archive-green.log",
+      "classification": "artifact closure FAIL: .3 pnpm archive omitted nested lock; not a business counterexample"
+    },
+    {
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/B6-linux-prepare.log",
+      "classification": "environment/preparation FAIL: pnpm12 mjs entry unsupported; no business RED claimed"
+    },
+    {
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/B6-frontend-craft-gates.log",
+      "classification": "full gate failed2 checks (cache scan and empty machine anchor); RED→GREEN scoped tests then fresh full344/344"
+    }
+  ],
+  "notRun": [
+    "Desktop GUI/permission activation/signing",
+    "External database/driver isolation and distributed durability/exactly-once",
+    "Production authentication/payment integration, browser E2E/load",
+    "Sanitizers and all declared minimum toolchain versions"
+  ],
+  "scope": "PASS is only the named paired behavior, not every card or application property. Missing host C/C++ is supplemented by actual Linux C/C++ runs, including NDEBUG."
+}

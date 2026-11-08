@@ -64,7 +64,12 @@ export function currentHash(file: string): string | null {
       throw new Error(`托管路径不是普通文件：${file}`);
     return hashBytes(fs.readFileSync(file));
   } catch (error) {
-    if ((error as NodeJS.ErrnoException).code === "ENOENT") return null;
+    if (
+      ["ENOENT", "ENOTDIR"].includes(
+        (error as NodeJS.ErrnoException).code ?? "",
+      )
+    )
+      return null;
     throw error;
   }
 }

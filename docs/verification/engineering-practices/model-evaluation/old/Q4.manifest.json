@@ -1,0 +1,64 @@
+{
+  "caseId": "Q4",
+  "arm": "old",
+  "bytes": 12251,
+  "sha256": "070c894dcae2967a1b8dcdd7424119699d070ad1b71f7001b327117e7073765c",
+  "selected": [
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-java-project-standard/SKILL.md",
+      "sha256": "f41fc4d1dc1e9f45aaac14c0925835335140b843944d8a327d58d3b802ca772e",
+      "bytes": 1094,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-java-project-standard/references/practice.md",
+      "sha256": "8e7d28ef130afa9b5953699723c0d26a6fde17b13358f3dda29602262ed4eb0e",
+      "bytes": 1748,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-java-runtime/SKILL.md",
+      "sha256": "367b9584a6a06865c52ea54088677a764ae9bc6613bf699ba4541c0026934932",
+      "bytes": 1104,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-java-runtime/references/practice.md",
+      "sha256": "34072fe2d9d911447ee3f8e8f3a77535dc5978cca0dc330cc6fbc47a91b62ac7",
+      "bytes": 1555,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-python-project-standard/SKILL.md",
+      "sha256": "e2d7bf2e3ed54479303a2229b98d371c57737e501e78024f2f4d11675c199b29",
+      "bytes": 1119,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-python-project-standard/references/practice.md",
+      "sha256": "c4c1815355551eff7bb17ea82215e59f0e213a6c91fe4a7f96454fa96df9edb2",
+      "bytes": 1692,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-python-async/SKILL.md",
+      "sha256": "e584b8776aa998a74508b68e0d90b1295fe4b79c5f5c533a3402afbde65d7dd0",
+      "bytes": 1143,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-python-async/references/practice.md",
+      "sha256": "c120428a9ea8c8c1a7fd42c02e024dccd214c7bdb449fb400d604e8975a2c3cd",
+      "bytes": 1656,
+      "deduplicated": false
+    }
+  ],
+  "configuration": {
+    "modelSelector": "inherited parent session, no override",
+    "reasoning": "inherited",
+    "maxReadCalls": 4,
+    "network": false,
+    "writes": false,
+    "maxAnswerChineseCharacters": 1200
+  }
+}

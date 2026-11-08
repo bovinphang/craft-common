@@ -1,0 +1,37 @@
+{
+  "configuration": {
+    "selector": "inherit parent model and reasoning, no overrides",
+    "actualModelIdentifier": "not exposed",
+    "actualReasoningParameters": "not exposed",
+    "maxReads": 4,
+    "networkAllowed": false,
+    "writesAllowed": false
+  },
+  "responses": [
+    {
+      "caseId": "Q1",
+      "reads": 2,
+      "firstReadTruncated": true,
+      "allOmissionsReadWithinBudget": true
+    },
+    {
+      "caseId": "Q2",
+      "reads": 1,
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "caseId": "Q3",
+      "reads": 1,
+      "truncated": false,
+      "complete": true
+    },
+    {
+      "caseId": "Q4",
+      "reads": 1,
+      "truncated": false,
+      "complete": true
+    }
+  ],
+  "audit": "Responders reported prior tool records in metadata-only followups; no resampling, reads or answer edits authorized."
+}

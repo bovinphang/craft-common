@@ -1,0 +1,64 @@
+{
+  "caseId": "Q2",
+  "arm": "old",
+  "bytes": 12108,
+  "sha256": "bf61933199459968ec0309065de64332026953c2d0c4804f6f5105293ea72a0b",
+  "selected": [
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-go-project-standard/SKILL.md",
+      "sha256": "f5fd73e2ef4176226254f652624dd323e79fd6fdc775456d50cf583b1cb477d6",
+      "bytes": 1105,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-go-project-standard/references/practice.md",
+      "sha256": "4d1b6a1f35933c64b778ccedcd937135da61a2707a938a8cd5ac2133f79203c5",
+      "bytes": 1628,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-go-concurrency/SKILL.md",
+      "sha256": "90e6106c7c2e4499a8d087d302a268c9f4a5d26e5511bf1ef64c7f1de479f7f8",
+      "bytes": 1126,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-go-concurrency/references/practice.md",
+      "sha256": "4f60ab8e40395a2d7b854f03658eb02e73a7e7bd3faf5bbaec4a892fa678e9e7",
+      "bytes": 1563,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-rust-project-standard/SKILL.md",
+      "sha256": "8da5c12a6d1be9aba2dd0ce52709a2d161ec6e0ed7e38ebcf91e8056967d40b2",
+      "bytes": 1125,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-rust-project-standard/references/practice.md",
+      "sha256": "1086897a03e861cac0d948447cb9b4acc1cc526c108446b0ce9b7f12f57f5399",
+      "bytes": 1720,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-rust-async/SKILL.md",
+      "sha256": "fa10305033868f6f5e560798d093def8bd1a29014e83fcafb767d7a297fe1921",
+      "bytes": 1122,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-rust-async/references/practice.md",
+      "sha256": "53b49a811e8dad6ee1f261f7e81dcc129d1cf94eb4e3e05968db66beca0994d9",
+      "bytes": 1604,
+      "deduplicated": false
+    }
+  ],
+  "configuration": {
+    "modelSelector": "inherited parent session, no override",
+    "reasoning": "inherited",
+    "maxReadCalls": 4,
+    "network": false,
+    "writes": false,
+    "maxAnswerChineseCharacters": 1200
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "caseId": "Q1",
+  "arm": "new",
+  "bytes": 99852,
+  "sha256": "967d860b852696f7849d32810f0b6299509c9578673d191be4839d7d3175e145",
+  "selected": [
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-typescript-project-standard/SKILL.md",
+      "sha256": "5d4f420f7c03ef0c8338bbb1e9ad8059e223ec6742492378608e7f708849c455",
+      "bytes": 4641,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-typescript-project-standard/references/common/engineering-practices.md",
+      "sha256": "239cc9649d0200a590e6746ccd26108109d73d6f5b4b979696ef3634827e7c81",
+      "bytes": 10684,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-typescript-project-standard/references/common/engineering-practices.rules.json",
+      "sha256": "dc1d4123459c084c3f7ae2880ecc5605c93514ca71854585d29f90ecaae6343e",
+      "bytes": 2292,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-typescript-project-standard/references/common/engineering-practices.sources.json",
+      "sha256": "3990c1fa5532f05d9cc49d8f3c1fcdb24cda7f60f8dd2d065e5aa397fd779913",
+      "bytes": 16268,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-typescript-project-standard/references/engineering-practices.md",
+      "sha256": "41bf7f73ed7952480946d5c74b63eef55a8083c3ba922a61a7f0ea4785657cd5",
+      "bytes": 4084,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-typescript-project-standard/references/type-safety-patterns.md",
+      "sha256": "bbfc7a02191e691af728aec5db1ea4dd474e34d62bfa900d17785ab7158f4465",
+      "bytes": 2030,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-typescript-project-standard/references/type-safety.md",
+      "sha256": "70fe79504c724cbb9db0943d2f27d04e4d947f4dda6c2570ac4314884aa491df",
+      "bytes": 4349,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-react-project-standard/SKILL.md",
+      "sha256": "9df7b8512adfdfb28ab9cc3082b33a4cc0af1f2d1bf2654d9e096a2888c00a66",
+      "bytes": 5615,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-react-project-standard/references/common/engineering-practices.md",
+      "sha256": "239cc9649d0200a590e6746ccd26108109d73d6f5b4b979696ef3634827e7c81",
+      "bytes": 10684,
+      "deduplicated": true
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-react-project-standard/references/common/engineering-practices.rules.json",
+      "sha256": "dc1d4123459c084c3f7ae2880ecc5605c93514ca71854585d29f90ecaae6343e",
+      "bytes": 2292,
+      "deduplicated": true
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-react-project-standard/references/common/engineering-practices.sources.json",
+      "sha256": "3990c1fa5532f05d9cc49d8f3c1fcdb24cda7f60f8dd2d065e5aa397fd779913",
+      "bytes": 16268,
+      "deduplicated": true
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-react-project-standard/references/engineering-practices.md",
+      "sha256": "98d831b0aa56b7a17c0e42d90aca05598000ba48e9f68ff3d783142487f4bd33",
+      "bytes": 2913,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-react-project-standard/references/generic-component-types.md",
+      "sha256": "0ae33e3ea425e7b644fbf4df544b922a5fc2772879969e86ae0019168f687c10",
+      "bytes": 715,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-react-project-standard/references/react-performance-patterns.md",
+      "sha256": "6833d5c0689bc123c2d66dd2981a7535279a9aae704a7fbc54ec6628bf3313e8",
+      "bytes": 1554,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-react-project-standard/references/react-project-structure.md",
+      "sha256": "ad663359a6d67707e08939d2a077552398b06ad035ee18eee6aabfb4f93fc000",
+      "bytes": 7657,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-react-project-standard/references/react-quality-patterns.md",
+      "sha256": "1a73c41bbe5b52ce3e4a7710b449f6156c6f8e4ab78c944d4231bac886a68a3d",
+      "bytes": 5052,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-react-project-standard/references/react-runtime-patterns.md",
+      "sha256": "3ab6e13e88559ae96da237241c34e3610f9383fdf538603890d62eecc20ccedf",
+      "bytes": 8888,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-api-integration/SKILL.md",
+      "sha256": "a1afafea99ed67a1abba51db40c4733bc38945042b45327c4c6f963ce0d5c8b8",
+      "bytes": 5398,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-api-integration/references/common/engineering-practices.md",
+      "sha256": "239cc9649d0200a590e6746ccd26108109d73d6f5b4b979696ef3634827e7c81",
+      "bytes": 10684,
+      "deduplicated": true
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-api-integration/references/common/engineering-practices.rules.json",
+      "sha256": "dc1d4123459c084c3f7ae2880ecc5605c93514ca71854585d29f90ecaae6343e",
+      "bytes": 2292,
+      "deduplicated": true
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-api-integration/references/common/engineering-practices.sources.json",
+      "sha256": "3990c1fa5532f05d9cc49d8f3c1fcdb24cda7f60f8dd2d065e5aa397fd779913",
+      "bytes": 16268,
+      "deduplicated": true
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-api-integration/references/engineering-practices.md",
+      "sha256": "f37ad93065b38249dd3ea9c0a874f08ad0c7321a05b2f283179fafee6b045cc4",
+      "bytes": 2828,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-api-integration/references/integration-patterns.md",
+      "sha256": "41972ea9d2c1ac5f56dc15fa67a4c97f0bd863e44af57531f8c5d7a3a45851e1",
+      "bytes": 2566,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-data-fetching/SKILL.md",
+      "sha256": "597b728cf89675f9559fd9c7ec61c5accbeb0db889b51353fbb2711f20987a80",
+      "bytes": 3081,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-data-fetching/references/common/engineering-practices.md",
+      "sha256": "239cc9649d0200a590e6746ccd26108109d73d6f5b4b979696ef3634827e7c81",
+      "bytes": 10684,
+      "deduplicated": true
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-data-fetching/references/common/engineering-practices.rules.json",
+      "sha256": "dc1d4123459c084c3f7ae2880ecc5605c93514ca71854585d29f90ecaae6343e",
+      "bytes": 2292,
+      "deduplicated": true
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-data-fetching/references/common/engineering-practices.sources.json",
+      "sha256": "3990c1fa5532f05d9cc49d8f3c1fcdb24cda7f60f8dd2d065e5aa397fd779913",
+      "bytes": 16268,
+      "deduplicated": true
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-data-fetching/references/engineering-practices.md",
+      "sha256": "9b897690d79259ef66e215cd5943546894ae2a730101ba5e168e4efdb543f859",
+      "bytes": 2756,
+      "deduplicated": false
+    },
+    {
+      "path": "frontend-craft/localized/zh-CN/skills/fec-data-fetching/references/query-patterns.md",
+      "sha256": "17fcb27a7e9eeaa6f3cbc63c3bb51c20a800887f84f39398e86c624d46f3103b",
+      "bytes": 3748,
+      "deduplicated": false
+    }
+  ],
+  "configuration": {
+    "modelSelector": "inherited parent session, no override",
+    "reasoning": "inherited",
+    "maxReadCalls": 4,
+    "network": false,
+    "writes": false,
+    "maxAnswerChineseCharacters": 1200
+  }
+}

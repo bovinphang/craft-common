@@ -1,0 +1,1453 @@
+{
+  "schemaVersion": 1,
+  "state": "local-unpublished",
+  "commonVersion": "2.0.0-dev.20261108.4",
+  "logicalCounts": {
+    "common": 21,
+    "frontend": 74,
+    "backend": 42
+  },
+  "archiveCounts": {
+    "commonSdk": 1,
+    "commonStandalone": 21,
+    "frontendCli": 1,
+    "frontendNative": 1,
+    "frontendStandalone": 74,
+    "backendCli": 1,
+    "backendNative": 1,
+    "backendStandalone": 42,
+    "total": 142
+  },
+  "checks": [
+    "Actual tgz extraction outside repository/sibling skills",
+    "New core/local references and link closure",
+    "Source example/code/lock bytes and bilingual equality",
+    "Exact source versions/repositories, LICENSE and no compiled/dependency caches",
+    "Full public common SDK inventory; root manifest normalization allowed"
+  ],
+  "files": [
+    {
+      "repo": "craft-common",
+      "kind": "sdk",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common4/bovinphang-craft-common-2.0.0-dev.20261108.4.tgz",
+      "bytes": 1244109,
+      "sha512": "36d3c3ed99434c421d45491da0ec82671b4f00f7a897d3a6d48573d8f4880f52921c15f9e29cb82f159ab51ef84d840d5aaf40d705919bfda83106dae38e6fc3",
+      "integrity": "sha512-NtPD7ZlDTEIdRUkdoOyCZxtPAPeol9Om1IVz2PSID1KSHBX54py4LxWatR74TYQNWq9A1wWRm/2oMQba445vww==",
+      "verifiedEnhancedEntries": 14
+    },
+    {
+      "repo": "craft-common",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common-skills/bovinphang-cc-c-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-c-project-standard",
+      "bytes": 23731,
+      "sha512": "f3330ef6011a490b6806357c0f0481a4303b4d232d22f26ab5f59b42cff552f6c4740824a9c3b9ba6b0c48d9d05154a9639558a2945ba44c0faf85903e0ffa12",
+      "integrity": "sha512-8zMO9gEaSQtoBjV8DwSBpDA7TSMtIvJqtfWbQs/1UvbEdAgkqcO5umsMSNnQUVSpY5VYopRbpEwPr4WQPg/6Eg==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "craft-common",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common-skills/bovinphang-cc-cpp-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-cpp-project-standard",
+      "bytes": 23343,
+      "sha512": "31d5c98a7b3444265eb7346e3b2b56cedfe4b0089da3e45613ea0201cbe5cbf69981b1d1c98ef6f169548d76c7b8dfd90fb0e28074612f451299e5deaf82417a",
+      "integrity": "sha512-MdXJins0RCZetzRuOytWzt/ksAido+RWE+oCAcvly/aZgbHRyY728WlUjXbHuN/ZD7DigHRhL0USmeXer4JBeg==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "craft-common",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common-skills/bovinphang-cc-debug-methodology-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-debug-methodology",
+      "bytes": 4028,
+      "sha512": "4f6233c50744ad1983d889ac9936af8f798aa2d7fec384a3f2488f41bc25e1e8bc3cfcd43a93038b212fb0d83f33106aeecb0219ef47c9b0a799f6ea5332d46b",
+      "integrity": "sha512-T2IzxQdErRmD2ImsmTavj3mKotf+w4Sj8kiPQbwl4ei8PPzUOpMDiyEvsNg/MxBq7ssCGe9HybCnmfbqUzLUaw==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "craft-common",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common-skills/bovinphang-cc-doc-sync-core-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-doc-sync-core",
+      "bytes": 3780,
+      "sha512": "706d7c6c5f2b31da0e2dd2c76d3199415d3178ad1e8a364421ca7e3c965929734d24c295f76a8a98ba1c2b45f90965e0397ef050ee58698160b16bd600aa88e9",
+      "integrity": "sha512-cG18bF8rMdoOLdLHbTGZQV0xeK0eijZEIcp+PJZZKXNNJMKV92qKmLocK0X5CWXgOX7wUO5YaYFgsWvWAKqI6Q==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "craft-common",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common-skills/bovinphang-cc-drawio-studio-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-drawio-studio",
+      "bytes": 914001,
+      "sha512": "aac6d1b8596229ae478baa99bcdf805d474f0aba54e84cd6274f76f9f9200fb0ea00964b97226e45d30c1bb8471600dc4514693ad4194fcff0403e609e9467b1",
+      "integrity": "sha512-qsbRuFliKa5Hi6qZvN+AXUdPCrpU6EzWJ092+fkgD7DqAJZLlyJuRdMMG7hHFgDcRRRpOtQZT8/wQD5gnpRnsQ==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "craft-common",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common-skills/bovinphang-cc-electron-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-electron-project-standard",
+      "bytes": 27360,
+      "sha512": "a837d40f8d3b46545fc286f93d8de3a6dacf97271d2da7a77ad2cd91e1ff7484ee5305db6fbe09787f907a24c6c71cf82715095e43fc70df26079e2d99d08caa",
+      "integrity": "sha512-qDfUD407RlRfwob5PY3jptrPlycdLaenetLNkeH/dITuUwXbb74JeH+QeiTGxxz4JxUJXkP8cN8mB54tmdCMqg==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "craft-common",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common-skills/bovinphang-cc-go-concurrency-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-go-concurrency",
+      "bytes": 19571,
+      "sha512": "d18e545672e1d0c640925dcef8a32ff6e5541d83d206b843c0a7c29b3629afa0e0c36a24e387a1216f252f37530d2ea04018f8d5c266c0c88e91f8c384459907",
+      "integrity": "sha512-0Y5UVnLh0MZAkl3O+KMv9uVUHYPSBrhDwKfCmzYpr6Dgw2ok44ehIW8lLzdTDS6gQBj41cJmwMiOkfjDhEWZBw==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "craft-common",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common-skills/bovinphang-cc-go-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-go-project-standard",
+      "bytes": 22703,
+      "sha512": "7ff7eff373006a610aa728d904ae93a83353bc4d0326f36effe93035f20c55ac397c9a04c42d41d53019cb9010234e0764358c3ff6ebcdf25b1a73523efea03d",
+      "integrity": "sha512-f/fv83MAamEKpyjZBK6TqDNTvE0DJvNu/+kwNfIMVaw5fJoExC1B1TAZy5AQI04HZDWMP/brzfJbGnNSPv6gPQ==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "craft-common",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common-skills/bovinphang-cc-java-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-java-project-standard",
+      "bytes": 22331,
+      "sha512": "53059b2fea0296cddeb6c2c7886d3d2ccf7e8ed48366c5cc5e470cc90172f0d27595bdab1d7c6d70f4d097f7d848fbda8fac71151a9d9815bb8b0abe48d1a422",
+      "integrity": "sha512-UwWbL+oCls3etsLHiG09LM9+jtSDZsXMXkcMyQFy8NJ1lb2rHXxtcPTQl/fYSPvaj6xxFRqdmBW7iwq+SNGkIg==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "craft-common",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common-skills/bovinphang-cc-java-runtime-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-java-runtime",
+      "bytes": 19736,
+      "sha512": "74772ce69aa5abbdba73e2746feb63424208fd20e3d0bc86e678c7500a4c1c96dc71d0b619c92cdeac3d5f4afb528f4c90a2b21e1c144439c9cb74af6c9b127e",
+      "integrity": "sha512-dHcs5pqlq726c+J0b+tjQkII/SDj0LyG5njHUApMHJbccdC2Gcks3qw9X0r7Uo9MkKKyHhwURDnJy3SvbJsSfg==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "craft-common",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common-skills/bovinphang-cc-native-memory-safety-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-native-memory-safety",
+      "bytes": 19676,
+      "sha512": "c338df7ee5f52f85581a293f85d82559cd12b5962e6af3c4620f136b91b9d400c751bc2ee6961c8859c39e4e14e229b93bf5c732ec7ba5b24a3b0f546e3e85fe",
+      "integrity": "sha512-wzjffuX1L4VYGik/hdglWc0StZYuavPEYg8Ta5G51ADHUbwu5pYciFnDnk4U4im5O/XHMux7pbJKOw9Ubj6F/g==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "craft-common",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common-skills/bovinphang-cc-python-async-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-python-async",
+      "bytes": 19500,
+      "sha512": "d98b8670b474413e0ac494bbb6aebccfe4d26a59dab824fe769b2a0c68c35bafc7f4e159d1ee444c1331cfdffde59711f97e8d744b09d4f5ce1b76ce31285f84",
+      "integrity": "sha512-2YuGcLR0QT4KxJS7tq68z+TSalnauCT+dpsqDGjDW6/H9OFZ0e5ETBMxz9/95ZcR+X6NdEsJ1PXOG3bOMShfhA==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "craft-common",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common-skills/bovinphang-cc-python-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-python-project-standard",
+      "bytes": 22519,
+      "sha512": "66c3498594f990e890f8062100d135e037c3409e75f1c950c6a6e492487abadccb02c1792bd6fe40a6efdd41ed7e100270c997c5178c418d17ee974545a49352",
+      "integrity": "sha512-ZsNJhZT5kOiQ+AYhANE14DfDQJ518clQxqbkkkh6utzLAsF5K9b+QKbv3UHtfhACcMmXxReMQY0X7pdFRaSTUg==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "craft-common",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common-skills/bovinphang-cc-refactoring-core-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-refactoring-core",
+      "bytes": 4604,
+      "sha512": "dc56dffcb9aec153eda89f987e0a933f07ceb5c832a1f7bbf1e1c8e57c86dcd8427bcc8c241a5f3acaf6324ab6567dd718ce38d631be77c91972439994f8525a",
+      "integrity": "sha512-3Fbf/LmuwVPtqJ+YfgqTPwfOtcgyofe78eHI5XyG3NhCe8yMJBpfOsr2Mkq2Vn3XGM441jG+d8kZckOZlPhSWg==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "craft-common",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common-skills/bovinphang-cc-rust-async-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-rust-async",
+      "bytes": 19583,
+      "sha512": "64a45eb1f0085fba504939ed586a9ee423b8358e3f9abc12299c103e01bba583640ee64bc42e70a9ec9e2493f4d50081fd783062b6c313e58cae080d5198a4c9",
+      "integrity": "sha512-ZKResfAIX7pQSTntWGqe5CO4NY4/mrwSKZwQPgG7pYNkDuZLxC5wqeyeJJP01QCB/XgwYrbDE+WMrggNUZikyQ==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "craft-common",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common-skills/bovinphang-cc-rust-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-rust-project-standard",
+      "bytes": 22635,
+      "sha512": "30494afe3efebeb3ebffde393fa74c9bacbe9221cb063f410b5ba4ad377c2ccc9af72c26ad13eb7dfbb1743a85dee0c37d55418d739f44b3fd37599fa374219e",
+      "integrity": "sha512-MElK/j7+vrPr/945P6dMm6y+kiHLBj9BC1ukrTd8LMya9ywmrRPrffuxdDqF3uDDfVVBjXOfRLP9N1mfo3Qhng==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "craft-common",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common-skills/bovinphang-cc-source-driven-development-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-source-driven-development",
+      "bytes": 4412,
+      "sha512": "fd9c224ded51a3c1af6668531fa487e437f0d191826713a233605cc97e49434da49c43dac3901f1a300ae7052e0d7187a9185da325040a2548d024bc7ca663dd",
+      "integrity": "sha512-/ZwiTe1Ro8GvZmhTH6SH5Dfw0ZGCZxOiM2BcyX5JQ02knEPaw5AfGjAK5wUuDXGHqRhdoyUECiVI0CS8fKZj3Q==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "craft-common",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common-skills/bovinphang-cc-tauri-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-tauri-project-standard",
+      "bytes": 26145,
+      "sha512": "dc45ee81d732736e7f9ee635e6a9b78b5220e07642d9f63d21857f95da4acfeec06f8f025627088c92d6ccf93c6188bff5b370bdbc959de893202dea7cf8e75f",
+      "integrity": "sha512-3EXugdcyc25/nuY15qm3i1Ig4HZC2fY9IYV/ldpKz+7Ab48CVicIjJLWzPk8YYi/9bNwvbyVneiTIC3qfPjnXw==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "craft-common",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common-skills/bovinphang-cc-tdd-methodology-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-tdd-methodology",
+      "bytes": 3760,
+      "sha512": "55e9dce19188c6d703c57c11c4d86519eddc2e37b0bde0f48be01e1259189c4b87771e6454738d797cd1960664c394b7fd8e52d111bed6e564f4cf6d082e55c7",
+      "integrity": "sha512-Venc4ZGIxtcDxXwRxNhlGe3cLjewveD0i+AeElkYnEuHdx5kVHONeXzRlgZkw5S3/Y5S0RG+1uVk9M9tCC5Vxw==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "craft-common",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common-skills/bovinphang-cc-technical-diagrams-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-technical-diagrams",
+      "bytes": 87032,
+      "sha512": "f7bf3a8faee4e9d0a101924d0825cd48c7dcd2e3f403515ca67c74bd12e64e393a7fe5ef34f36287097a67dabba796cd03501b488f73e1821027fd3e9bacd9ec",
+      "integrity": "sha512-9786j67k6dChAZJNCCXNSMfc0uP0A1Fcpnx0vRLmTjk6f+XvNPNihwl6Z9q7p5bNA1AbSI9z4YIQJ/0+m6zZ7A==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "craft-common",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-common-skills/bovinphang-cc-typescript-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-typescript-project-standard",
+      "bytes": 29245,
+      "sha512": "c54f3a804f74f4103aa8bafbd6052c0a44e9571ca41e99c4a3ba0cfd5f87c1ea9ce4d7999823d9a0ed2a45ad937bd5b20e0dfd68c2da07b8fbfd5f3aeff1d500",
+      "integrity": "sha512-xU86gE909BA6qLr71gUsCkTpVxykHpnEo7oM/V+Hweqc5NeZmCPZoO0qRa2Te9WyDg39aMLaB7j7/V867/HVAA==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "kind": "cli",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-cli/bovinphang-frontend-craft-3.0.0.tgz",
+      "bytes": 2110431,
+      "sha512": "ece752b6fb3329cc9bcce9e88027ae4a680cea356ee1d007d57b04996ca55c7b5b61f7dc7a7492bba089cfb47abe7b325c791e6eb96f61958fa185e345f41088",
+      "integrity": "sha512-7OdStvszKcybzOnogCeuSmgM6jVu4dAH1XsEmWylXHtbYffcenSSu6CJz7R6vnsyXHkebrlvYZWPoYXjRfQQiA==",
+      "verifiedEnhancedEntries": 22
+    },
+    {
+      "repo": "frontend-craft",
+      "kind": "openclaw",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-native/frontend-craft-3.0.0.tgz",
+      "bytes": 3123885,
+      "sha512": "ad2d97c372902e8f3619708c2f88ac4700fc3a3a82c7d352c74bb024c0d048d0bdc47923c94430ac103146048a99f5089651fff2b48910ea8972096bfc99bd37",
+      "integrity": "sha512-rS2Xw3KQLo82GXCML4isRwD8OjqCx9NSx0uwJMDQSNC9xHkjyUQwrBAxRgSKmfUIllH/8rSJEOqJcglr/Jm9Nw==",
+      "verifiedEnhancedEntries": 22
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-cc-c-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-c-project-standard",
+      "bytes": 23581,
+      "sha512": "7e4358fc26c277ce5ce09335820fabd558c281e86fe7dbc94acb35bc8aba2b5149976983333c6c0f1e13e6be03a523cfefad9f3d959b9b71533a7aae5e0471fd",
+      "integrity": "sha512-fkNY/CbCd85c4JM1gg+r1VjCgehv59vJSss1vIq6K1FJl2mDMzxsDx4T5r4DpSPP762fPZWbm3FTOnquXgRx/Q==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-cc-cpp-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-cpp-project-standard",
+      "bytes": 23217,
+      "sha512": "1a52cf245a914800481a8b849bb832c87b05467dca3459c6b523e4a563aaf17e9bf694cd4c42b3dbc421ecf323d67d7fa318f5db527e491ab82b1d0bd36d424b",
+      "integrity": "sha512-GlLPJFqRSABIGouEm7gyyHsFRn3KNFnGtSPkpWOq8X6b9pTNTEKz28Qh7PMj1n1/oxj121J+SRq4Kx0L021CSw==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-cc-debug-methodology-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-debug-methodology",
+      "bytes": 4250,
+      "sha512": "9204ccda70fcff442b1fe31d4b9d3db82cb7a3469fddda03bac4fed98986333e4c2bc65724f05e1434a2ccf650b8909817aafd3f0f7d76132c32c4d96a12aecb",
+      "integrity": "sha512-kgTM2nD8/0QrH+MdS509uCy3o0af3doDusT+2YmGMz5MK8ZXJPBeFDSizPZQuJCYF6r9Pw99dhMsMsTZahKuyw==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-cc-doc-sync-core-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-doc-sync-core",
+      "bytes": 4000,
+      "sha512": "d22fb033b7fcdddd05f61c3e2cf72cc95bca71bd74ccc898239778f30528ea9b08b250cdd30efe1e3e50e78a9aa7ccda14acaf9923f0b3097db017a4c709ea2c",
+      "integrity": "sha512-0i+wM7f83d0F9hw+LPcsyVvKcb10zMiYI5d48wUo6psIslDN0w7+Hj5Q54qap8zaFKyvmSPwswl9sBekxwnqLA==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-cc-drawio-studio-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-drawio-studio",
+      "bytes": 918004,
+      "sha512": "b367d66196be9a84e6a295e3aaa2360e16a5b4a7bbd51008a85e7a27b8b7ef14f999ac089b6d0fb9b374325cbedc32ffd78c07fa14ebc227c4c15195ddd937e8",
+      "integrity": "sha512-s2fWYZa+moTmopXjqqI2DhaltKe71RAIqF56J7i37xT5mawIm20PubN0Mly+3DL/14wH+hTrwifEwVGV3dk36A==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-cc-electron-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-electron-project-standard",
+      "bytes": 26879,
+      "sha512": "638865e1630833f6a29af23ecf814b5321bf3a683593c32f42870e82cc56eddae3240d42347ee68d3073c632a88016fae6c2924aee3c78d057834f3cd9ad3038",
+      "integrity": "sha512-Y4hl4WMIM/aimvI+z4FLUyG/Omg1k8MvQocOgsxW7drjJA1CNH7mjTBzxjKogBb65sKSSu48eNBXg0882a0wOA==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-cc-go-concurrency-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-go-concurrency",
+      "bytes": 19636,
+      "sha512": "6f83b8e47ab1a285cd5e6e5325cf39b61c9b2e6bac621ade9c213047af6da5c8cfe6189c2ea77a8e65a4e34d2f3ad7edd4214eae947d0ab28976d40f765c0068",
+      "integrity": "sha512-b4O45HqxooXNXm5TJc85thybLmusYhrenCEwR69tpcjP5hicLqd6jmWk400vOtft1CFOrpR9CrKJdtQPdlwAaA==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-cc-go-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-go-project-standard",
+      "bytes": 22538,
+      "sha512": "180c3f96d5d24b63a3bf67433a89f2c1335002b57575de6e9678ad56d54cbcc763ec95003eb9189abfc838156560223a6095bd4c596a3ff75725198086f6550d",
+      "integrity": "sha512-GAw/ltXSS2Ojv2dDOonywTNQArV1dd5ulnitVtVMvMdj7JUAPrkYmr/IOBVlYCI6YJW9TFlqP/dXJRmAhvZVDQ==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-cc-java-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-java-project-standard",
+      "bytes": 22216,
+      "sha512": "b6c7383b05855d6c9a789deebb61b122c1c9ed5a642b2864599a2b0e38830ecb6bcd1da5f23d6eb2ac8f8e01b305c1e0d83e47bdcc0ccf3338fdd9bb96e71b46",
+      "integrity": "sha512-tsc4OwWFXWyaeJ3uu2GxIsHJ7VpkKyhkWZorDjiDDstrzR2l8j1usqyPjgGzBcHg2D5HvcwMzzM4/dm7lucbRg==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-cc-java-runtime-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-java-runtime",
+      "bytes": 19798,
+      "sha512": "4c4b6fd29ac96768d409c6e47abe04960a390627ebf4e08a833ceabf96e76f158f1f1317ed341166832a8e4e37bba66edef9d21ab58a02455d9cbc0c82d2b170",
+      "integrity": "sha512-TEtv0prJZ2jUCcbker4Elgo5Bifr9OCKgzzqv5bnbxWPHxMX7TQRZoMqjk43u6Zu3vnSGrWKAkVdnLwMgtKxcA==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-cc-native-memory-safety-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-native-memory-safety",
+      "bytes": 19804,
+      "sha512": "6ce36d28c6e019ffaea5e4637091a505ed266e77e71afbe83d28096ded65f377b492957f6298ad54792b02a2a65e848a711147e3d651592937d2474d592c85d0",
+      "integrity": "sha512-bONtKMbgGf+upeRjcJGlBe0mbnfnGvvoPSgJbe1l83e0kpV/YpitVHkrAqKmXoSKcRFH49ZRWSk30kdNWSyF0A==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-cc-python-async-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-python-async",
+      "bytes": 19565,
+      "sha512": "0fc772656a8cafb86b45db1b8c6f54937a3e9017f6a938ff9ea634fbe2ba1ba60d408611d909cf0b17d1354cc40840abf4858e341baa1aecd6be8aca239126f9",
+      "integrity": "sha512-D8dyZWqMr7hrRdsbjG9Uk3o+kBf2qTj/nqY0++K6G6YNQIYR2QnPCxfRNUzECECr9IWONBuqGuzWvorKI5Em+Q==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-cc-python-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-python-project-standard",
+      "bytes": 22388,
+      "sha512": "af50ea4687672aafa0bacd59f7e2a63dd5f571ec6618acc2f3a8d6da94c70d80335abff9c12bd35336924538a49d5810b3bdb99b4932a5f7d962f352a95a5819",
+      "integrity": "sha512-r1DqRodnKq+gus1Z9+KmPdX1cexmGKzC86jW2pTHDYAzWr/5wSvTUzaSRTiknVgQs725m0kypffZYvNSqVpYGQ==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-cc-refactoring-core-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-refactoring-core",
+      "bytes": 4825,
+      "sha512": "a1b4d4fc429b897b1f4df8ebed76a84e83ac7c33e3b2851a891490958fd4ea7203580b33bf5ae250bba14250e666f9c4a76d3d9b4e7c26a068f019f26f2b93dd",
+      "integrity": "sha512-obTU/EKbiXsfTfjr7XaoToOsfDPjsoUaiRSQlY/U6nIDWAszv1riULuhQlDmZvnEp209m058JqBo8BnybyuT3Q==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-cc-rust-async-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-rust-async",
+      "bytes": 19646,
+      "sha512": "a84cdf1cb862ef27c3564c2041f302ff2f11e08577420be3138fdb97d896e4821ba1ab5672fd2f751b34de4102d148de40501d4e6bbf492cd643bcd67408c645",
+      "integrity": "sha512-qEzfHLhi7yfDVkwgQfMC/y8R4IV3QgvjE4/bl9iW5IIboatWcv0vdRs03kEC0UjeQFAdTmu/SSzWQ7zWdAjGRQ==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-cc-rust-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-rust-project-standard",
+      "bytes": 22473,
+      "sha512": "dd76a40c163a5228653cec1d0878380dd2b57e1f80cc11fcff3984cfd655247deca172f75c6a05932c046737b158fc773a0771f991fa748156a0197b96026f5c",
+      "integrity": "sha512-3XakDBY6UihlPOwdCHg4DdK1fh+AzBH8/zmEz9ZVJH3soXL3XGoFkywEZzexWPx3Ogdx+ZH6dIFWoBl7lgJvXA==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-cc-source-driven-development-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-source-driven-development",
+      "bytes": 4629,
+      "sha512": "e80a8c890957208feea518c04589d0e12a32cd8a677b169324ea39e47528c809cd8cd6c6ae79077556a2c0273834d48240ac0cf0e110137b12d44af092ae75ab",
+      "integrity": "sha512-6AqMiQlXII/upRjARYnQ4SoyzYpnexaTJOo55HUoyAnNjNbGrnkHdVaiwCc4NNSCQKwM8OEQE3sS1Erwkq51qw==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-cc-tauri-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-tauri-project-standard",
+      "bytes": 25709,
+      "sha512": "0f4bd3aa6998a827be734493212376b9553fb67c8736a49d4c7bda1411d296456573a911327f28bb74ed1ce19a693d367caf84a52292781d57a2eb002e60fc47",
+      "integrity": "sha512-D0vTqmmYqCe+c0STISN2uVU/tnyHNqSdTHvaFBHSlkVlc6kRMn8ou3TtHOGaaT02fK+EpSKSeB1XousALmD8Rw==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-cc-tdd-methodology-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-tdd-methodology",
+      "bytes": 3974,
+      "sha512": "0ca3777957c1a6b6adf172229726878352ba88008169c787147d4216196dfbd64d1b4d871fd603f46aa48fc944209fe0e0dc6049c92d79d92d3e36c8e25db0f9",
+      "integrity": "sha512-DKN3eVfBprat8XIilyaHg1K6iACBaceHFH1CFhlt+9ZNG02HH9YD9Gqkj8lEIJ/g4NxgScktedktPjbI4l2w+Q==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-cc-technical-diagrams-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-technical-diagrams",
+      "bytes": 94642,
+      "sha512": "64ee9baf97f05adac3d615069f57fb23bb83f21cafba07624f7c3a4823ae1465d9d5db34b79b42ebbd7e757a3808ea60a510c466ccb15c955389e1d2ece1f71a",
+      "integrity": "sha512-ZO6br5fwWtrD1hUGn1f7I7uD8hyvugdiT3w6SCOuFGXZ1ds0t5tC671+dXo4COpgpRDEZsyxXJVTieHS7OH3Gg==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-cc-typescript-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-typescript-project-standard",
+      "bytes": 29101,
+      "sha512": "2774752a1db03c379a30ead08d288f7ad6ab53d38e9c00ecb42d870f25fa3e4c0588a9a0cd609ab20c80f67cd4cc4f5ba1bef49f63b101259397153b04530708",
+      "integrity": "sha512-J3R1Kh2wPDeaMOrQjSiPetarU9OOnADstC2HDyX6PkwFiKmgzWCasgyA9nzUzE9bob70n2OxASWTlxU7BFMHCA==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-accessibility-check-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-accessibility-check",
+      "bytes": 6661,
+      "sha512": "bfcea14ef9a4d595b52892b6a86207424c36a2ccf16dcd258eaacfe4f5b3eec56c039389090109a2e3aa43139e839d9e7ad4efbc91147d2dfc0e2bb5cd109d5c",
+      "integrity": "sha512-v86hTvmk1ZW1KJK2qGIHQkw2oszxbc0ljqrP5PWz7sVsA5OJCQEJouOqQxOeg52eetTvvJEUfS38Diu1zRCdXA==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-alchemy-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-alchemy",
+      "bytes": 15173,
+      "sha512": "51546dee8fefccb6ee880397d25a85511f2b76b4014c2bcbf159ef7ccecbfbea9317477baec1484c69fc33eb7b74e677aeaa01a9b90788e34bde868f563c54ff",
+      "integrity": "sha512-UVRt7o/vzLbuiAOX0lqFUR8rdrQBTCvL8VnvfM7L++qTF0d7rsFITGn8M+t7dOZ3rqoBqbkHiONL3oaPVjxU/w==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-api-integration-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-api-integration",
+      "bytes": 24705,
+      "sha512": "f7970b6940780af1ad4ed23cf969be622d371ed0fbec82cdc9802ad4b0873e98024ee6387d4ce8a811f92b106ff0eb76d94c572e14a893c1d2620ad33976bca5",
+      "integrity": "sha512-95cLaUB4CvGtTtI8+Wm+Yi03HtD77ILNyYAq1LCHPpgCTuY4fUzoqBH5KxBv8Ot22UxXLhSok8HSYgrTOXa8pQ==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-backend-requirements-handoff-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-backend-requirements-handoff",
+      "bytes": 5281,
+      "sha512": "eec22b01c906b6031482e642085290e93dac537663840fb46b29d14e965d94ad2bb6fdb24b93735bd7c45d76bb703875597757958642103a237c50ac4be7755a",
+      "integrity": "sha512-7sIrAckGtgMUguZCCFKQ6T2sU3ZjhA+0aynRTpZdlK0rtv2yS5NzW9fEXXa7cDh1WXdXlYZCEDojfFCsS+d1Wg==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-browser-storage-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-browser-storage",
+      "bytes": 5145,
+      "sha512": "b5ac70743e381988fed83f1a9f977db29af948af3eea14b7182803e80ffce5d8b1fe5c65efa2e3269ecd9cafa4f05b8c5dc93618468e0c5c7a6bb0cd01ddf428",
+      "integrity": "sha512-taxwdD44GYj+2D8an5d9spr5SK8+6hS3GCgD6A/85dix/lxl76LjJp7NnK+k8FuMXck2GEaODFx6a7DNAd30KA==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-canvas-threejs-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-canvas-threejs",
+      "bytes": 9006,
+      "sha512": "e9468febb6b6cddc2f9761a492e20e2b6986955fdf734d5fcc796e329ea4d7e4b95e043846a7622913b35724404029824031ce91245d5694ddd775e77b2c558a",
+      "integrity": "sha512-6UaP67a2zdwvl2GkkuIOK2mGlV/fc01fzHluMp6k1+S5XgQ4RqdiKROzVyRAQCmCQDHOkSRdVpTd13XneyxVig==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-code-review-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-code-review",
+      "bytes": 27118,
+      "sha512": "e9b49bd84fa6ae204255c0f8351b7da87123ac81563ef927c1046218bb1c7f5491e47877e5aafb3583f3c1c84024095004fdd9f5d63bf33a67990ad42882aa26",
+      "integrity": "sha512-6bSb2E+mriBCVcD4NRt9qHEjrIFWPvknwQRiGLscf1SR5Hh35ar7NYPzwchAJAlQBP3Z9dY78zpnmQrUKIKqJg==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-code-smells-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-code-smells",
+      "bytes": 17897,
+      "sha512": "c5ff654b36a70722f08ad058ff4f2524d852aa8eae002a1ebf3da4ef65fd62281c080057b3336fdfe475e97780e3a0a2276adef15b232dba0dd48f61ed3e40c3",
+      "integrity": "sha512-xf9lSzanByLwitBY/08lJNhSqo6uACoevz2k72X9YigcCABXszNv3+R16XeA46CiJ2re8VsjLboN1I9h7T5Aww==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-component-testing-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-component-testing",
+      "bytes": 6402,
+      "sha512": "4652fb306602114c54c73d6c611d54e3a9ae340326c132011e89ed47e335d056b31a5b6d52aa61fcc3780635c9a8fe32cdd92b8876ce7a43e3e400b8c8171873",
+      "integrity": "sha512-RlL7MGYCEUxUxz1sYR1U46muNAMmwTIBHontR+M10FazGlttUqph/MN4BjXJqP4yzdkriHbOekPj5AC4yBcYcw==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-data-fetching-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-data-fetching",
+      "bytes": 22426,
+      "sha512": "8d98a3269d5d21a98152fec389e26f0d73ff88a59a8b6c1a49f9e9f4dc44898611d534762da4278c22a9c7a6a365b5fda29d5da512cc79b414ed4a23285de324",
+      "integrity": "sha512-jZijJp1dIamBUv7DieJvDXP/iKWai2waSfnp9NxEiYYR1TR2LaQnjCKpx6ajZbX9op1dpRLMebQU7UojKF3jJA==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-debug-framework-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-debug-framework",
+      "bytes": 8802,
+      "sha512": "9ae526a71018e2d8489bcb88b8f75311b94f28c34868b49d15bc822aad4ee15de82fc13c2bc9da026723b2d070bf3e5f438b718f601eed9a5b1782ec860ad7ff",
+      "integrity": "sha512-muUmpxAY4thIm8uIuPdTEblPKMNIaLSdFbyCKq1O4V3oL8E8K8naAmcjstBwvz5fQ4txj2Ae7ZpbF4LshgrX/w==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-dependency-upgrade-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-dependency-upgrade",
+      "bytes": 21547,
+      "sha512": "84fa3bbc0d324795a23d078855c6af365874b4913f424331c60c031bd5a0f0f8bc10aaa31b9bfa5d19fe3d6245a854e9fa7d1b2ea55ade42ec765e81380b95d8",
+      "integrity": "sha512-hPo7vA0yR5WiPQeIVcavNlh0tJE/QkMxxgwDG9Wg8Pi8EKqjG5v6XRn+PWJFqFTp+n0bLqVa3kLsdl6BOAuV2A==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-doc-sync-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-doc-sync",
+      "bytes": 4661,
+      "sha512": "713db942e3b25b38ea15add6618fcfaae9d82082005f5e19d2242d9dadf4da3d7573bd54ece4eafd14564cee34e10e5ccd9278c21022770d0303f007eb63d54f",
+      "integrity": "sha512-cT25QuOyWzjqFa3WYY/PqunYIIIAX14Z0iQtna302j11c71U7OTq/RRWTO404Q5czZJ4whAidw0DA/AH62PVTw==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-e2e-testing-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-e2e-testing",
+      "bytes": 10108,
+      "sha512": "37dacfa88ba8a179f427454884b7ebf14424a8c285c7ee2d259fb08e1cdf2a2eaa56eab78b37c47f2694326d182e2771924f226a21b4b602ad4c862433c74407",
+      "integrity": "sha512-N9rPqIuooXn0J0VIhLfr8UQkqMKFx+4tJZ+wjhzfKi6qVuq3izfEfyaUMm0YLidxkk8iaiG0tgKtTIYkM8dEBw==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-form-handling-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-form-handling",
+      "bytes": 8263,
+      "sha512": "7f0131cbe927de7e1ab0b4704ce898d24521dbeb200aa16724ad20635d516416b86625b08f07af07f74200ac1bc21574fb365984be6cb420541b7e4553251e62",
+      "integrity": "sha512-fwExy+kn3n4asLRwTOiY0kUh2+sgCqFnJK0gY11RZBa4ZiWwjwevB/dCAKwbwhV0+zZZhL5stCBUG35FUyUeYg==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-image-generation-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-image-generation",
+      "bytes": 25720,
+      "sha512": "2aa2977012381f72ccce1a886460e9610581bbd2e0b8e7a9cb4c4987bf64b71479ffbe10ea9eb059bf71eb394b2ad45ba2f069d6bd6628ed8b4d3d3a3d0915bc",
+      "integrity": "sha512-KqKXcBI4H3LMzhqIZGDpYQWBu9LguOepy0xJh79ktxR5/74Q6p6wWb9x6zlLKtRbovBp1r1mKO2LTT06PQkVvA==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-implement-from-design-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-implement-from-design",
+      "bytes": 8346,
+      "sha512": "d70f0d91534d3a68d71ca38e7cf37d8159cbbcd6e7fd2581c0b0162342fc04fbe8b8d7c69c526d3010a41cb140490a5590f5f2f088b5953b0e587ae086380b28",
+      "integrity": "sha512-1w8NkVNNOmjXHKOOfPN9gVnLvNbn/SWBwLAWI0L8BPvouNfGnFJtMBCkHLFASQpVkPXy8Ii1lTsOWHrghjgLKA==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-legacy-to-modern-migration-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-legacy-to-modern-migration",
+      "bytes": 14212,
+      "sha512": "ca107a5e86e36b9c9da637df06b9411a482daa00f8a4572d95a84f77c2eccc6ba9e1a72b0e846dddc74f6344d7dd246f47eb9f68a000bdee045daa0f52fe175c",
+      "integrity": "sha512-yhB6Xobja5ydpjffBrlBGkgtqgD4pFctlahPd8LszGup4acrDoRt3cdPY0TX3SRvR+ufaKAAve4EXaoPUv4XXA==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-legacy-web-standard-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-legacy-web-standard",
+      "bytes": 5476,
+      "sha512": "47b41ed8618ff847f1db123c20f2e0ca9395d9c8dd4776a0ca073783df678dd325ac286cfcdacbc82abcbda3ab5237a7d1b5e807c41c2e28adccea2ed0632eb4",
+      "integrity": "sha512-R7Qe2GGP+Efx2xI8IPLgypOV2cjdR3agygc3g99njdMlrChs/NrLyCq8vaOrUjen0bXoB8QcLiitzOou0GMutA==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-list-virtualization-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-list-virtualization",
+      "bytes": 7146,
+      "sha512": "835ad219d6f508d525b1d8f51fe562e1c72689abe4d473d16f779580cfab60fb6fa4ea5d4b51e9edcdc0322b3f7eaf99a105aeddf137b269a853f3fe7d423c8c",
+      "integrity": "sha512-g1rSGdb1CNUlsdj1H+Vi4ccmiavk1HPRb3eVgM+rYPtvpOpdS1Hp7c3AMis/fq+ZoQWu3fE3smmoU/P+fUI8jA==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-monorepo-project-standard-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-monorepo-project-standard",
+      "bytes": 5680,
+      "sha512": "41701322742b53f8155fb9e2e4612d04b712b314acdfa6cd51dfd9fb0860e1eed6506b4e8dd59f92f92658cf941eb48a9a19041301c47409fcfef3baf43fcac6",
+      "integrity": "sha512-QXATInQrU/gVX7ni5GEtBLcSsxSs36bNUd/Z+whg4e7WUGtOjdWfkvkmWM+UHrSKmhkEEwHEdAn8/vO69D/Kxg==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-motion-interaction-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-motion-interaction",
+      "bytes": 9695,
+      "sha512": "f3a668b2ae8006c67241295638bc3ae829bd771ec35ca7291cb91775f236ce06030021ecb39fd074c0a3960c57dad24d3bfcae76b2f22ab1e4115526b2ab2672",
+      "integrity": "sha512-86Zosq6ABsZyQSlWOLw66Cm9dx7DXKcpHLkXdfI2zgYDACHss5/QdMCjlgxX2tJNO/yudrLyKrHkEVUmsqsmcg==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-nextjs-project-standard-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-nextjs-project-standard",
+      "bytes": 7442,
+      "sha512": "83558258a3c23f1a17fe8aac14ea786bbe78a48d6b84cd0042f9a766045b744bd981e57f7fff1bdc6846e31be5177029be536e83edad8e1a77b1a15e11564804",
+      "integrity": "sha512-g1WCWKPCPxoX/oqsFOp4a754pI1rhM0AQvmnZgRbdEvZgeV/f/8b3GhG4xvlF3ApvlNug+2tjhp3saFeEVZIBA==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-nuxt-project-standard-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-nuxt-project-standard",
+      "bytes": 5433,
+      "sha512": "fd1f669d16fb771c002da53143b39907586ab11cdea5f251839763350f0fc461fecf725e5f7fa559afb2681ed90506ac99ea376cb73c682fe0e356dd26773e0b",
+      "integrity": "sha512-/R9mnRb7dxwALaUxQ7OZB1hqsRzepfJRg5djNQ8PxGH+z3JeX3+lWa+yaB7ZBQasmeo3bLc8aC/g41bdJnc+Cw==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-performance-optimization-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-performance-optimization",
+      "bytes": 11835,
+      "sha512": "76dfbbc251994a0538565beff69326c6fe87972a7ad2934cdcc651a96e8adb068e6bc23dd92bdfd5f9f67ede86c047506ff5db57e01a4b85a9e70522563b65d0",
+      "integrity": "sha512-dt+7wlGZSgU4Vlvv9pMmxv6Hlyp60pNM3MZRqW6K2waOa8I92Svf1fn2ft6GwEdQb/XbV+AaS4Wp5wUiVjtl0A==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-pwa-implementation-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-pwa-implementation",
+      "bytes": 6620,
+      "sha512": "0269eec4a3da16d3c2666ab2a4f704c88221d8635fc019576ca3a757378dc0f84e9646424cc1f218ea2072a74867fe775e2a7f616a09e9f085def209d39c4d9a",
+      "integrity": "sha512-AmnuxKPaFtPCZmqypPcEyIIh2GNfwBlXbKOnVzeNwPhOlkZCTMHyGOogcqdIZ/53Xip/YWoJ6fCF3vIJ05xNmg==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-react-project-standard-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-react-project-standard",
+      "bytes": 52813,
+      "sha512": "0b87d835fc35b0bc674f985d53f47a112655af34d42e9b11cd07cee7724857e8f79a74b854d979c1a1d43184b0b5efb81c854ff484fe9b0e2a61133032bf814f",
+      "integrity": "sha512-C4fYNfw1sLxnT5hdU/R6ESZVrzTULpsRzQfO53JIV+j3mnS4VNl5waHUMYSwte+4HIVP9IT+mw4qYRMwMr+BTw==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-refactor-clean-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-refactor-clean",
+      "bytes": 6432,
+      "sha512": "0408cb01523a5ad742e931f8c38feb01a98264f27d984549b6af41686ae503bda0460d7520adcc06e9b0ffa7b3f903a0fc534396499067da8321ab8d7be5f877",
+      "integrity": "sha512-BAjLAVI6WtdC6TH4w4/rAamCZPJ9mEVJtq9BaGrlA72gRg11IK3MBumw/6ez+QOg/FNDlkmQZ9qDIauNe+X4dw==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-refactoring-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-refactoring",
+      "bytes": 9955,
+      "sha512": "cc9503f6414dcb4fa9df46f2c234846ce9db193446fea4b3d0f2e83e5ecde082a262a74d73e42b805a7a634a145f5c9429e419fe8a0e9c4b5d0f88183b76c8d0",
+      "integrity": "sha512-zJUD9kFNy0+p30bywjSEbOnbGTRG/qSz0PLoPl7N4IKiYqdNc+QrgFp6Y0oUX1yUKeQZ/ooOnEtdD4gYO3bI0A==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-refactoring-api-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-refactoring-api",
+      "bytes": 10593,
+      "sha512": "69fde11997f90a1ba19bcfff4ef63c40312b10acde0a0e5b8a6c47be4252beb9ffa73267065cd45f2acf6984b3e13832ed24fcc6287b85b69b29656d5a2c93a4",
+      "integrity": "sha512-af3hGZf5Chuhm8//TvY8QDErEKzeCg5bimxHvkJSvrn/pzJnBlzUXyrPaYSz4Tgy7ST8xih7hbabKWVtWiyTpA==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-refactoring-catalog-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-refactoring-catalog",
+      "bytes": 11626,
+      "sha512": "d5999b68b4285158cc3131c12ce22cadd7c83ba2e6d7f252daefb96f3f8da73b06116ee2e553edbe973fae38f09f2003c745e7bdb0af43e6c9dc8e2360be36d2",
+      "integrity": "sha512-1ZmbaLQoUVjMMTHBLOIsrdfIO6Lm1/JS2u+5bz+NpzsGEW7i5VPtvpc/rjjwnyADx0XnvbCvQ+bJ3I4jYL420g==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-refactoring-control-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-refactoring-control",
+      "bytes": 8922,
+      "sha512": "809d4eee698aa565703ac45321ae3e0056dbba6ac90c56634a528e57d8f38f3537eb6871ada2fdc6f10e21d3fe3f5f3556882fdc6aa60fc4f61eacae1a32532c",
+      "integrity": "sha512-gJ1O7mmKpWVwOsRTIa4+AFbbumrJDFZjSlKOV9jzjzU362hxraL9xvEOIdP+P181Vogv3GqmD8T2HqyuGjJTLA==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-refactoring-data-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-refactoring-data",
+      "bytes": 8185,
+      "sha512": "4c61377b17a6fd77ea802ad7562cced7fad990baa69130b1f06a53014c43494112a837e9ee8b3532b9beab46806eaef91325b5007e1b9db8de253c9d56633598",
+      "integrity": "sha512-TGE3exem/XfqgCrXVizO1/rZkLqmkTCx8GpTAUxDSUESqDfp7os1Mrm+q0aAbq75EyW1AH4bnbjeJTydVmM1mA==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-refactoring-encapsulation-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-refactoring-encapsulation",
+      "bytes": 10189,
+      "sha512": "73a191ce842c08f281975ec89abf0a615fae911742123c19f926391a8e533f8a4f29f44736b790fa56cf12e2e11ee7173661944cd81683597f032768e97f40f1",
+      "integrity": "sha512-c6GRzoQsCPKBl17Imr8KYV+ukRdCEjwZ+SY5Go5TP4pPKfRHNreQ+lbPEuLhHucXNmGUTNgWg1l/Aydo6X9A8Q==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-refactoring-functions-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-refactoring-functions",
+      "bytes": 11152,
+      "sha512": "f70d356d17442684981495219906b7497aeaaeda22b6debe525d999123e313f3122a4ee8a8d7575df5b2932de4935f380401acc87980968849b16d304bbcf0f2",
+      "integrity": "sha512-9w01bRdEJoSYFJUhmQa3SXrqrtoitt6+Ul2ZkSPjE/MSKk7oqNdXXfWyky3kk184BAGsyHmAlohJsW0wS7zw8g==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-refactoring-inheritance-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-refactoring-inheritance",
+      "bytes": 10788,
+      "sha512": "9c2636c3d64058370a7c4aea5a3a803cd0f987abde78b4da58be5760897ce472526fb23edf74f4ccd70ff6a854e74d8beb1983b75b466118bf56221611605fd7",
+      "integrity": "sha512-nCY2w9ZAWDcKfErqWjqAPND5h6veeLTaWL5XYIl85HJSb7I+33T0zNcP9qhU502L6xmDt1tGYRi/ViIWEWBf1w==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-refactoring-move-features-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-refactoring-move-features",
+      "bytes": 10097,
+      "sha512": "1698d8164755250a4622a724be9cad33bd45547ce47601707f756448259f79a42502061dd6e4055edec8f6092c56507f5bcc0a9a0c19b0d90a4da01a7954db38",
+      "integrity": "sha512-FpjYFkdVJQpGIqckvpytM71FVHzkdgFwf3VkSCWfeaQlAgYd1uQFXt7I9gksVlB/W8wKmgwZsNkKTaAaeVTbOA==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-refactoring-validation-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-refactoring-validation",
+      "bytes": 7653,
+      "sha512": "dd8e5af4969d795697ac822f65c7d36d6045f975f2c3f12b1a611f8e49691d396d49af4c491eceb2f2895ab81ff42fd36726d55a6586812406004bc8e4f27029",
+      "integrity": "sha512-3Y5a9JadeVaXrIIvZcfTbWBF+XXyw/ErGmEfjklpHTltSa9MSR7OsvKJWrgf9C/TZybVWmWGgSQGAEvI5PJwKQ==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-responsive-layout-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-responsive-layout",
+      "bytes": 7505,
+      "sha512": "daf6fbe1550c6ac9e5221836b08fcb9baecb14da4fb3bf391319dc079aa72f8cfed0bb4aaeccd9343d0a2dd40543ac22d5a1932845fa76497e817b3aed7f42f8",
+      "integrity": "sha512-2vb74VUMasnlIhg2sI/Lm67LFNpPs785ExncB5qnL4z+0LtKrszZND0KLdQFQ6wi1aGTKEX6dkl+gXs67X9C+A==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-route-protection-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-route-protection",
+      "bytes": 5512,
+      "sha512": "e4b8f9ae5867efa23e143a1dc3b57d5bbf5cdd3408ff6a84b7a7e652dc5563bb79a8f8be248cbf6e868a0aa81923b34f3e9c6a866d5cfc08018c025973a5617a",
+      "integrity": "sha512-5Lj5rlhn76I+FDodw7V9W79c3TQI/2qEt6fmUtxVY7t5qPi+JIy/boaKCqgZI7NPPpxqhm1c/AgBjAJZc6Vheg==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-security-review-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-security-review",
+      "bytes": 24649,
+      "sha512": "78925664a245289d1f1b767154ef0ee05dc1d97b19e1bc16b9fd00a562d385600c13a05feb35f5e3edff0f2164d7e8ca2e646ce80793858c03fc9284ddc35cfd",
+      "integrity": "sha512-eJJWZKJFKJ0fG3ZxVO8O4F3B2XsZ4bwWuf0ApWLThWAME6Bf6zX14+3/DyFk1+jKLmRs6AeThYwD/JKE3cNc/Q==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-state-management-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-state-management",
+      "bytes": 8549,
+      "sha512": "44e8098a3b744ddc25ff2eb30154bb98f95a71abe8b1c987b2971238af02a3dc3abb07baa61f9a41f56aea312fe41eebaa2f9df4e68b912af2818661ed663e7c",
+      "integrity": "sha512-ROgJijt0Tdwl/y6zAVS7mPlacavoscmHspcSOK8Co9w6uwe6ph+aQfVq6jEv5B7rqi+d9OaLkSrygYZh7WY+fA==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-storybook-component-doc-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-storybook-component-doc",
+      "bytes": 5974,
+      "sha512": "15ba232478f57e48a6afc6d16fdf584c99fb0cbf2755e54e0c14097085af0428168d856e62e355be443600efb1770d914d27fbaff72c8dd7c2986509ced5bb71",
+      "integrity": "sha512-FbojJHj1fkimr8bRb99YTJn7DL8nVeVODBQJcIWvBCgWjYVuYuNVvkQ2AO+xdw2RTSf7r/csjdfCmGUJztW7cQ==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-svg-animation-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-svg-animation",
+      "bytes": 5769,
+      "sha512": "d263f134735945ea2c3037fd0eab2b3a66097e0594a2477fe0b52368e689038c63e95aff139304ee4959529a04d0386d2e310dd916c0f6dbf8791f8c454707d5",
+      "integrity": "sha512-0mPxNHNZReosMDf9DqsrOmYJfgWUokd/4LUjaOaJA4xj6Vr/E5ME7klZUpoE0DhtLjEN2RbA9tv4eR+MRUcH1Q==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-tailwind-design-system-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-tailwind-design-system",
+      "bytes": 7746,
+      "sha512": "86374d84fcf4907893c58fb5230593f07e8bd1e4df4035de661e6fe9e0a3cda4cbaf65291ac37ed2bbf9f8d91758a5bf323f087bd9f44ae5883d745a8fdd9be8",
+      "integrity": "sha512-hjdNhPz0kHiTxY+1IwWT8H6L0eTfQDXeZh5v6eCjzaTLr2UpGsN+0rv5+NkXWKW/Mj8Ie9n0SuWIPXRaj92b6A==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-tdd-workflow-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-tdd-workflow",
+      "bytes": 5059,
+      "sha512": "91dc66ac13e5d34bc619b2234ce0d0344bc413bd64291cdf108698a50968660d53fda4a82348c69bb1c06111260a6fa01efa16f085b7b045274e058e31500322",
+      "integrity": "sha512-kdxmrBPl00vGGbIjTODQNEvEE71kKRzfEIaYpQloZg1T/aSoI0jGm7HAYREmCm+gHvoW8IW3sEUnTgWOMVADIg==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-testing-strategy-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-testing-strategy",
+      "bytes": 21042,
+      "sha512": "10c477da1e253c23f985b6e8fc8ba33b8648671532e0f0d7bbb4b39e0dda3d4504c41c645b1368e49f8eada3d4336068a28cfd72bb9239900b5ea9f7728210e8",
+      "integrity": "sha512-EMR32h4lPCP5hbbo/IujO4ZIZxUy4PDXu7Szng3aPUUExBxkWxNo5J+OraPUM2Boooz9cruSOZALXqn3coIQ6A==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-ui-design-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-ui-design",
+      "bytes": 43528,
+      "sha512": "0483c11a0d746811e0c9f50811335446065c90e8cdf1e816b39275ca42521cf04618ec6a07ff56e80131b79235beb43b5673e66b862845c1f793472977069228",
+      "integrity": "sha512-BIPBGg10aBHgyfUIETNURgZckOjN8egWs5J1ykJSHPBGGOxqB/9W6AExt5I1vrQ7VnPma4YoRcH3k0cpdwaSKA==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-validation-fix-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-validation-fix",
+      "bytes": 5432,
+      "sha512": "266707863247e86d27373bb3bfc13ffb6e65b972304c794a26a4efba5ea94d25ba059d56bf034c5e6bc8ae0bb9529f32f8dfee82797adeadb4e1b1ad84f9db62",
+      "integrity": "sha512-JmcHhjJH6G0nNzuzv8E/+25luXIwTHlKJqTvul6pTSW6BZ1WvwNMXmvIrgu5Up8y+N/ugnl63q204bGthPnbYg==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-vite-project-standard-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-vite-project-standard",
+      "bytes": 5976,
+      "sha512": "56fad889eab12dfd3c1d160bbb9889abfc3d7dbe1ea327646a6fbb0d127ff1432e555ca32b254ba3b9d427998219400bd269a95f7c95ee3c444d79d0938f7607",
+      "integrity": "sha512-VvrYieqxLf08HRYLu5iJq/w9fb4eoydkam+7DRJ/8UMuVVyjKyVLo7nUJ5mCGUAL0mmpX3yV7jxETXnQk492Bw==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-vue3-project-standard-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-vue3-project-standard",
+      "bytes": 34302,
+      "sha512": "cf74ddf2eb561c6cd5e4010ce0a164a8031313f32712ad897a84b01ccb780d4db6c9dc4136092d05c7049f6ca377227ba2c402d60ee2579551786895ac19d93f",
+      "integrity": "sha512-z3Td8utWHGzV5AEM4KFkqAMTE/MnEq2JeoSwHMt4DU22ydxBNgktBccEn2yjdyJ7osQC1g7iV5VReGiVrBnZPw==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-web-video-presentation-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-web-video-presentation",
+      "bytes": 17070,
+      "sha512": "43425f9226760c8e19aff0e38ecadbe18f33b7fc8930c3305fe0a4af401aba6408c569b9bcf09f0f98eb99f0280aa407476b783c26935271e415165c7bcd69ad",
+      "integrity": "sha512-Q0JfkiZ2DI4Zr/Djjsrb4Y8zt/yJMMMwX+Ckr0AaumQIxWm5vPCfD5jrmfAoCqQHR2t4PCaTUnHkFRZce81prQ==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "frontend-craft",
+      "file": "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-frontend-skills/bovinphang-fec-web-workers-3.0.0.tgz",
+      "kind": "standalone",
+      "skill": "fec-web-workers",
+      "bytes": 6356,
+      "sha512": "e0e29ae927546f49612c94a08f82f5f417c2e2fcfd5baeaa541ef47340c7b4d64b260c31d72bda3509cd4a26e2a4ccb55d3cacd625471f0a0001d54c50aef437",
+      "integrity": "sha512-4OKa6SdUb0lhLJSgj4L19BfC4vz9W66qVB70c0DHtNZLJgwx1yvaNQnNSibipMy1XTys1iVHHwoAAdVMUK70Nw==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-backend-craft-1.0.0.tgz",
+      "kind": "cli",
+      "bytes": 1720179,
+      "sha512": "87804cb2d5a2141bfee9ee051794628229054cb8af97edfe9b1f7e6d87de06897ba79bb976b4683d3ea39cbf471ad6e85ba434193c0bd98efdf3e21415398b5a",
+      "integrity": "sha512-h4BMstWiFBv+6e4FF5RigikFTLivl+3+mx9+bYfeBol7p5u5drRoPT6jnL9HGtboW6Q0GTwL2Y798+IUFTmLWg==",
+      "verifiedEnhancedEntries": 28,
+      "aliases": [
+        "craft-common/.superpowers/sdd/2026-11-08-engineering-practices-integration/packages/final-backend-cli/bovinphang-backend-craft-1.0.0.tgz"
+      ]
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-backend-craft-openclaw-1.0.0.tgz",
+      "kind": "openclaw",
+      "bytes": 1412152,
+      "sha512": "9370beef4d68b3173ae774cfc146e401f3da5b0619f2ed2e0187baaff49ff25ea0d53712388246e5fdd0660c92d6a88bcbd0a07b7b4f2c61404d97d1f013350c",
+      "integrity": "sha512-k3C+701osxc653TPwUbkAfPaWwYZ8u0uAYe6r/Sf8l6g1TcSOIJG5f3QZgyS1qiLy9Cge3tPLGFATZfR8BM1DA==",
+      "verifiedEnhancedEntries": 28
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-bec-api-design-1.0.0.tgz",
+      "kind": "standalone",
+      "skill": "bec-api-design",
+      "bytes": 24144,
+      "sha512": "387aaafe40d23bf29ca7c76be2e767ab55f3012df9fd0504bc7603fa6c0c0b928fc0ba5d531d02160e35f0b527f2491af4cd153c2a52feea4e4949521e40ddfd",
+      "integrity": "sha512-OHqq/kDSO/Kcp8dr4udnq1XzAS35/QUEvHYD+mwMC5KPwLpdUx0CFg418LUn8kka9M0VPCpS/upOSUlSHkDd/Q==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-bec-architecture-design-1.0.0.tgz",
+      "kind": "standalone",
+      "skill": "bec-architecture-design",
+      "bytes": 19857,
+      "sha512": "036a3699ad7d5beef85113b4be69190d49b349c6bceea480f6f84ad9c3dd7e93562bdbef40342d265576859a19fcef3f4c7622d1f3d03fbf4ae71e0716ee4c68",
+      "integrity": "sha512-A2o2ma19W+74URO0vmkZDUmzSca87qSA9vhK2cPdfpNWK9vvQDQtJlV2hZoZ/O8/THYi0fPQP79K5x4HFu5MaA==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-bec-auth-security-1.0.0.tgz",
+      "kind": "standalone",
+      "skill": "bec-auth-security",
+      "bytes": 19745,
+      "sha512": "514e929affb4d495868d4e0b577e3d7573082d8b23d24713790ea13ec47615dc9994c9f05bacf35ff2112b74fb8fcf13b96bf606ff82873dad0fe177d47231aa",
+      "integrity": "sha512-UU6Smv+01JWGjU4LV349dXMILYsj0kcTeQ6hPsR2FdyZlMnwW6zzX/IRK3T7j88TuWv2Bv+Chz2tD+F31HIxqg==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-bec-axum-project-standard-1.0.0.tgz",
+      "kind": "standalone",
+      "skill": "bec-axum-project-standard",
+      "bytes": 26713,
+      "sha512": "92a2418b1e00bbfb3181d1c92624a449c443ef502e965455d87e2c77a3312b74bce0af23cbbbd66f49cf5e8560363f9fb41a6e035b5b8650207d30d0825df20f",
+      "integrity": "sha512-kqJBix4Au/sxgdHJJiSkScRD71AullRV2H4sd6MxK3S84K8jy7vWb0nPXoVgNj+ftBpuA1tbhlAgfTDQgl3yDw==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-bec-cache-design-1.0.0.tgz",
+      "kind": "standalone",
+      "skill": "bec-cache-design",
+      "bytes": 4677,
+      "sha512": "353a894f7c1c63e360f00bd08102d44d2cf9d7669c528b4a2c265ccbc68af8d2149db96af329ecfb65c2d5f968097841aee043d6750d7a37aa5a72fd4c1ecb0b",
+      "integrity": "sha512-NTqJT3wcY+Ng8AvQgQLUTSz512acUotKLCZcy8aK+NIUnblq8yns+2XC1floCXhBruBD1nUNejeqWnL9TB7LCw==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-bec-code-review-1.0.0.tgz",
+      "kind": "standalone",
+      "skill": "bec-code-review",
+      "bytes": 19660,
+      "sha512": "d61e7bd3af79d2f2104960498af9671a807ec6aef516ff19f19bce0148f5538e22ac30d4fbd8cf924ae202414ef186f4ce2de32563af2e546cb4bf04e84bb22a",
+      "integrity": "sha512-1h5706950vIQSWBJivlnGoB+xq71Fv8Z8ZvOAUj1U44irDDU+9jPkkriAkFO8Yb0zi3jJWOvLlRstL8E6EuyKg==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-bec-database-design-1.0.0.tgz",
+      "kind": "standalone",
+      "skill": "bec-database-design",
+      "bytes": 19636,
+      "sha512": "b6b281e8e1101fb2f0cd6e31e50c1b3f5c9d3e41575cf81f2a4b146e771afb16b1247e44f2c7eee71a1353397ca5f3d2fed1400a6c3d1f1f660fd225a33952f6",
+      "integrity": "sha512-trKB6OEQH7LwzW4x5QwbP1ydPkFXXPgfKksUbnca+xaxJH5E8sfu5xoTUzl8pfPS/tFACmw9Hx9mD9IlozlS9g==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-bec-debug-framework-1.0.0.tgz",
+      "kind": "standalone",
+      "skill": "bec-debug-framework",
+      "bytes": 6554,
+      "sha512": "b190217aaff0095385904865de4a48a6add391bd90cb43b2985abef8db1ddf03d5d3b317e28f16b11e253bb4737b537d097a8ebc025fcb1eedc2fff98592055a",
+      "integrity": "sha512-sZAheq/wCVOFkEhl3kpIpq3Tkb2Qy0OymFq++Nsd3wPV07MX4o8WsR4lO7Rze1N9CXqOvAJfyx7twv/5hZIFWg==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-bec-dependency-management-1.0.0.tgz",
+      "kind": "standalone",
+      "skill": "bec-dependency-management",
+      "bytes": 19571,
+      "sha512": "7ba1e23703715a10180b6ace088606a1559b3fd2ad737931fdc3fe8574e524e3a5c7185b95b7220bbfa12ad8172d73c67ee395c2c6d128d8a3444af1fa68341d",
+      "integrity": "sha512-e6HiNwNxWhAYC2rOCIYGoVWbP9Ktc3kx/cP+hXTlJOOlxxhblbciC7+hKtgXLXPGfuOVwsbRKNijRErx+mg0HQ==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-bec-doc-sync-1.0.0.tgz",
+      "kind": "standalone",
+      "skill": "bec-doc-sync",
+      "bytes": 6373,
+      "sha512": "961a867a659d613a1ff7c85ecb8e521c9fd8b4381c18382c7d0a4bd80c1dc94605144fff3d2b82e9d4046bffd7b15fe085def47621e6e6aaa440e45262b17f80",
+      "integrity": "sha512-lhqGemWdYTof98hey45SHJ/YtDgcGDgsfQpL2AwdyUYFFE//PSuC6dQEa//XsV/ghd70diHm5qqkQORSYrF/gA==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-bec-drogon-project-standard-1.0.0.tgz",
+      "kind": "standalone",
+      "skill": "bec-drogon-project-standard",
+      "bytes": 23143,
+      "sha512": "ef56363377d4b54e9be571cac49f8915dd1a438b86f5f79a3c42a4c5f1de9f5de0b23aedfe5057a8e694aafbd618a98e672e88cb431fbe073674cccedafe1b2f",
+      "integrity": "sha512-71Y2M3fUtU6b5XHKxJ+JFd0aQ4uG9feaPEKkxfHen13gsjrt/lBXqOaUqvvWGKmOZy6Iy0Mfvgc2dMzO2v4bLw==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-bec-fastapi-project-standard-1.0.0.tgz",
+      "kind": "standalone",
+      "skill": "bec-fastapi-project-standard",
+      "bytes": 21988,
+      "sha512": "22141258609c82595d89be0a3c0ac8570ffc95646538aa8a85f3dd17e069a6770d03bf1db740d6a694f19ebb34ec61df5e9dbd22bfc46bdd3b21961dffc540c4",
+      "integrity": "sha512-IhQSWGCcglldib4KPArIVw/8lWRlOKqKhfPdF+BppncNA78dt0DWppTxnrs07GHfXp29Ir/Ea907IZYd/8VAxA==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-bec-gin-project-standard-1.0.0.tgz",
+      "kind": "standalone",
+      "skill": "bec-gin-project-standard",
+      "bytes": 26321,
+      "sha512": "b675194cdc3148b22fc43a81d05bdb95f9f6792c1734e052349a3c2e9b3ee509e6a4503a89f1632ad106603997f80f9845c5b2e98d10ed551a892d06cb7a629c",
+      "integrity": "sha512-tnUZTNwxSLIvxDqB0Fvblfn2eSwXNOBSNJo8Lps+5QnmpFA6ifFjKtEGYDmX+A+YRcWy6Y0Q7VUaiS0Gy3pinA==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-bec-observability-1.0.0.tgz",
+      "kind": "standalone",
+      "skill": "bec-observability",
+      "bytes": 19658,
+      "sha512": "529864ca5fd7f6b4b5cdec07bbc009121a19ed40db3391fdb229b22f25a03e0c29ea3f138f492abc9023cbfefce437d9de4a4e9b5f5e5cc8514ac03d5eadf0b5",
+      "integrity": "sha512-Uphkyl/X9rS1zewHu8AJEhoZ7UDbM5H9simyLyWgPgwp6j8Tj0kqvJAjy/785DfZ3kpOm19eXMhRSsA9Xq3wtQ==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-bec-performance-optimization-1.0.0.tgz",
+      "kind": "standalone",
+      "skill": "bec-performance-optimization",
+      "bytes": 4629,
+      "sha512": "509901eff9040c507983e63360d265825143682a56ac6ed079638e8ebeb46fb4d675d615d341f68625525f5395d420fd49c2c07e41000da33a8a44cff078186e",
+      "integrity": "sha512-UJkB7/kEDFB5g+YzYNJlglFDaCpWrG7QeWOOjr60b7TWddYV00H2hiVSX1OV1CD9ScLAfkEADaM6ikTP8HgYbg==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-bec-project-init-1.0.0.tgz",
+      "kind": "standalone",
+      "skill": "bec-project-init",
+      "bytes": 4552,
+      "sha512": "8a246ceb885f53bbdfb0cff27ffe26b482e453584f693d93c30f9803a8ce2514d9760773f52dd18ec3f0764d85b2ad1c044e824a44cd120e975982b634f8b200",
+      "integrity": "sha512-iiRs64hfU7vfsM/yf/4mtILkU1hPaT2Tww+YA6jOJRTZdgdz9S3RjsPwdk2Fsq0cBE6CSkTNEg6XWYK2NPiyAA==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-bec-refactoring-1.0.0.tgz",
+      "kind": "standalone",
+      "skill": "bec-refactoring",
+      "bytes": 7094,
+      "sha512": "ed87f2ce7f45fd9c2c7933c246fdd63f90a18a955925b1a34c232624e3f033529cb3794487e315454f263ef4c49e4cd442518665ab0dfdb4a579e2fa800a0e55",
+      "integrity": "sha512-7Yfyzn9F/ZwseTPCRv3WP5ChipVZJbGjTCMmJOPwM1Kcs3lEh+MVRU8mPvTEnkzUQlGGZasN/bSleeL6gAoOVQ==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-bec-spring-boot-project-standard-1.0.0.tgz",
+      "kind": "standalone",
+      "skill": "bec-spring-boot-project-standard",
+      "bytes": 22905,
+      "sha512": "a5e21ed1792cd3a37c454b87793ba71d4fc15305bcfb130c258de29463b1decc300781460267136d879804516ab872a6a0d9274828a89d373daa2e05e8355bef",
+      "integrity": "sha512-peIe0Xks06N8RUuHeTunHU/BUwW8+xMMJY3ilGOx3swwB4FGAmcTbYeYBFFquHKmoNknSCionTc9qi4F6DVb7w==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-bec-tdd-workflow-1.0.0.tgz",
+      "kind": "standalone",
+      "skill": "bec-tdd-workflow",
+      "bytes": 6434,
+      "sha512": "f11b06f59a0de913dfa311020ed60c6adb19a0454d8ba39c10a1152e3200f32044853286df20d76a68714f3242d1cec32b9351a83abc29f3dde81f5efccc3e6b",
+      "integrity": "sha512-8RsG9ZoN6RPfoxECDtYMatsZoEVNi6OcEKEVLjIA8yBEhTKG3yDXamhxTzJC0c7DK5NRqDq8KfPd6B9e/Mw+aw==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-bec-testing-strategy-1.0.0.tgz",
+      "kind": "standalone",
+      "skill": "bec-testing-strategy",
+      "bytes": 19545,
+      "sha512": "46bbc6ed5ef2e29c09281093865f2ca03b4f034c54272c3967a916ebdbb12456e9365faf059a01e4be5a6045821790f56475ad533fa011f9dbceff6ae10e4357",
+      "integrity": "sha512-RrvG7V7y4pwJKBCThl8soDtPA0xUJyw5Z6kW69uxJFbpNl+vBZoB5L5aYEWCF5D1ZHWtUz+gEfnbzv9q4Q5DVw==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-bec-transaction-management-1.0.0.tgz",
+      "kind": "standalone",
+      "skill": "bec-transaction-management",
+      "bytes": 19852,
+      "sha512": "ef206cd40cad36db5024c0f0193cf157d3f7e00adc286479e21502891a1c44a02673a1f843a23764bac87a80eeef565825c1de53c853afaf1088b0314a28f011",
+      "integrity": "sha512-7yBs1AytNttQJMDwGTzxV9P34ArcKGR54hUCiRocRKAmc6H4Q6I3ZLrIeoDu71ZYJcHeU8hTr68QiLAxSijwEQ==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-cc-c-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-c-project-standard",
+      "bytes": 24190,
+      "sha512": "5a7304a0dee765bc9e5d0810ba99834e278528571d5272a49d7dd061f4894a8f0230a0f12b208c669d500a288b6d809883c98d45dfba4bb72f61c23d4b1f11ba",
+      "integrity": "sha512-WnMEoN7nZbyeXQgQupmDTieFKFcdUnKknX3QYfSJSo8CMKDxKyCMZp1QCiiLbYCYg8mNRd+6S7cvYcI9Sx8Rug==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-cc-cpp-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-cpp-project-standard",
+      "bytes": 23793,
+      "sha512": "342eb6db87eef79cd8203db0414f7f6b1e9761a7736b0b916e7730ad1f313da9119cb18e52f3936d0a0ce0cb7846cefadbf4729432064f237b661e2ab16e71b7",
+      "integrity": "sha512-NC6224fu95zYID2wQU9/ax6XYadzawuRbncwrR8xPakRnLGOUvOTbQoM4Mt4Rs762/RylDIGTyN7Zh4qsW5xtw==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-cc-debug-methodology-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-debug-methodology",
+      "bytes": 4203,
+      "sha512": "65e2f35660e6bbcb5e7bf6ffd1f4da73aea96a9c49696fb9270b55f000275c94b829ac0eddcc089cfccd9054b78440e440f4e435e9f9fbae692223fdc68d7ee9",
+      "integrity": "sha512-ZeLzVmDmu8tee/b/0fTac66papxJaW+5JwtV8AAnXJS4KawO3cwInPzNkFS3hEDkQPTkNen5+65pIiP9xo1+6Q==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-cc-doc-sync-core-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-doc-sync-core",
+      "bytes": 3953,
+      "sha512": "6d58c130e1228ab88c6e5ba38dc0975241c4b2746c53e6cee921fae902c620d26c7b63404363d309cb11bc5f190ad596813795b4054ae8a2772a391efa59b18c",
+      "integrity": "sha512-bVjBMOEiiriMblujjcCXUkHEsnRsU+bO6SH66QLGINJse2NAQ2PTCcsRvF8ZCtWWgTeVtAVK6KJ3Kjke+lmxjA==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-cc-drawio-studio-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-drawio-studio",
+      "bytes": 914510,
+      "sha512": "6dfba09726d596e2a11d55395a490f638731b93beba5d63c6cf3e5f19786f7a68689511af5db2b7831c87853bbf9d123acb681abce939ee284bd13e2d4152e4b",
+      "integrity": "sha512-bfuglybVluKhHVU5WkkPY4cxuTvrpdY8bPPl8ZeG96aGiVEa9dsreDHIeFO7+dEjrLaBq86TnuKEvRPi1BUuSw==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-cc-electron-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-electron-project-standard",
+      "bytes": 27977,
+      "sha512": "ebd84a898690471531f33256593506aa86fef440e970fa7d1bfceb78a10ec08798632088bf00f9243cad6da3ff993808bebd28f41a5c0b00358bdc7aeae3539e",
+      "integrity": "sha512-69hKiYaQRxUx8zJWWTUGqob+9EDpcPp9G/zreKEOwIeYYyCIvwD5JDytbaP/mTgIvr0o9BpcCwA1i9x66uNTng==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-cc-go-concurrency-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-go-concurrency",
+      "bytes": 19921,
+      "sha512": "4afb3792052cf90f2c16917c3824a6d026bc74ec51d14961f41796c77f7ddc88fe7dfe3a8df259d234002bb340d15567a459cd0bacf0ee10e6aba5a54e275d1c",
+      "integrity": "sha512-Svs3kgUs+Q8sFpF8OCSm0Ca8dOxR0Ulh9BeWx3993Ij+ff46jfJZ0jQAK7NA0VVnpFnNC6zw7hDmq6WlTiddHA==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-cc-go-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-go-project-standard",
+      "bytes": 23129,
+      "sha512": "4922ee2a0d1a795e5a0e9a0abef1ce7e0db57fbdd01d8ec8dc60f1d54d6ff67842fa75049a32e21f146554c4604dd055b8ad425c6392da5c928f5150f95a3fb3",
+      "integrity": "sha512-SSLuKg0aeV5aDpoKvvHOfg21f73QHY7I3GDx1U1v9nhC+nUEmjLiHxRlVMRgTdBVuK1CXGOS2lySj1FQ+Vo/sw==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-cc-java-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-java-project-standard",
+      "bytes": 22761,
+      "sha512": "545685699c6eb5123e62fc6f1c496e243218d25535b2adbfbc281fc65b3c3947d5e58e44b142318da813c3907344a35944d8fa208cbeb128d904c3bf79bc7776",
+      "integrity": "sha512-VFaFaZxutRI+YvxvHEluJDIY0lU1sq2/vCgfxls8OUfV5Y5EsUIxjagTw5BzRKNZRNj6IIy+sSjZBMO/ebx3dg==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-cc-java-runtime-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-java-runtime",
+      "bytes": 20074,
+      "sha512": "6b882d2f6ae8bb0f10ede6ae5dc4af37624d13b7324f8914b4192a8b56627747423c0fedfbb6b2839ad9f7b1494151d2a8778c4a003005612ea29d854ea5ba9e",
+      "integrity": "sha512-a4gtL2rouw8Q7eauXcSvN2JNE7cyT4kUtBkqi1Zid0dCPA/t+7ayg5rZ97FJQVHSqHeMSgAwBWEuop2FTqW6ng==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-cc-native-memory-safety-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-native-memory-safety",
+      "bytes": 20019,
+      "sha512": "78880c4b8b9666f8e4586d2ba77873b55fdb83eeee75f48d2f24ece240982ef13900be0ed8ba11af2e1fb8e50cebdde256234086ddacd4eadf6144928f3e6a3c",
+      "integrity": "sha512-eIgMS4uWZvjkWG0rp3hztV/bg+7udfSNLyTs4kCYLvE5AL4O2LoRry4fuOUM693iViNAht2s1OrfYUSSjz5qPA==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-cc-python-async-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-python-async",
+      "bytes": 19846,
+      "sha512": "71ef474b96016f4f5df2200f9518f6fc2c6296105b917f7584bcbf4a9f2c4502712ba84a4d9fdcd1f4b35e366d32496c094ca1ddcb7c42ad6efa42c13228e527",
+      "integrity": "sha512-ce9HS5YBb09d8iAPlRj2/CxilhBbkX91hLy/Sp8sRQJxK6hKTZ/c0fSzXjZtMklsCUyh3ct8Qq1u+kLBMijlJw==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-cc-python-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-python-project-standard",
+      "bytes": 22955,
+      "sha512": "0abac7a78acce44187387e9260d8ff88ad0bc832a11a3b8019096f48915e2a0e58237178fd7f9e40cb36034937c768998e573ed3b14a17b7ce96f0c14b00a6b5",
+      "integrity": "sha512-CrrHp4rM5EGHOH6SYNj/iK0LyDKhGjuAGQlvSJFeKg5YI3F4/X+eQMs2A0k3x2iZjlc+07FKF7fOlvDBSwCmtQ==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-cc-refactoring-core-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-refactoring-core",
+      "bytes": 4788,
+      "sha512": "3949223744d24ab79eb1390fdacccb1534280d21c48c84eb8a5f88677180b71d00fa95a2f55a96a6ed0bee9f7dc1a444843a6e3a426162f8910d6643f029db06",
+      "integrity": "sha512-OUkiN0TSSreesTkP2szLFTQoDSHEjITril+IZ3GAtx0A+pWi9VqWpu0L7p99waREhDpuOkJhYviRDWZD8CnbBg==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-cc-rust-async-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-rust-async",
+      "bytes": 19925,
+      "sha512": "79d740c80e6484675d3b2f92dfb3ef1bfe67331b9902a7e90bd124448593769eee532c3c1b2dccb2e90de960d66b02d6a6ca8caedc5493ad144d7a5743ddce1d",
+      "integrity": "sha512-eddAyA5khGddOy+S37PvG/5nMxuZAqfpC9EkRIWTdp7uUyw8Gy3MsukN6WDWawLWpsqMrtxUk60UTXpXQ93OHQ==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-cc-rust-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-rust-project-standard",
+      "bytes": 23074,
+      "sha512": "6a6f8b008b1126ff8ec344257bf179369fde39a84c92ed504f9195fc770ab117bdfb526255de395341fee32cad8f43bbb224c439308860e378883b016b21d588",
+      "integrity": "sha512-am+LAIsRJv+Ow0Qle/F5Np/eOahMku1QT5GV/HcKsRe9+1JiVd45U0H+4yytj0O7siTEOTCIYON4iDsBayHViA==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-cc-source-driven-development-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-source-driven-development",
+      "bytes": 4594,
+      "sha512": "361f086748db42c87274620a7716a66a378962b2f54a374cc7d643882899b6e1fe8fce404564b18190baa2aee8653cbdeb823f49896d7e5ece852a2ffba16113",
+      "integrity": "sha512-Nh8IZ0jbQshydGIKdxamajeJYrL1SjdMx9ZDiCiZtuH+j85ARWSxgZC6oq7oZTy964I/SYltfl7OhSov+6FhEw==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-cc-tauri-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-tauri-project-standard",
+      "bytes": 26864,
+      "sha512": "52fa14153a81e58641a6b4c8fb83cce5f9b9dec592e1470402b7f294c3fb855853d9c726eb72284f2c4ccb036f9d10a6b95b40ec6d676116d461fdb79cd125a7",
+      "integrity": "sha512-UvoUFTqB5YZBprTI+4PM5fm53sWS4UcEArfylMP7hVhT2ccm63IoTyxMywNvnRCmuVtA7G1nYRbUYf23nNElpw==",
+      "verifiedEnhancedEntries": 1
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-cc-tdd-methodology-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-tdd-methodology",
+      "bytes": 3930,
+      "sha512": "779f3afada8d0dbf07ff445defd563082c220439916a4b11d230159b04c83cb9a87e6256eec67693984d4b66fa1709132c1acd31598817fb003a9f3b424aaa76",
+      "integrity": "sha512-d586+tqNDb8H/0Rd79VjCCwiBDmRaksR0jAVmwTIPLmofmJW7sZ2k5hNS2b6FwkTLBrNMVmIF/sAOp87Qkqqdg==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-cc-technical-diagrams-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-technical-diagrams",
+      "bytes": 87887,
+      "sha512": "bbeb5c0f9c28192fbd104d0e0c58b803deef9fae4b3479471eca8c23331a02acad98b2248587116415b5babb5e39baa7652d359bc199c19339f5cbbdc160abed",
+      "integrity": "sha512-u+tcD5woGS+9EE0ODFi4A97vn65LNHlHHsqMIzMaAqytmLIkhYcRZBW1urteObqnZS01m8GZwZM59cu9wWCr7Q==",
+      "verifiedEnhancedEntries": 0
+    },
+    {
+      "repo": "backend-craft",
+      "file": "backend-craft/npm-packages-5kiy2W/bovinphang-cc-typescript-project-standard-2.0.0-dev.20261108.4.tgz",
+      "kind": "standalone",
+      "skill": "cc-typescript-project-standard",
+      "bytes": 29770,
+      "sha512": "1dd649ffbff6ef6bbfdcefb0876b12d41cd33ff9dab3edb0c9303d3cf56a37307b5e4d2926c3f90ec6da0cac26247c42c4ddc29e898501f2102d716ef8b9f98f",
+      "integrity": "sha512-HdZJ/7/272u/3O+wh2sS1BzTP/nas+2wyTA9PPVqNzB7Xk0pJsP5DsbaDKwmJHxCxN3CnomFAfIQLXFu+Ln5jw==",
+      "verifiedEnhancedEntries": 1
+    }
+  ],
+  "notes": [
+    "Previous golden archives remain intact; original frontend native archive restored at original path after saving current native artifact separately.",
+    "Earlier .3 archive omitted nested lock under pnpm12 pack and is not the delivery candidate. Canonical .4 uses existing npm pack via pnpm exec; package manager unchanged.",
+    "Local verified SRI does not prove public-registry availability; publication/frozen public install NOT RUN."
+  ]
+}

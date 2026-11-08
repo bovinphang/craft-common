@@ -1,0 +1,160 @@
+{
+  "caseId": "Q2",
+  "arm": "new",
+  "bytes": 56269,
+  "sha256": "67cdde1c3bed4257b02a32f865b7cc353d9e51a8283d63309e9bb45cdf68e30a",
+  "selected": [
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-go-project-standard/SKILL.md",
+      "sha256": "2d0b0c989b527d7aa93a82b51037742ed2820132b162c88eaabba2f06d4473c5",
+      "bytes": 1343,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-go-project-standard/references/common/engineering-practices.md",
+      "sha256": "239cc9649d0200a590e6746ccd26108109d73d6f5b4b979696ef3634827e7c81",
+      "bytes": 10684,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-go-project-standard/references/common/engineering-practices.rules.json",
+      "sha256": "dc1d4123459c084c3f7ae2880ecc5605c93514ca71854585d29f90ecaae6343e",
+      "bytes": 2292,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-go-project-standard/references/common/engineering-practices.sources.json",
+      "sha256": "3990c1fa5532f05d9cc49d8f3c1fcdb24cda7f60f8dd2d065e5aa397fd779913",
+      "bytes": 16268,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-go-project-standard/references/engineering-practices.md",
+      "sha256": "e8e4a887b1188010cb8576a789315eef1317e1ba003f6c8abc1fc05d9ab4d79e",
+      "bytes": 3910,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-go-project-standard/references/practice.md",
+      "sha256": "4d1b6a1f35933c64b778ccedcd937135da61a2707a938a8cd5ac2133f79203c5",
+      "bytes": 1628,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-go-concurrency/SKILL.md",
+      "sha256": "85274419a873bb2f59f2cfd8d3fa24961df2967ab9425f6e9bf12609c9cde3ea",
+      "bytes": 1364,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-go-concurrency/references/common/engineering-practices.md",
+      "sha256": "239cc9649d0200a590e6746ccd26108109d73d6f5b4b979696ef3634827e7c81",
+      "bytes": 10684,
+      "deduplicated": true
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-go-concurrency/references/common/engineering-practices.rules.json",
+      "sha256": "dc1d4123459c084c3f7ae2880ecc5605c93514ca71854585d29f90ecaae6343e",
+      "bytes": 2292,
+      "deduplicated": true
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-go-concurrency/references/common/engineering-practices.sources.json",
+      "sha256": "3990c1fa5532f05d9cc49d8f3c1fcdb24cda7f60f8dd2d065e5aa397fd779913",
+      "bytes": 16268,
+      "deduplicated": true
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-go-concurrency/references/engineering-practices.md",
+      "sha256": "9e0443dba2d7d0c3ebc53813a5b504bf070ac948a1c8a59b8f6b5586b9e6facb",
+      "bytes": 2700,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-go-concurrency/references/practice.md",
+      "sha256": "4f60ab8e40395a2d7b854f03658eb02e73a7e7bd3faf5bbaec4a892fa678e9e7",
+      "bytes": 1563,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-rust-project-standard/SKILL.md",
+      "sha256": "d099950387bf88e83c74fd4c0f9b844b501b5f083b70eec6c40bcf8b9175ded5",
+      "bytes": 1363,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-rust-project-standard/references/common/engineering-practices.md",
+      "sha256": "239cc9649d0200a590e6746ccd26108109d73d6f5b4b979696ef3634827e7c81",
+      "bytes": 10684,
+      "deduplicated": true
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-rust-project-standard/references/common/engineering-practices.rules.json",
+      "sha256": "dc1d4123459c084c3f7ae2880ecc5605c93514ca71854585d29f90ecaae6343e",
+      "bytes": 2292,
+      "deduplicated": true
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-rust-project-standard/references/common/engineering-practices.sources.json",
+      "sha256": "3990c1fa5532f05d9cc49d8f3c1fcdb24cda7f60f8dd2d065e5aa397fd779913",
+      "bytes": 16268,
+      "deduplicated": true
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-rust-project-standard/references/engineering-practices.md",
+      "sha256": "d40c31f1f94880574cd1e6f6dd9bee4cdede26247eea4735309cf183fa7eafe4",
+      "bytes": 3828,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-rust-project-standard/references/practice.md",
+      "sha256": "1086897a03e861cac0d948447cb9b4acc1cc526c108446b0ce9b7f12f57f5399",
+      "bytes": 1720,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-rust-async/SKILL.md",
+      "sha256": "d113d7e20a595fc5f224a0a6c511933e00dce67be17ee1fc58d7e4e959f0c2ae",
+      "bytes": 1360,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-rust-async/references/common/engineering-practices.md",
+      "sha256": "239cc9649d0200a590e6746ccd26108109d73d6f5b4b979696ef3634827e7c81",
+      "bytes": 10684,
+      "deduplicated": true
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-rust-async/references/common/engineering-practices.rules.json",
+      "sha256": "dc1d4123459c084c3f7ae2880ecc5605c93514ca71854585d29f90ecaae6343e",
+      "bytes": 2292,
+      "deduplicated": true
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-rust-async/references/common/engineering-practices.sources.json",
+      "sha256": "3990c1fa5532f05d9cc49d8f3c1fcdb24cda7f60f8dd2d065e5aa397fd779913",
+      "bytes": 16268,
+      "deduplicated": true
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-rust-async/references/engineering-practices.md",
+      "sha256": "517710c769a31ba8b61d3e4f349e22c7ec186f7d7b910461c7141d227a7fa9f9",
+      "bytes": 2730,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-rust-async/references/practice.md",
+      "sha256": "53b49a811e8dad6ee1f261f7e81dcc129d1cf94eb4e3e05968db66beca0994d9",
+      "bytes": 1604,
+      "deduplicated": false
+    }
+  ],
+  "configuration": {
+    "modelSelector": "inherited parent session, no override",
+    "reasoning": "inherited",
+    "maxReadCalls": 4,
+    "network": false,
+    "writes": false,
+    "maxAnswerChineseCharacters": 1200
+  }
+}

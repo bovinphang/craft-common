@@ -1,0 +1,52 @@
+{
+  "caseId": "Q3",
+  "arm": "old",
+  "bytes": 9268,
+  "sha256": "1369885214efcb3e1ad94f5db7df79b3f6335078251d71c4cdf5296e9c0b2cd1",
+  "selected": [
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-c-project-standard/SKILL.md",
+      "sha256": "c4d4622e00ea57d1e072d436ce4ba398178ad5c38ca555deddf3e7a784bdffed",
+      "bytes": 1101,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-c-project-standard/references/practice.md",
+      "sha256": "15d3c7822a495eca19c7e932f59f34b11465b45d38209ad0633e967984ab4b83",
+      "bytes": 1725,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-cpp-project-standard/SKILL.md",
+      "sha256": "1fc0be416c45b77bbed50a67fd63a78bbffbb2798dc0f9c528b58a12e4a57d3a",
+      "bytes": 1090,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-cpp-project-standard/references/practice.md",
+      "sha256": "6f3a34d2cc00298c851d0d076c99fe77da5735aacb3f54f535c1b6651639ab6b",
+      "bytes": 1640,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-native-memory-safety/SKILL.md",
+      "sha256": "d6bab34408693de15c279b3c7036b48cc4231067aea27d4bcfa41ecd67515656",
+      "bytes": 1086,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-native-memory-safety/references/practice.md",
+      "sha256": "568c17d144f47e41f89f05ad6aef578d00a2e17d23bb9ce4043528328aadce02",
+      "bytes": 1642,
+      "deduplicated": false
+    }
+  ],
+  "configuration": {
+    "modelSelector": "inherited parent session, no override",
+    "reasoning": "inherited",
+    "maxReadCalls": 4,
+    "network": false,
+    "writes": false,
+    "maxAnswerChineseCharacters": 1200
+  }
+}

@@ -1,0 +1,350 @@
+{
+  "date": "2026-11-08",
+  "license": "MIT",
+  "sources": [
+    {
+      "repo": "backend-craft",
+      "old": "bec-rust-project-standard",
+      "id": "cc-rust-project-standard",
+      "sourceCommit": "e1720b2ce16ead22776a93ef750914811e71cc09",
+      "originalFiles": {
+        "en": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "a7c867bcbdff9c067e3512c48c074abc57b38b096f4976417f65ba1b5d7d51ba"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "e5e959319e950da1e0c1d20b8874255f653f25bc905c146045923f00d340edfa"
+          }
+        ],
+        "localized/zh-CN/": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "5ef2db49b6b3e53ef835a69df741c177aa701f43cc99e7364222dd79f6362bff"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "253d0ddeb44c8595c8818ac91242c477abe9b7700a7241fcb6f99701d376be2c"
+          }
+        ]
+      }
+    },
+    {
+      "repo": "backend-craft",
+      "old": "bec-go-project-standard",
+      "id": "cc-go-project-standard",
+      "sourceCommit": "e1720b2ce16ead22776a93ef750914811e71cc09",
+      "originalFiles": {
+        "en": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "fcbf2b1e4060fb5dddf6bf1827e202efd9438074bc1249b0191033cf6989fc48"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "64d568f75a67d3b3a956a1e3a606724839bf0bf7e1f65571bfeeb00dadb00d48"
+          }
+        ],
+        "localized/zh-CN/": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "cad82fe682fea8e0240117dde9e607b9c2b4cac34ff9d866f97a61a8543d1a02"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "0ee5dc206d1eb2b55a993b88520d4b69011b0220632df739a83ff05910ab094c"
+          }
+        ]
+      }
+    },
+    {
+      "repo": "backend-craft",
+      "old": "bec-java-project-standard",
+      "id": "cc-java-project-standard",
+      "sourceCommit": "e1720b2ce16ead22776a93ef750914811e71cc09",
+      "originalFiles": {
+        "en": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "f3aade1f4e2fdb430fbd7af338f9e3f80d07800ec179ee4f84fd1a8b38197203"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "27e5688b1e968b01973d3ce726b97ca69fb073417e9417826ad40d47e82b2a4f"
+          }
+        ],
+        "localized/zh-CN/": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "fca98ad8b6f7607242e0d990cb3fde24d6ba2f4234ccd26a2876d21ff3a322f1"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "165061761d364da5c8e9c87b6298a39c408a08ffd8418cc54f8d0be958efd1a4"
+          }
+        ]
+      }
+    },
+    {
+      "repo": "backend-craft",
+      "old": "bec-python-project-standard",
+      "id": "cc-python-project-standard",
+      "sourceCommit": "e1720b2ce16ead22776a93ef750914811e71cc09",
+      "originalFiles": {
+        "en": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "591be7247ee5c1a8f1be26ef5519c0867f50e6f18752f9834fe29b2720158ef3"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "6ff0f1ea8a401308ccd11b1bdbff0755ec592326190c0c746ed9c8a3d928a603"
+          }
+        ],
+        "localized/zh-CN/": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "49658a8cfb0b3cddea3358a47ea91afcf14f388c74a7e6a8d0f82fdadef3e689"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "cd1b2031e58a85945c0b56c100adb4bdafb12f756bd09e424d373bb35db0ecf9"
+          }
+        ]
+      }
+    },
+    {
+      "repo": "backend-craft",
+      "old": "bec-c-project-standard",
+      "id": "cc-c-project-standard",
+      "sourceCommit": "e1720b2ce16ead22776a93ef750914811e71cc09",
+      "originalFiles": {
+        "en": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "5a1b38689e0189de51df9311464d450a7f487a6372be3bf5a2cf9071e3b8e60e"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "63c2bc0ea4ef5d8be67dc36de9511f78597ec142c97739474e7657466699b280"
+          }
+        ],
+        "localized/zh-CN/": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "aff19ebc261176aef48757807605f32349c6bd46d12ead20b07438f02a9754b5"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "7d8e1ca5a9d3b5c4eba97d28cec5b13df7d17bac98e39baad7d452c13aa9ff71"
+          }
+        ]
+      }
+    },
+    {
+      "repo": "backend-craft",
+      "old": "bec-cpp-project-standard",
+      "id": "cc-cpp-project-standard",
+      "sourceCommit": "e1720b2ce16ead22776a93ef750914811e71cc09",
+      "originalFiles": {
+        "en": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "0b214bb5c847554be3c91b238bcd303b5578776cb3ccc25e45dd9d8b19207f69"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "0533c573331cfb66793d6fa2e1cc869643458aa04949b614b28712f3d4565af8"
+          }
+        ],
+        "localized/zh-CN/": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "e1eaab8b3d5fb434f2abddefdf71bfe9d37e1245fd52d9c4b6ad2936db7e282b"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "82475f58c1da6ea3895cf82ce019675304ead5088cceb391beb54df66181d4e2"
+          }
+        ]
+      }
+    },
+    {
+      "repo": "backend-craft",
+      "old": "bec-rust-async",
+      "id": "cc-rust-async",
+      "sourceCommit": "e1720b2ce16ead22776a93ef750914811e71cc09",
+      "originalFiles": {
+        "en": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "d8d00d23b95552020c415a7d047f50cfac516f2dd406b067d4afc6d5bff483c6"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "84aa3827d4f83a40c3dd8af2b8fceafdce3793caa15d5de62bd5732dc51a0b49"
+          }
+        ],
+        "localized/zh-CN/": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "58c616e04916f116bb368b432aec9c9708d872b02ec4f36efa8de2d7583cea52"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "1f1a4c8adc49eb107fdfdf3b82f47f0a365df06371b133158c192461ef573e4f"
+          }
+        ]
+      }
+    },
+    {
+      "repo": "backend-craft",
+      "old": "bec-go-concurrency",
+      "id": "cc-go-concurrency",
+      "sourceCommit": "e1720b2ce16ead22776a93ef750914811e71cc09",
+      "originalFiles": {
+        "en": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "49d1cc49ddca47bf4f50c5cd719a892527c9c3438fa20cc156e3e6f28ce88d16"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "3c96ed20d13dcfc46d6160a7d2b0e58d4ce94f36bc5f9fc95a3cc7cd288cf89a"
+          }
+        ],
+        "localized/zh-CN/": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "346250344948af4ca03d02f52a8de47cab15dea755ec59d4daa0535e9d8ee449"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "fe4414b50fe5e64b710d487860ecbfec2298d8f5a9302329420ef1ba5e46cfd6"
+          }
+        ]
+      }
+    },
+    {
+      "repo": "backend-craft",
+      "old": "bec-python-async",
+      "id": "cc-python-async",
+      "sourceCommit": "e1720b2ce16ead22776a93ef750914811e71cc09",
+      "originalFiles": {
+        "en": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "9c5f22918f6d483674d8bbd3438c9325773eeabb752fd11afd6acb986bf277fd"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "8bc0c0f64e51291cb240a2afcb366cdb9a486e733b7cfa2aa03c19287459762c"
+          }
+        ],
+        "localized/zh-CN/": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "f87dd40e4011f9fe4877cf583aaa48618662793a49e40ed83697ea0b96931996"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "18648d219f37b59a0f75fe27c3cfae8e82149db627ca79b7c137cb535bf71a4b"
+          }
+        ]
+      }
+    },
+    {
+      "repo": "backend-craft",
+      "old": "bec-java-runtime",
+      "id": "cc-java-runtime",
+      "sourceCommit": "e1720b2ce16ead22776a93ef750914811e71cc09",
+      "originalFiles": {
+        "en": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "acb524a10b6e5af1109ae049ac2648054f28a720583d00958690136cc15d6639"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "5372a1f1df8fd5637393a248f24506fac282e3e1051d08d93f55b46dc6941ec1"
+          }
+        ],
+        "localized/zh-CN/": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "3557c050bac02a04d84e3912c42aa782b694624d069f977e59d346f739227269"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "4eb92db216d662322f4d7197b338a5c42cfa32f2f56e8957caeac9eed3d54130"
+          }
+        ]
+      }
+    },
+    {
+      "repo": "backend-craft",
+      "old": "bec-native-memory-safety",
+      "id": "cc-native-memory-safety",
+      "sourceCommit": "e1720b2ce16ead22776a93ef750914811e71cc09",
+      "originalFiles": {
+        "en": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "da7c3c291224fd3ffad519db615481b3933ca11d2276041743e187249d7592f6"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "9aebca118fa50e861faeb34182c5f7a23bf802ebad9dd6b072723b9a0736e418"
+          }
+        ],
+        "localized/zh-CN/": [
+          {
+            "relativePath": "references/practice.md",
+            "hash": "2c9534f26d37330503127230bca0a79d7040939b506a35e7c740814598582e8b"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "a1f200b231124bc8171a951611e72ac44d086343fa656e4056219950c57fd726"
+          }
+        ]
+      }
+    },
+    {
+      "repo": "frontend-craft",
+      "old": "fec-typescript-project-standard",
+      "id": "cc-typescript-project-standard",
+      "sourceCommit": "036f2b2a904469917a2e55cede8d21366e5f3263",
+      "originalFiles": {
+        "en": [
+          {
+            "relativePath": "references/type-safety-patterns.md",
+            "hash": "dc8d165fefb79b6a731ef543b41c09cb19285de7d16f1aaae971654fc21c1e45"
+          },
+          {
+            "relativePath": "references/type-safety.md",
+            "hash": "b4858dc6dd1c1d8943cbed2dd892bc98f62df21f8b4e6e7bce572f100cb1f3ef"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "be8217f91b8c33000f1dfed4a07ffbf309e0d7adfc95e3fc495d4d330dc7b136"
+          }
+        ],
+        "localized/zh-CN/": [
+          {
+            "relativePath": "references/type-safety-patterns.md",
+            "hash": "f9f0c3ce807196e41d3797b9a6e620ba11baf8a521450f2fc31bc3d5e23589de"
+          },
+          {
+            "relativePath": "references/type-safety.md",
+            "hash": "f881b88dfcb69142910676d57792e06962b7b99eae99373286a7ec135e3c09af"
+          },
+          {
+            "relativePath": "SKILL.md",
+            "hash": "1eab0f7803261f48af2459e76dc6a506afeb43d0728fc38eb4cfa3f99ccfee52"
+          }
+        ]
+      }
+    }
+  ]
+}

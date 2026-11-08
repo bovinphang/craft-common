@@ -1,0 +1,278 @@
+{
+  "cc-rust-project-standard": {
+    "en": [
+      "SKILL.md",
+      "examples/engineering/Cargo.lock",
+      "examples/engineering/Cargo.toml",
+      "examples/engineering/README.md",
+      "examples/engineering/src/lib.rs",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ],
+    "localized/zh-CN/": [
+      "SKILL.md",
+      "examples/engineering/Cargo.lock",
+      "examples/engineering/Cargo.toml",
+      "examples/engineering/README.md",
+      "examples/engineering/src/lib.rs",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ]
+  },
+  "cc-go-project-standard": {
+    "en": [
+      "SKILL.md",
+      "examples/engineering/README.md",
+      "examples/engineering/go.mod",
+      "examples/engineering/lifecycle.go",
+      "examples/engineering/lifecycle_test.go",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ],
+    "localized/zh-CN/": [
+      "SKILL.md",
+      "examples/engineering/README.md",
+      "examples/engineering/go.mod",
+      "examples/engineering/lifecycle.go",
+      "examples/engineering/lifecycle_test.go",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ]
+  },
+  "cc-java-project-standard": {
+    "en": [
+      "SKILL.md",
+      "examples/engineering/README.md",
+      "examples/engineering/ResourceBoundary.java",
+      "examples/engineering/ResourceBoundaryTest.java",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ],
+    "localized/zh-CN/": [
+      "SKILL.md",
+      "examples/engineering/README.md",
+      "examples/engineering/ResourceBoundary.java",
+      "examples/engineering/ResourceBoundaryTest.java",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ]
+  },
+  "cc-python-project-standard": {
+    "en": [
+      "SKILL.md",
+      "examples/engineering/README.md",
+      "examples/engineering/resource_boundary.py",
+      "examples/engineering/test_resource_boundary.py",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ],
+    "localized/zh-CN/": [
+      "SKILL.md",
+      "examples/engineering/README.md",
+      "examples/engineering/resource_boundary.py",
+      "examples/engineering/test_resource_boundary.py",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ]
+  },
+  "cc-c-project-standard": {
+    "en": [
+      "SKILL.md",
+      "examples/engineering/README.md",
+      "examples/engineering/boundary.c",
+      "examples/engineering/boundary.h",
+      "examples/engineering/boundary_test.c",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ],
+    "localized/zh-CN/": [
+      "SKILL.md",
+      "examples/engineering/README.md",
+      "examples/engineering/boundary.c",
+      "examples/engineering/boundary.h",
+      "examples/engineering/boundary_test.c",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ]
+  },
+  "cc-cpp-project-standard": {
+    "en": [
+      "SKILL.md",
+      "examples/engineering/README.md",
+      "examples/engineering/boundary.cpp",
+      "examples/engineering/boundary.hpp",
+      "examples/engineering/boundary_test.cpp",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ],
+    "localized/zh-CN/": [
+      "SKILL.md",
+      "examples/engineering/README.md",
+      "examples/engineering/boundary.cpp",
+      "examples/engineering/boundary.hpp",
+      "examples/engineering/boundary_test.cpp",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ]
+  },
+  "cc-rust-async": {
+    "en": [
+      "SKILL.md",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ],
+    "localized/zh-CN/": [
+      "SKILL.md",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ]
+  },
+  "cc-go-concurrency": {
+    "en": [
+      "SKILL.md",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ],
+    "localized/zh-CN/": [
+      "SKILL.md",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ]
+  },
+  "cc-python-async": {
+    "en": [
+      "SKILL.md",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ],
+    "localized/zh-CN/": [
+      "SKILL.md",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ]
+  },
+  "cc-java-runtime": {
+    "en": [
+      "SKILL.md",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ],
+    "localized/zh-CN/": [
+      "SKILL.md",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ]
+  },
+  "cc-native-memory-safety": {
+    "en": [
+      "SKILL.md",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ],
+    "localized/zh-CN/": [
+      "SKILL.md",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/practice.md"
+    ]
+  },
+  "cc-typescript-project-standard": {
+    "en": [
+      "SKILL.md",
+      "examples/engineering/README.md",
+      "examples/engineering/boundary.test.ts",
+      "examples/engineering/input.ts",
+      "examples/engineering/package.json",
+      "examples/engineering/pnpm-lock.yaml",
+      "examples/engineering/pnpm-workspace.yaml",
+      "examples/engineering/tsconfig.json",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/type-safety-patterns.md",
+      "references/type-safety.md"
+    ],
+    "localized/zh-CN/": [
+      "SKILL.md",
+      "examples/engineering/README.md",
+      "examples/engineering/boundary.test.ts",
+      "examples/engineering/input.ts",
+      "examples/engineering/package.json",
+      "examples/engineering/pnpm-lock.yaml",
+      "examples/engineering/pnpm-workspace.yaml",
+      "examples/engineering/tsconfig.json",
+      "references/common/engineering-practices.md",
+      "references/common/engineering-practices.rules.json",
+      "references/common/engineering-practices.sources.json",
+      "references/engineering-practices.md",
+      "references/type-safety-patterns.md",
+      "references/type-safety.md"
+    ]
+  }
+}

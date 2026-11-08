@@ -1,0 +1,160 @@
+{
+  "caseId": "Q4",
+  "arm": "new",
+  "bytes": 56496,
+  "sha256": "d1b1616b7e15408b3cc267d72cb4c6bd9757f5b96c6502a9e89aed99308d6003",
+  "selected": [
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-java-project-standard/SKILL.md",
+      "sha256": "01bca0b2e91a389f3d90fa5b432cf5bb644c2e32d8878e505b97b346f3d0bc58",
+      "bytes": 1332,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-java-project-standard/references/common/engineering-practices.md",
+      "sha256": "239cc9649d0200a590e6746ccd26108109d73d6f5b4b979696ef3634827e7c81",
+      "bytes": 10684,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-java-project-standard/references/common/engineering-practices.rules.json",
+      "sha256": "dc1d4123459c084c3f7ae2880ecc5605c93514ca71854585d29f90ecaae6343e",
+      "bytes": 2292,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-java-project-standard/references/common/engineering-practices.sources.json",
+      "sha256": "3990c1fa5532f05d9cc49d8f3c1fcdb24cda7f60f8dd2d065e5aa397fd779913",
+      "bytes": 16268,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-java-project-standard/references/engineering-practices.md",
+      "sha256": "ec4747e9aacb08fc54f0aca47207bb0b7b897d4d5af24756a4e984ee80fc0da6",
+      "bytes": 3951,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-java-project-standard/references/practice.md",
+      "sha256": "8e7d28ef130afa9b5953699723c0d26a6fde17b13358f3dda29602262ed4eb0e",
+      "bytes": 1748,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-java-runtime/SKILL.md",
+      "sha256": "c12acc41e5db62ab0e272aef95e393678ee684cc50cb0ee28a3cab519c58996e",
+      "bytes": 1342,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-java-runtime/references/common/engineering-practices.md",
+      "sha256": "239cc9649d0200a590e6746ccd26108109d73d6f5b4b979696ef3634827e7c81",
+      "bytes": 10684,
+      "deduplicated": true
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-java-runtime/references/common/engineering-practices.rules.json",
+      "sha256": "dc1d4123459c084c3f7ae2880ecc5605c93514ca71854585d29f90ecaae6343e",
+      "bytes": 2292,
+      "deduplicated": true
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-java-runtime/references/common/engineering-practices.sources.json",
+      "sha256": "3990c1fa5532f05d9cc49d8f3c1fcdb24cda7f60f8dd2d065e5aa397fd779913",
+      "bytes": 16268,
+      "deduplicated": true
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-java-runtime/references/engineering-practices.md",
+      "sha256": "81b3bdc8f0bc763d3b22a9831dd3c6fc680f09b5f0f2bcff21f7b60b5cc69759",
+      "bytes": 2732,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-java-runtime/references/practice.md",
+      "sha256": "34072fe2d9d911447ee3f8e8f3a77535dc5978cca0dc330cc6fbc47a91b62ac7",
+      "bytes": 1555,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-python-project-standard/SKILL.md",
+      "sha256": "dce7e0fb203b887314d7e7a91c374394cacc5d75b753572fe80b9ca3ebed404c",
+      "bytes": 1357,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-python-project-standard/references/common/engineering-practices.md",
+      "sha256": "239cc9649d0200a590e6746ccd26108109d73d6f5b4b979696ef3634827e7c81",
+      "bytes": 10684,
+      "deduplicated": true
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-python-project-standard/references/common/engineering-practices.rules.json",
+      "sha256": "dc1d4123459c084c3f7ae2880ecc5605c93514ca71854585d29f90ecaae6343e",
+      "bytes": 2292,
+      "deduplicated": true
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-python-project-standard/references/common/engineering-practices.sources.json",
+      "sha256": "3990c1fa5532f05d9cc49d8f3c1fcdb24cda7f60f8dd2d065e5aa397fd779913",
+      "bytes": 16268,
+      "deduplicated": true
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-python-project-standard/references/engineering-practices.md",
+      "sha256": "33cbf9d10fc75414467a3b7abf90f705d7d18ced0229c791ac4dd0cc7bbcd074",
+      "bytes": 3901,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-python-project-standard/references/practice.md",
+      "sha256": "c4c1815355551eff7bb17ea82215e59f0e213a6c91fe4a7f96454fa96df9edb2",
+      "bytes": 1692,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-python-async/SKILL.md",
+      "sha256": "3d404e715ea2c4647067c98ba559951ec074887fb161364d3d05a2e536198863",
+      "bytes": 1381,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-python-async/references/common/engineering-practices.md",
+      "sha256": "239cc9649d0200a590e6746ccd26108109d73d6f5b4b979696ef3634827e7c81",
+      "bytes": 10684,
+      "deduplicated": true
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-python-async/references/common/engineering-practices.rules.json",
+      "sha256": "dc1d4123459c084c3f7ae2880ecc5605c93514ca71854585d29f90ecaae6343e",
+      "bytes": 2292,
+      "deduplicated": true
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-python-async/references/common/engineering-practices.sources.json",
+      "sha256": "3990c1fa5532f05d9cc49d8f3c1fcdb24cda7f60f8dd2d065e5aa397fd779913",
+      "bytes": 16268,
+      "deduplicated": true
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-python-async/references/engineering-practices.md",
+      "sha256": "587ff9dc50dfae258ef2331b81318f48c2ad314c8b4c2db62fbff3662776ef6a",
+      "bytes": 2658,
+      "deduplicated": false
+    },
+    {
+      "path": "craft-common/localized/zh-CN/skills/cc-python-async/references/practice.md",
+      "sha256": "c120428a9ea8c8c1a7fd42c02e024dccd214c7bdb449fb400d604e8975a2c3cd",
+      "bytes": 1656,
+      "deduplicated": false
+    }
+  ],
+  "configuration": {
+    "modelSelector": "inherited parent session, no override",
+    "reasoning": "inherited",
+    "maxReadCalls": 4,
+    "network": false,
+    "writes": false,
+    "maxAnswerChineseCharacters": 1200
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "cases": [
+    {
+      "id": "Q1", "language": "zh-CN",
+      "prompt": "项目使用现有 React、TypeScript、pnpm 和 node:test。提交付款写操作超时，服务端可能已提交；现有代码遇到429、5xx或网络错误就重试三次。页面又可能先请求A后请求B，但A最后回来，卸载后旧任务还继续。团队为赶工要求沿用上述自动重试并用类型断言接收响应。请依据材料给出可执行的修改建议、边界和验证方案；没有源码或运行工具，不要声称已测试通过，也不要换工具链。",
+      "materials": [
+        {"repo":"craft-common","skillId":"cc-typescript-project-standard","paths":["SKILL.md","references/**"]},
+        {"repo":"frontend-craft","skillId":"fec-react-project-standard","paths":["SKILL.md","references/**"]},
+        {"repo":"frontend-craft","skillId":"fec-api-integration","paths":["SKILL.md","references/**"]},
+        {"repo":"frontend-craft","skillId":"fec-data-fetching","paths":["SKILL.md","references/**"]}
+      ],
+      "criteria": [
+        {"id":"Q1-contract","critical":true,"expectation":"区分读写及提交不确定性；先明确幂等键和请求意图/服务端契约，再考虑有预算的重试；不直接重试付款"},
+        {"id":"Q1-lifecycle","critical":true,"expectation":"取消加当前请求/生命周期校验；旧响应不能覆盖新状态，卸载清理所属任务"},
+        {"id":"Q1-tools","critical":false,"expectation":"保留现有工具链，在外部数据边界做运行时校验，不用断言替代校验"},
+        {"id":"Q1-evidence","critical":true,"expectation":"提出可控乱序、卸载和提交后响应失败的验证；明确未执行，不伪造通过"}
+      ]
+    },
+    {
+      "id":"Q2", "language":"zh-CN",
+      "prompt":"同一桌面项目有 Go 后台生产者/消费者和 Rust async 任务。关闭时目前只发cancel就返回；赶工建议加大channel缓冲，把Rust资源放Arc里并把工作spawn出去，不再等待。任务还持有锁和文件。请根据材料评审这项建议并给最小修复与验证步骤，说明库/桌面边界，不要重构整个workspace。你不能实际运行项目。",
+      "materials":[
+        {"repo":"craft-common","skillId":"cc-go-project-standard","paths":["SKILL.md","references/**"]},
+        {"repo":"craft-common","skillId":"cc-go-concurrency","paths":["SKILL.md","references/**"]},
+        {"repo":"craft-common","skillId":"cc-rust-project-standard","paths":["SKILL.md","references/**"]},
+        {"repo":"craft-common","skillId":"cc-rust-async","paths":["SKILL.md","references/**"]}
+      ],
+      "criteria":[
+        {"id":"Q2-owner","critical":true,"expectation":"明确启动、取消、等待和资源释放责任；取消通知不能替代确认退出"},
+        {"id":"Q2-mechanism","critical":true,"expectation":"缓冲/Arc不能证明退出，Rust guard不能无理由跨await，说明协作取消与完成等待"},
+        {"id":"Q2-tests","critical":false,"expectation":"用事件/通道或可控future安排关闭及确认退出，不用任意sleep充当证明"},
+        {"id":"Q2-scope","critical":true,"expectation":"保留workspace/工具链，按桌面或库职责处理；明确尚未运行"}
+      ]
+    },
+    {
+      "id":"Q3", "language":"zh-CN",
+      "prompt":"插件同时提供纯C ABI和C++实现。宿主传入借用指针，必须由宿主释放；插件自己的分配器也可能部分分配失败。现有C++工程禁用异常。团队建议把所有入参直接包装shared_ptr、把C接口迁为C++并打开异常来简化。请依材料给专业建议、最小修复和可观察验证，明确整数大小/输出/释放契约。没有编译器，不要假装运行。",
+      "materials":[
+        {"repo":"craft-common","skillId":"cc-c-project-standard","paths":["SKILL.md","references/**"]},
+        {"repo":"craft-common","skillId":"cc-cpp-project-standard","paths":["SKILL.md","references/**"]},
+        {"repo":"craft-common","skillId":"cc-native-memory-safety","paths":["SKILL.md","references/**"]}
+      ],
+      "criteria":[
+        {"id":"Q3-ownership","critical":true,"expectation":"借用指针不被接管，插件分配器成对释放，失败清理只释放已拥有资源，输出有定义"},
+        {"id":"Q3-policy","critical":true,"expectation":"尊重禁异常和C ABI，不允许异常跨边界，不强推C++迁移/SAL或新编译标准"},
+        {"id":"Q3-tests","critical":false,"expectation":"提出分配失败注入、借用不释放、大小溢出和成功路径的可观测计数/断言；不只依赖UB崩溃"},
+        {"id":"Q3-evidence","critical":true,"expectation":"明确缺工具及未运行；sanitizer只在实际执行后作为额外证据"}
+      ]
+    },
+    {
+      "id":"Q4", "language":"zh-CN",
+      "prompt":"项目交付Java库和Python库，也被CLI/桌面调用。用户要求统一controller/service/repository、导入Python包时连接外部服务，Java初始化失败时吞掉原异常返回空对象以便启动。已有部分资源在失败前创建。请按材料给适合当前项目的最小建议和验证步骤，不加入Web框架，不升级JDK/Python。当前没有JDK、外部服务和运行权限。",
+      "materials":[
+        {"repo":"craft-common","skillId":"cc-java-project-standard","paths":["SKILL.md","references/**"]},
+        {"repo":"craft-common","skillId":"cc-java-runtime","paths":["SKILL.md","references/**"]},
+        {"repo":"craft-common","skillId":"cc-python-project-standard","paths":["SKILL.md","references/**"]},
+        {"repo":"craft-common","skillId":"cc-python-async","paths":["SKILL.md","references/**"]}
+      ],
+      "criteria":[
+        {"id":"Q4-scope","critical":false,"expectation":"以库/CLI/桌面实际职责划边界，不强套Web三层或加入框架/升级工具链"},
+        {"id":"Q4-resource","critical":true,"expectation":"明确生命周期和部分失败清理，关闭已取得资源一次，不吞原始异常造成伪成功"},
+        {"id":"Q4-import","critical":true,"expectation":"Python导入无外部初始化，通过显式生命周期/注入取得连接"},
+        {"id":"Q4-evidence","critical":true,"expectation":"提出导入无副作用/失败原因/清理测试，诚实标记缺工具和外部服务未运行"}
+      ]
+    }
+  ]
+}

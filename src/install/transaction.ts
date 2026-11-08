@@ -5,6 +5,10 @@ import { randomUUID } from "node:crypto";
 import type { CommonPlan, FileMutation, SharedRequest } from "./types.js";
 import { canonicalPath, resolveSharedIdentity } from "./identity.js";
 import {
+  transactionEntryHash,
+  prepareTransitionRestore,
+} from "./file-transition.js";
+import {
   currentHash,
   hashBytes,
   planSharedDeployment,
@@ -195,12 +199,15 @@ function validateJournal(
 }
 function restore(journal: Journal, token: string): void {
   for (const entry of [...journal.entries].reverse()) {
-    const actual = currentHash(entry.path);
+    const actual = transactionEntryHash(entry, journal.entries);
     if (actual !== entry.beforeHash && actual !== entry.afterHash)
       throw new Error(`事务期间文件被修改，保留恢复记录：${entry.path}`);
     if (actual === entry.beforeHash) continue;
     if (entry.before === null) fs.unlinkSync(entry.path);
-    else atomicWrite(entry.path, Buffer.from(entry.before, "base64"), token);
+    else {
+      prepareTransitionRestore(entry, journal.entries);
+      atomicWrite(entry.path, Buffer.from(entry.before, "base64"), token);
+    }
   }
 }
 function recoverUnderLease(
@@ -220,7 +227,7 @@ function recoverUnderLease(
   if (journal.phase === "prepared") restore(journal, token);
   else
     for (const entry of journal.entries)
-      if (currentHash(entry.path) !== entry.afterHash)
+      if (transactionEntryHash(entry, journal.entries) !== entry.afterHash)
         throw new Error(`已提交事务存在外部修改，保留恢复记录：${entry.path}`);
   fs.unlinkSync(file);
   return "recovered";
@@ -275,7 +282,12 @@ function normalizeProductPath(file: string, roots: string[]): string {
         if (fs.lstatSync(current).isSymbolicLink())
           throw new Error(`产品托管路径不允许符号链接：${current}`);
       } catch (error) {
-        if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
+        if (
+          !["ENOENT", "ENOTDIR"].includes(
+            (error as NodeJS.ErrnoException).code ?? "",
+          )
+        )
+          throw error;
       }
       const parent = path.dirname(current);
       if (parent === current) throw new Error("产品路径未到达声明边界");

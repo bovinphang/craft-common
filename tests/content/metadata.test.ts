@@ -4,18 +4,33 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { readContentCatalog } from "../../src/content/catalog.js";
+import { readCapabilityCandidates } from "../../src/content/applicability.js";
 const root = path.resolve(
   path.dirname(fileURLToPath(import.meta.url)),
   "../..",
 );
 const expected = [
+  "cc-c-project-standard",
+  "cc-cpp-project-standard",
   "cc-debug-methodology",
   "cc-doc-sync-core",
   "cc-drawio-studio",
+  "cc-electron-project-standard",
+  "cc-go-concurrency",
+  "cc-go-project-standard",
+  "cc-java-project-standard",
+  "cc-java-runtime",
+  "cc-native-memory-safety",
+  "cc-python-async",
+  "cc-python-project-standard",
   "cc-refactoring-core",
+  "cc-rust-async",
+  "cc-rust-project-standard",
   "cc-source-driven-development",
+  "cc-tauri-project-standard",
   "cc-tdd-methodology",
   "cc-technical-diagrams",
+  "cc-typescript-project-standard",
 ];
 
 test("中英文公共能力发现清单完整且无前端旧公共入口", () => {
@@ -37,6 +52,15 @@ test("中英文公共能力发现清单完整且无前端旧公共入口", () =>
       fs.readFileSync(path.join(catalog.root, "skills/metadata.json"), "utf8"),
     ) as Array<{ id: string; version: string; repository: string }>;
     assert.deepEqual(metadata.map((item) => item.id).sort(), expected);
+    assert.equal(
+      readCapabilityCandidates(
+        metadata,
+        Object.fromEntries(
+          catalog.skills.map((skill) => [skill.id, skill.sourcePackage]),
+        ),
+      ).length,
+      expected.length,
+    );
     for (const item of metadata) {
       assert.equal(item.version, catalog.packageVersion);
       assert.equal(

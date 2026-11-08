@@ -6,5 +6,8 @@ await build({
   format: "esm",
   platform: "node",
   target: "node22",
-  packages: "external",
+  packages: "bundle",
+  banner: {
+    js: 'import { createRequire as __craftCreateRequire } from "node:module"; const require = __craftCreateRequire(import.meta.url);',
+  },
 });

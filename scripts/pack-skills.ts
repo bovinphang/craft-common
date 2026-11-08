@@ -5,6 +5,7 @@ import { readContentCatalog } from "../src/content/catalog.js";
 
 export function packSkills(root: string, output: string): void {
   const catalog = readContentCatalog(root, "en");
+  const localized = readContentCatalog(root, "zh-CN");
   const index = [];
   for (const skill of catalog.skills) {
     const dest = path.join(output, skill.id);
@@ -14,6 +15,16 @@ export function packSkills(root: string, output: string): void {
       fs.mkdirSync(path.dirname(target), { recursive: true });
       fs.copyFileSync(
         path.join(catalog.root, "skills", skill.id, file.relativePath),
+        target,
+      );
+    }
+    const translated = localized.skills.find((s) => s.id === skill.id);
+    if (!translated) throw new Error("Missing Chinese skill: " + skill.id);
+    for (const file of translated.files) {
+      const target = path.join(dest, "localized/zh-CN", file.relativePath);
+      fs.mkdirSync(path.dirname(target), { recursive: true });
+      fs.copyFileSync(
+        path.join(localized.root, "skills", skill.id, file.relativePath),
         target,
       );
     }
@@ -39,6 +50,8 @@ export function packSkills(root: string, output: string): void {
         "data",
         "styles",
         "assets",
+        "examples",
+        "localized",
         "metadata.json",
         "README.md",
         "LICENSE",

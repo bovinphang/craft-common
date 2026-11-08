@@ -9,7 +9,8 @@ export type MethodName =
   | "doc-sync"
   | "debug"
   | "refactoring"
-  | "tdd";
+  | "tdd"
+  | "engineering-practices";
 export function readMethodResource(
   packageRoot: string,
   method: MethodName,
@@ -21,6 +22,7 @@ export function readMethodResource(
     "debug",
     "refactoring",
     "tdd",
+    "engineering-practices",
   ];
   if (!allowed.includes(method))
     throw new Error(`未知公共方法：${String(method)}`);
