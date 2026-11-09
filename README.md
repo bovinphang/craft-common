@@ -28,3 +28,7 @@ Craft AI Coding 的公共能力包，由 frontend-craft 和 backend-craft 自动
 维护者显式运行`pnpm run verify:engineering`，缺工具按MISSING报告；`--prepare`才准备环境，Docker方式见脚本参数。八个公共案例覆盖七语言及IPC，另两例由产品拥有。真实运行、四组模型对照与结构完整性分别记录，均不代表GUI、数据库或分布式保证。
 
 [变更日志](CHANGELOG.zh-CN.md) · [English changelog](CHANGELOG.md) · [2.0.0发布步骤](docs/releases/2.0.0.md)。craft-common 2.0.0、frontend-craft 3.0.0、backend-craft 1.0.0 均已于2026-11-09（Asia/Shanghai）发布至 npm，版本号不变。
+
+## 共享 CLI（2.1.0 待发布）
+
+新增 createCraftCli、CliProductDefinition、CliProductAdapter、createCliLifecycle、createCliPrompts 与 createClaudeCacheManager。产品注入身份、Runtime、安装发现、资源适配器及专业命令；包管理器识别和 CLI 自管理复用同一实现。2.1.0 尚未发布，先验证公共包 tarball，再按公共包优先顺序发布匹配产品。

@@ -1,4 +1,57 @@
 export * from "./content/types.js";
+export * from "./cli/types.js";
+export { createCraftCli, renderCliHelp } from "./cli/commands.js";
+export { createCliLifecycle } from "./cli/lifecycle.js";
+export type {
+  CliLifecycleProduct,
+  CliLifecycleContext,
+  LifecycleDependencies,
+} from "./cli/lifecycle.js";
+export {
+  identifyInstallation,
+  relocatePackage,
+  managerQuery,
+  findPackageManagers,
+  resolveManagerExecutable,
+  runProcess,
+} from "./cli/package-manager.js";
+export type {
+  DetectionOptions,
+  ProcessOptions,
+  ProcessRunner,
+  PackageManager,
+  GlobalInstallation,
+  TemporaryInstallation,
+  Installation,
+} from "./cli/package-manager.js";
+export type {
+  CliPromptsConfig,
+  SelectOption,
+  SelectState,
+  PromptInstallLanguage,
+} from "./cli/interactive.js";
+export type {
+  ClaudeCacheEntry,
+  ClaudeCacheReport,
+  ClaudeCacheCleanupResult,
+  ClaudeNativeInstall,
+  ClaudeCliInstall,
+  ClaudeInstallSourceReport,
+  ClaudeCacheManagerConfig,
+} from "./cli/claude-cache.js";
+export {
+  createCliPrompts,
+  createSelectablePromptState,
+  renderSelectablePrompt,
+  parseLanguageInput,
+  parseLocationInput,
+} from "./cli/interactive.js";
+export {
+  createClaudeCacheManager,
+  renderClaudeCacheReport,
+  renderClaudeCacheCleanupResult,
+  renderClaudeInstallSourceReport,
+} from "./cli/claude-cache.js";
 export * from "./content/applicability.js";
 export * from "./project/types.js";
 export * from "./project/evidence.js";
