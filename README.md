@@ -1,5 +1,8 @@
 # craft-common
 
+> 发布状态更新（2026-11-09）：craft-common 2.0.0 已发布至 npm。frontend 3.0.0、backend 1.0.0 继续未发布，产品版本号不变；下方原发布准备说明保留当时状态。
+
+
 Craft AI Coding 的公共能力包，由 frontend-craft 和 backend-craft 自动交付；用户无需手动安装第三个插件。
 
 公共能力使用 `cc-*` 标识。此仓库是公共 Skill、资源与方法的唯一维护来源，产品中的对应目录由固定版本生成并校验。
