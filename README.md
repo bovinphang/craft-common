@@ -1,34 +1,115 @@
-# craft-common
+<div align="center">
 
-> 发布状态更新：craft-common 2.0.0、frontend-craft 3.0.0、backend-craft 1.0.0 均已于2026-11-09（Asia/Shanghai）发布至 npm，版本号不变。
+# Craft Common
 
+Shared engineering capabilities and product integration for Craft AI Coding.
 
-Craft AI Coding 的公共能力包，由 frontend-craft 和 backend-craft 自动交付；用户无需手动安装第三个插件。
+[![CI](https://github.com/bovinphang/craft-common/actions/workflows/ci.yml/badge.svg)](https://github.com/bovinphang/craft-common/actions/workflows/ci.yml)
+[![npm](https://img.shields.io/npm/v/@bovinphang/craft-common)](https://www.npmjs.com/package/@bovinphang/craft-common)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+![Node.js](https://img.shields.io/badge/Node.js-22%2B-5FA04E)
 
-公共能力使用 `cc-*` 标识。此仓库是公共 Skill、资源与方法的唯一维护来源，产品中的对应目录由固定版本生成并校验。
+**English** · [简体中文](README.zh-CN.md)
 
-开发要求 Node.js >=22 和 pnpm 12.4.1。使用 `pnpm install`、`pnpm lint`、`pnpm typecheck`、`pnpm test`、`pnpm build` 校验。
+</div>
 
-提供 21 个双语公共入口：既有七个方法与图表入口、十二个跨领域语言入口，以及 Tauri/Electron 桌面专项。TypeScript、Rust、Go、Java、Python、C、C++ 可用于 UI、桌面核心、原生库、服务或 CLI；能力由工程证据和任务选择，不按产品名称限制语言。
+Craft Common provides [Frontend Craft](https://github.com/bovinphang/frontend-craft) and [Backend Craft](https://github.com/bovinphang/backend-craft) with **21 shared skills**, **6 reusable methods**, and infrastructure for content synchronization, project discovery, shared installation and product CLIs. Skills and methods include English and Simplified Chinese content.
 
-公共安装引擎统一十五宿主的路径、显式规划会话、共享配置所有权、跨产品配置锁及事务恢复。产品保留身份声明、历史清单编解码和内容转换。共享协议以真实 Skill 目标定位消费者，检查精确版本、语言和内容摘要；卸载保留其他消费者及用户修改。原生插件双产品去重需另外按 Runtime 验证。
+Product users receive common capabilities through the frontend or backend plugin. Integration developers use the exported ESM library APIs. Shared capabilities use cc-* identifiers and are maintained in this repository.
 
-消费和维护约定见[消费指南](docs/consuming-common.md)。公共包和前端 3.0 的公开发布仍是独立发布步骤，仓库中的本地验证不代表 npm registry 已有可下载版本。
+[Documentation](docs/README.md) · [Consuming the library](docs/consuming-common.md) · [Contributing](CONTRIBUTING.md) · [Changelog](CHANGELOG.md)
 
-[工程结构与维护入口](docs/consuming-common.md#工程结构与维护入口)说明公共源、方法同步和生成产物边界。frontend-craft 3.0.0 与 backend-craft 1.0.0 均精确依赖正式版本号 `2.0.0`，均已公开发布；公共包不提供独立 CLI。
+## Core capabilities
 
-<!-- engineering-practices-20261108 -->
+| Capability | Purpose |
+| --- | --- |
+| `readContentCatalog / readMethodResource` | Read bilingual catalogs and reusable method bytes |
+| `syncProductSnapshot` | Generate and verify product copies and provenance |
+| `inspectWorkspace / recommendCapabilities` | Inspect bounded workspace evidence and recommend delivered capabilities |
+| `resolveRuntimeTargets / RUNTIME_DESCRIPTORS` | Resolve configuration and Skill paths for 15 runtimes |
+| `createInstallSession / runProductLifecycle` | Plan product-owned resources and coordinate installation |
+| `planSharedDeployment / executeSharedPlan / recoverSharedTransaction` | Plan shared deployment, commit transactions and recover interruptions |
+| `createCraftCli / createCliLifecycle / createCliPrompts / createClaudeCacheManager` | Compose product CLI dispatch, lifecycle, prompts and cache management in 2.1.0 |
 
-## 分层工程实践
+## Getting started
 
-公开企业经验和语言官方资料按“公共原则 → 语言 → 场景 → 验证证据”融入既有入口。公共八项原则、31条一手来源与适用限制由 [methods](methods/engineering-practices.md) 及其 [来源记录](methods/engineering-practices.sources.json) 唯一维护；不把企业内部偏好直接变为项目强制规则。14个公共入口增强，产品分别补8个前端及14个服务入口，总数仍为21/74/42。
+### Product users
 
-规则级别为required/recommended/conditional；项目兼容、安全及现有工具约定优先。每个增强入口的references/engineering-practices.md给出风险、条件、例外、正反示意和验证。代码/锁双语同字节，说明本地化；关联案例ID不证明该条全部语义。
+Install Frontend Craft or Backend Craft to receive shared skills, embedded methods and common-resource management. Each product owns its commands, domain standards and runtime adapters. Follow the corresponding product README.
 
-维护者显式运行`pnpm run verify:engineering`，缺工具按MISSING报告；`--prepare`才准备环境，Docker方式见脚本参数。八个公共案例覆盖七语言及IPC，另两例由产品拥有。真实运行、四组模型对照与结构完整性分别记录，均不代表GUI、数据库或分布式保证。
+### Library integrators
 
-[变更日志](CHANGELOG.zh-CN.md) · [English changelog](CHANGELOG.md) · [2.0.0发布步骤](docs/releases/2.0.0.md)。craft-common 2.0.0、frontend-craft 3.0.0、backend-craft 1.0.0 均已于2026-11-09（Asia/Shanghai）发布至 npm，版本号不变。
+Requires Node.js 22+ and uses TypeScript / ESM.
 
-## 共享 CLI（2.1.0 待发布）
+```sh
+pnpm add --save-exact @bovinphang/craft-common@2.1.0
+```
 
-新增 createCraftCli、CliProductDefinition、CliProductAdapter、createCliLifecycle、createCliPrompts 与 createClaudeCacheManager。产品注入身份、Runtime、安装发现、资源适配器及专业命令；包管理器识别和 CLI 自管理复用同一实现。2.1.0 尚未发布，先验证公共包 tarball，再按公共包优先顺序发布匹配产品。
+Have the caller supply the actual installed package root to read complete content and methods.
+
+```ts
+import {
+  readContentCatalog,
+  readMethodResource,
+} from "@bovinphang/craft-common";
+
+export function loadCommonContent(packageRoot: string) {
+  return {
+    catalog: readContentCatalog(packageRoot, "en"),
+    method: readMethodResource(packageRoot, "doc-sync", "en"),
+  };
+}
+```
+
+Catalogs include complete file lists, source versions, file hashes and a catalog digest. Use zh-CN for Simplified Chinese. Bundled products should explicitly resolve and pass their common content root. See the [consumption guide](docs/consuming-common.md).
+
+## Shared skill catalog
+
+| Area | Skills |
+| --- | --- |
+| Language foundations | `cc-typescript-project-standard`, `cc-rust-project-standard`, `cc-go-project-standard`, `cc-java-project-standard`, `cc-python-project-standard`, `cc-c-project-standard`, `cc-cpp-project-standard` |
+| Runtime and concurrency | `cc-rust-async`, `cc-go-concurrency`, `cc-java-runtime`, `cc-python-async`, `cc-native-memory-safety` |
+| Desktop | `cc-electron-project-standard`, `cc-tauri-project-standard` |
+| Engineering methods | `cc-source-driven-development`, `cc-doc-sync-core`, `cc-debug-methodology`, `cc-refactoring-core`, `cc-tdd-methodology` |
+| Diagrams | `cc-drawio-studio`, `cc-technical-diagrams` |
+
+Languages, frameworks and project roles are modeled separately. A language capability can apply to UI, desktop cores, native libraries, services and CLIs. Recommendations use actual project evidence and delivered content.
+
+## Reusable methods and engineering practices
+
+The six methods are source-driven-development, doc-sync, debug, refactoring, tdd and engineering-practices. Sources live in methods/ and its Chinese mirror; synchronization scripts generate embedded skill references.
+
+Engineering practices include eight shared principles and primary-source records with applicability limits. Rules use required, recommended and conditional levels. Language and desktop references record conditions, exceptions and verification requirements.
+
+[Engineering practices](methods/engineering-practices.md) · [Source registry](methods/engineering-practices.sources.json)
+
+## Product integration and coexistence
+
+Products declare resource changes through explicit planning sessions. The shared installer coordinates paths, configuration-entry ownership, cross-product locks and interruption recovery. Products sharing a real Skill target must use identical common versions, languages and content digests. Unknown and user-modified files are protected.
+
+dry-run performs planning with read-only disk behavior. Before upgrading, release old common references through each old product CLI, then install matching products. Native plugin coexistence requires additional host verification. See [consuming the library](docs/consuming-common.md) and [CLI integration](docs/cli-integration.md).
+
+## Development and verification
+
+Source development uses pnpm 12.4.1, esbuild and Node.js node:test.
+
+```sh
+pnpm install --frozen-lockfile
+pnpm lint
+pnpm typecheck
+pnpm run sync:methods -- --check
+pnpm build
+pnpm test
+pnpm run pack:skills
+pnpm exec npm pack
+```
+
+pack:skills generates 21 bilingual standalone skill packages. Use the npm packer for library archives to retain nested example lockfiles. Prepare and verify engineering examples separately as described in [project structure](docs/project-structure.md).
+
+## Documentation and contributing
+
+The [documentation index](docs/README.md) links consumption, CLI integration, maintenance and historical evidence. See [Contributing](CONTRIBUTING.md) for bilingual maintenance, generated content and pre-submission checks. Report problems through [GitHub Issues](https://github.com/bovinphang/craft-common/issues).
+
+## License
+
+[MIT](LICENSE) © bovinphang.

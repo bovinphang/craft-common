@@ -20,16 +20,22 @@
     }
   },
   "files": [
-    "docs/consuming-common.md",
+    "docs/README*.md",
+    "docs/consuming-common*.md",
+    "docs/cli-integration*.md",
+    "docs/project-structure*.md",
+    "docs/releases/2.0.0.md",
     "dist",
     "skills",
     "localized",
     "methods",
     "LICENSE",
     "README.md",
+    "README.zh-CN.md",
+    "CONTRIBUTING.md",
+    "CONTRIBUTING.zh-CN.md",
     "CHANGELOG.md",
-    "CHANGELOG.zh-CN.md",
-    "docs/releases/2.0.0.md"
+    "CHANGELOG.zh-CN.md"
   ],
   "publishConfig": {
     "access": "public"
