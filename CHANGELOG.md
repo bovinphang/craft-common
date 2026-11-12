@@ -4,13 +4,12 @@
 
 ## [2.1.0] - 2026-11-10
 
-Source version prepared. npm publication is pending.
+### Added
 
-### Changed
-
-- Share product CLI dispatch, prompts, package-manager ownership detection, self-management and Claude cache management.
-- Align backend basic commands with frontend; setup defaults local, ordinary noninteractive install defaults global; preserve backend validation and ownership.
-- Reorganize bilingual README, library consumption, CLI integration and contributor documentation, and include the guides in the library archive.
+- Export `createCraftCli` and `createCliPrompts` for command routing and interactive installation. With the shared defaults, `setup` installs locally and ordinary non-interactive installs target Claude globally in English. Products can override these defaults.
+- Export `identifyInstallation` and `createCliLifecycle` to detect verified npm/pnpm installations and let product CLIs update or remove themselves through the original package manager.
+- Export `createClaudeCacheManager` to report installation sources and clean stale product caches while protecting the active installation.
+- Include bilingual library consumption, [CLI integration](docs/cli-integration.md), and project structure guides in the npm package.
 
 ## [2.0.0] - 2026-11-09
 
@@ -19,20 +18,19 @@ Source version prepared. npm publication is pending.
 - Expand the shared catalog to 21 English/Simplified Chinese `cc-*` entries. TypeScript, Rust, Go, Java, Python, C and C++ have independent language foundations; Rust async, Go concurrency, Python async, Java runtime and native memory safety have focused entries. Tauri and Electron provide desktop adaptations.
 - Add bounded, read-only workspace inspection and task-scoped capability recommendations. Languages, application roles and framework evidence remain separate; discovery does not execute project code or install tools.
 - Add shared product lifecycle APIs for explicit planning sessions, 15-runtime target resolution, per-entry configuration ownership, cross-product locking and recoverable product/common transactions.
-- Add the sixth reusable method, engineering practices: eight core principles, 31 primary-source records with applicability limits, and local language/desktop decisions in 14 common entries. Guidance uses required/recommended/conditional levels and preserves project conventions.
-- Add isolated, paired behavior examples for seven languages and the IPC handler core. Preparation is explicit; missing tools, compilation failures and empty/skipped tests are distinguished from demonstrated behavior. GUI, signing, real databases and distributed guarantees are separate validation boundaries.
+- Add reusable engineering practices with eight principles, 31 primary-source records with applicability limits, and language and desktop guidance in 14 shared entries. Guidance uses required, recommended and conditional levels and respects project conventions.
+- Add isolated examples pairing defects with fixes for seven languages and the IPC handler core. Examples require explicit setup and distinguish demonstrated behavior from missing tools, compilation failures and empty or skipped tests. GUI, signing, real databases and distributed guarantees require separate validation.
 
 ### Changed
 
-- Keep common content authoritative in this package. Products generate complete bilingual snapshots, embedded methods and provenance locks from the same exact package version and bytes. Standalone skills retain their own references, examples and license.
-- Preserve frontend/backend product identities and adapters while sharing stable installation mechanics. No-Skill runtime references do not become native Skills or create shared Skill consumers.
-- Use the existing npm packer through `pnpm exec npm pack` for release archives: pnpm 12.4.1's pack command omits nested `pnpm-lock.yaml` files, even with an explicit files whitelist. Dependency management remains on pnpm 12.4.1.
+- Products generate bilingual snapshots, embedded methods and provenance locks from the same pinned version and package bytes. Standalone skills include their own references, examples and license.
+- Runtimes without Skill support receive private references without registering as shared Skill consumers.
+- Release archives use `pnpm exec npm pack` to preserve nested `pnpm-lock.yaml` files. The `pnpm pack` command in pnpm 12.4.1 omits those files.
 
 ### Fixed
 
-- Replace seven-entry catalog reconstruction in method synchronization with bilingual preflight and incremental planning. Preserve all 21 entries, applicability, unknown fields and query bytes; support read-only checks and idempotent synchronization.
+- Method synchronization preserves all 21 entries, applicability, unknown fields and query bytes. It supports read-only checks and leaves existing output unchanged on repeated runs with the same input.
 - Reject invalid indexes, missing language resources, unsafe internal links and modified/unknown generated outputs before writing.
-- Retain the transaction recovery, Windows equivalent-path and fixed-line-ending repairs released in 1.0.1.
 
 ## [1.0.1] - 2026-11-06
 

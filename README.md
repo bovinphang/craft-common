@@ -29,7 +29,7 @@ Product users receive common capabilities through the frontend or backend plugin
 | `resolveRuntimeTargets / RUNTIME_DESCRIPTORS` | Resolve configuration and Skill paths for 15 runtimes |
 | `createInstallSession / runProductLifecycle` | Plan product-owned resources and coordinate installation |
 | `planSharedDeployment / executeSharedPlan / recoverSharedTransaction` | Plan shared deployment, commit transactions and recover interruptions |
-| `createCraftCli / createCliLifecycle / createCliPrompts / createClaudeCacheManager` | Compose product CLI dispatch, lifecycle, prompts and cache management in 2.1.0 |
+| `createCraftCli / createCliLifecycle / createCliPrompts / createClaudeCacheManager` | Compose product CLI dispatch, lifecycle, prompts and cache management |
 
 ## Getting started
 
@@ -39,7 +39,7 @@ Install Frontend Craft or Backend Craft to receive shared skills, embedded metho
 
 ### Library integrators
 
-Requires Node.js 22+ and uses TypeScript / ESM.
+Requires Node.js 22 or later. The library exposes an ESM entry point with TypeScript types. Pin the exact version for your product. Available versions are listed on [npm](https://www.npmjs.com/package/@bovinphang/craft-common).
 
 ```sh
 pnpm add --save-exact @bovinphang/craft-common@2.1.0
@@ -87,7 +87,7 @@ Engineering practices include eight shared principles and primary-source records
 
 Products declare resource changes through explicit planning sessions. The shared installer coordinates paths, configuration-entry ownership, cross-product locks and interruption recovery. Products sharing a real Skill target must use identical common versions, languages and content digests. Unknown and user-modified files are protected.
 
-dry-run performs planning with read-only disk behavior. Before upgrading, release old common references through each old product CLI, then install matching products. Native plugin coexistence requires additional host verification. See [consuming the library](docs/consuming-common.md) and [CLI integration](docs/cli-integration.md).
+A dry run plans changes without writing to disk. Verify native plugin coexistence in the target host. See [coordinated upgrades](docs/consuming-common.md#coordinated-upgrades-and-distribution) and [CLI integration](docs/cli-integration.md).
 
 ## Development and verification
 
@@ -108,7 +108,7 @@ pack:skills generates 21 bilingual standalone skill packages. Use the npm packer
 
 ## Documentation and contributing
 
-The [documentation index](docs/README.md) links consumption, CLI integration, maintenance and historical evidence. See [Contributing](CONTRIBUTING.md) for bilingual maintenance, generated content and pre-submission checks. Report problems through [GitHub Issues](https://github.com/bovinphang/craft-common/issues).
+See [Contributing](CONTRIBUTING.md) for bilingual maintenance, generated content and pre-submission checks. Report problems through [GitHub Issues](https://github.com/bovinphang/craft-common/issues).
 
 ## License
 

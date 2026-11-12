@@ -29,7 +29,7 @@ Craft Common 为 [Frontend Craft](https://github.com/bovinphang/frontend-craft) 
 | `resolveRuntimeTargets / RUNTIME_DESCRIPTORS` | 解析 15 个 Runtime 的配置与 Skill 路径 |
 | `createInstallSession / runProductLifecycle` | 规划产品托管资源并协调安装 |
 | `planSharedDeployment / executeSharedPlan / recoverSharedTransaction` | 规划共享部署、提交事务与恢复中断 |
-| `createCraftCli / createCliLifecycle / createCliPrompts / createClaudeCacheManager` | 在 2.1.0 中组合产品命令调度、生命周期、交互与缓存管理 |
+| `createCraftCli / createCliLifecycle / createCliPrompts / createClaudeCacheManager` | 组合产品命令调度、生命周期、交互与缓存管理 |
 
 ## 开始使用
 
@@ -39,7 +39,7 @@ Craft Common 为 [Frontend Craft](https://github.com/bovinphang/frontend-craft) 
 
 ### 库集成开发者
 
-要求 Node.js 22+，使用 TypeScript / ESM。
+要求 Node.js 22 或更高版本。公共库提供 ESM 入口和 TypeScript 类型。请为产品锁定精确依赖版本。可用版本见 [npm](https://www.npmjs.com/package/@bovinphang/craft-common)。
 
 ```sh
 pnpm add --save-exact @bovinphang/craft-common@2.1.0
@@ -87,7 +87,7 @@ export function loadCommonContent(packageRoot: string) {
 
 产品通过显式规划会话声明资源变更，由公共安装引擎协调路径、配置条目所有权、跨产品锁与中断恢复。两产品共享同一真实 Skill 目标时，common 版本、语言与内容摘要必须一致。未知和用户修改的文件受到保护。
 
-dry-run 执行规划且保持磁盘只读。升级前通过各旧产品 CLI 退出旧公共引用，再安装匹配产品。原生插件共存需要额外宿主验证。集成约定见[消费指南](docs/consuming-common.zh-CN.md)，命令组合见[共享 CLI 接入](docs/cli-integration.zh-CN.md)。
+预览模式只规划变更，保持磁盘只读。原生插件共存需要在目标宿主中验证。参见[协调升级](docs/consuming-common.zh-CN.md#协调升级与发行)和[共享 CLI 接入](docs/cli-integration.zh-CN.md)。
 
 ## 开发与验证
 
@@ -108,7 +108,7 @@ pack:skills 生成 21 个双语独立 Skill 包。库归档使用 npm 打包器�
 
 ## 文档与贡献
 
-[文档导航](docs/README.zh-CN.md)汇总消费、CLI、维护和历史证据入口。[贡献指南](CONTRIBUTING.zh-CN.md)说明双语维护、生成边界和提交前检查。通过 [GitHub Issues](https://github.com/bovinphang/craft-common/issues)反馈问题。
+[贡献指南](CONTRIBUTING.zh-CN.md)说明双语维护、生成边界和提交前检查。通过 [GitHub Issues](https://github.com/bovinphang/craft-common/issues)反馈问题。
 
 ## 许可证
 
